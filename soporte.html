@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+  <title>Soporte</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!--Header superior!-->
+      <div class="header-contenedor background-1">
+        <div class="header-superior width-pagina">
+          <a href="acerca.html"><span>Acerca de KORG</span></a>
+          <!--Buscador!-->
+          <div class="buscador">
+            <input type="text" name="buscador" value="">
+            <button type="button" name="button"><img src="/img/iconos/icono-lupa.png" alt="Lupa del buscador"></button>
+          </div>
+          <!--Lista de redes sociales!-->
+          <ul class="header-superior__redes">
+            <li><a href="https://www.youtube.com/user/korglatinoamerica" target="_blank"><img src="img/iconos/logo-youtube-negro.png" alt="Logo de Youtube" class="redes__icono-header"></a></li>
+            <li><a href="https://www.instagram.com/korglatinoamerica/" target="_blank"><img src="img/iconos/logo-instagram-negro.png" alt="Logo de Instagram" class="redes__icono-header"></a></li>
+            <li><a href="https://www.facebook.com/KORGlatinoamerica/" target="_blank"><img src="img/iconos/logo-facebook-negro.png" alt="Logo de Facebook" class="redes__icono-header"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main-contenedor width-pagina">
+    <!--Header inferior. Logo y menu de navegación!-->
+    <section>
+      <div class="main-header">
+        <div class="menu">
+          <a href="index.html"><img src="/img/iconos/korg-chico.png" alt="Logo de Korg" class="menu__logo"></a>
+          <ul class="menu__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo General</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+          </ul>
+        </div>
+        <div class="main-header__presentacion">
+          <span class="presentacion__texto">
+            <h2>Consulta nuestra sección de preguntas frecuentes o envia tu consulta a nuestro equipo.</h2>
+          </span>
+
+        </div>
+      </div>
+    </section>
+
+    <!--PREGUNTAS FRECUENTES!-->
+    <section>
+      <div class="separador">
+        <h3>Preguntas frecuentes</h3>
+      </div>
+      <span id="presentacion-filtros">
+        <h4>¡Utiliza nuestros filtros!</h4>
+      </span>
+      <!--  filtros para preguntas frecuentes-->
+      <ul class="filtros">
+        <li class="filtro">
+          <button type="button" name="button" id="categoria-sintetizadores">Sintetizadores</button>
+        </li>
+        <li class="filtro">
+          <button type="button" name="button" id="categoria-workstation">Workstation</button>
+        </li>
+        <li class="filtro">
+          <button type="button" name="button" id="categoria-garantia">Software</button>
+        </li>
+      </ul>
+      <!--  sección preguntas frecuentes-->
+      <ul id="preguntas-frecuentes">
+        <!-- categoría 1 -->
+        <li id="categoria-sintetizadores" class="preguntas-frecuentes__categoria visible">
+          <ul>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">¿Parece que solo tengo 50 de los 80 ajustes preestablecidos de fábrica en mi Monologue.</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>1. Comience con el Monologue apagado.<br>
+
+2. Mientras mantiene presionado el botón WRITE y el botón EXIT, encienda el monólogo.
+Se indicará y resaltará “FACTORY RESET” en la pantalla. NO gire la perilla PROGRAM / VALUE ya que esto seleccionará otra opción.<br>
+
+3. Presione el botón WRITE.<br>
+La pantalla indicará el mensaje "¿Está seguro?".<br>
+
+4. Gire la perilla PROGRAM / VALUE para seleccionar “Yes” y presione el botón WRITE.<br>
+
+
+SUGERENCIA Presione el botón EXIT, o seleccione “No” usando la perilla PROGRAM / VALUE y presione el botón WRITE para cancelar la operación.
+Nunca apague el Monologue mientras se cargan los datos de fábrica.<br></p>
+              </div>
+            </li>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">¿Cómo puedo guardar mi programa en un destino diferente al actual en mi Volca FM?</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>Después de presionar GUARDAR, puede elegir el destino girando la perilla PROGRAM. Después de elegir su destino, presione GUARDAR nuevamente para ejecutar el proceso de guardado o presione EDITAR para salir sin guardar.<br>
+
+* Esta función se agregó a partir de la versión 1.02 en adelante.
+volca fm: Actualizador del sistema</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- categoría 2 -->
+        <li id="categoria-workstation" class="preguntas-frecuentes__categoria">
+          <ul>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">¿Cómo restaurar ajustes de fábrica en el Korg Krome?</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>Antes de cargar los datos de pre-carga ir a "modo Global P0: Basic Setup-system" y desactivar el seteo “Memory protect” para los datos que queremos cargar. Ej: Programas.<br>
+
+Cargando los datos de pre-carga se reescribirán los contenidos de la memoria interna. Si queremos mantener los datos existentes en la memoria interna debemos usar “Save all (PCG&SNG)” o “Save PCG” para  guardar nuestros datos en una tarjeta de memoria antes de continuar el proceso.<br><br>
+
+1) Acceder al modo Global - P0 BASIC SETUP-BASIC PAGE.
+(Entrar al modo Global presionando el botón Global)<br>
+
+2)Presionar el botón de menú y elegir “LOAD PRELOAD/DEMO DATA”<br>
+
+3) En el campo ”Kind” seleccionar All (Preload PCG and Demo songs)<br>
+
+4) Presionar el botón Ok para cargar los datos pre-cargados si decidimos no hacerlo presionar el botón Cancel.
+
+Cuando presionamos el botón Ok, un cuadro de dialogo nos pedirá la confirmación para ejecutar la carga.</p>
+              </div>
+            </li>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">¿Qué tipo de datos se guarda una canción grabada del i3?</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>La canción se guarda como datos WAV con el nombre AudioSong_xxx en la carpeta AudioRec dentro de la carpeta i3 de la unidad flash USB. Un minuto de grabación será aproximadamente 10 MB de datos.</p>
+              </div>
+            </li>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">¿Cuáles son las diferencias entre el Electribe Sampler y el Electribe?</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>El muestreador electribe y electribe tienen esencialmente las mismas funciones, pero sus motores de sonido son significativamente diferentes.
+
+Electribe: Sintetizador
+- Contiene un motor de sonido de modelado analógico con 55 sonidos diferentes (el muestreador electribe solo tiene 16)<br>
+- Contiene 16 tipos diferentes de filtro (el muestreador electribe solo tiene tres)<br>
+
+Electribe Sampler: Sampler<br>
+- Puede usar cualquier sonido por muestreo (el electribe usa solo muestras preestablecidas)<br>
+- Admite muestras estéreo y corte de muestras (el electribe no lo hace)<br>
+
+Sin embargo, ambos modelos contienen un motor de sonido de modelado simple y muestras de batería estándar, por lo que es fácil hacer ritmos con cualquiera de los modelos. Elija el modelo que mejor se adapte a los sonidos que más utiliza.</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <!-- categoría 3 -->
+        <li id="categoria-software" class="preguntas-frecuentes__categoria">
+          <ul>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">No puedo tocar seis notas aunque KEY ASSIGN MODE esté configurado en POLY en mi iPolysix</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>Puede utilizar la perilla VOICES para especificar la polifonía máxima. Asegúrese de que esta perilla esté en 6.</p>
+              </div>
+            </li>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">¿Puedo tocar el Odyssei con un teclado MIDI externo?
+</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>¡Por supuesto! Puede reproducir el módulo utilizando un teclado MIDI externo como microKEY 2 o nanoKEY2, taktile, etc. a través del kit de conexión de cámara para iPad / adaptador de cámara USB Lightning. Y soporte de conexión micro KEY Air o nanoKEY Studio a través de Bluetooth MIDI.</p>
+              </div>
+            </li>
+            <li class="preguntas-frecuentes__categoria--pregunta">
+              <div class="pregunta__titulo">
+                <h4 class="caja-texto__titulo">¿Puedo hacer zoom en el panel de vista?
+</h4>
+              </div>
+              <div class="pregunta__respuesta">
+                <p>En el modo SYNTH, puede tocar dos veces la sección AMPLIFICADOR CONTROLADO POR VOLTAJE del MS-20 para encender "ZOOM MS-20" y cambiar a "PANEL DE CONTROL". Al tocar dos veces el área del logotipo en la sección de parches, puede cambiar a "PATCH PANEL". También puede tocar dos veces para volver desde "PANEL DE CONTROL" o "PANEL DE PATCH".</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+    </section>
+
+    <!--Formulario de contacto e info!-->
+    <section id="contacto">
+      <div class="separador">
+        <h3>Contactános</h3>
+      </div>
+      <div id="contacto__contenido">
+        <form action="#" method="post" id="contenido__formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" value="">
+          <label for="email">Email</label>
+          <input type="text" name="email" value="">
+          <label for="categoria">¿De qué indole es tu mensaje?</label>
+          <select name="categoria">
+            <option value="comercial">Consulta comercial</option>
+            <option value="tecnico">Consulta técnica</option>
+            <option value="tecnico">Consulta legal</option>
+            <option value="tecnico">Sugerencia</option>
+            <option value="general">General</option>
+          </select>
+          <div class="">
+            <label for="newsletter">¿Te interesa recibir el newsletter de Korg?</label>
+            <input type="checkbox" name="newsletter" value="">
+          </div>
+
+          <textarea name="name" rows="16" cols="60"></textarea>
+          <input type="reset" name="" value="limpiar formulario" class="formulario__btn">
+          <button type="button" name="button" class="formulario__btn">Enviar</button>
+        </form>
+        <div class="contenido__info">
+          <div class="separador separador--chico">
+            <h4>Asistencia técnica en Argentina</h4>
+          </div>
+          <p id="info__texto">
+            <strong>IMPORT MUSIC ARGENTINA S.A.</strong><br>
+            Lorem ipsum 421 Piso 17<br>
+            TEL: 54-11-4850 XXXX<br>
+            FAX: 54-11-4850 XXXX<br>
+            korgsupport@importmusic.com.ar
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="background-1">
+    <nav>
+      <div class="footer-contenedor width-pagina">
+        <div class="footer-contenedor__contenido">
+          <a href="acerca.html"><span class="acerca-footer">Acerca de KORG</span></a>
+          <!--Lista de redes sociales!-->
+          <ul class="footer-contenedor__redes">
+            <li><a href="https://www.youtube.com/user/korglatinoamerica" target="_blank"><img src="img/iconos/logo-youtube-negro.png" alt="Logo de Youtube" class="redes__icono-footer"></a></li>
+            <li><a href="https://www.instagram.com/korglatinoamerica/" target="_blank"><img src="img/iconos/logo-instagram-negro.png" alt="Logo de Instagram" class="redes__icono-footer"></a></li>
+            <li><a href="https://www.facebook.com/KORGlatinoamerica/" target="_blank"><img src="img/iconos/logo-facebook-negro.png" alt="Logo de Facebook" class="redes__icono-footer"></a></li>
+          </ul>
+          <a href="index.html"><img src="/img/iconos/korg-chico.png" alt="Logo de Korg" class="logo-footer"></a>
+        </div>
+        <div class="footer-contenedor__pie">
+          <span>Copyright © 2021 KORG Inc. All Rights Reserved.</span>
+        </div>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>
