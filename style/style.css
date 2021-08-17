@@ -4,7 +4,7 @@ html {
   font-size:62.25%;
 }
 
-* {
+*, ul {
   padding:0;
   margin:0;
   box-sizing: border-box;
@@ -89,9 +89,7 @@ negro rgb(26,27,30)
 
 .header-superior {
   height:inherit;
-  display:grid;
-  grid-auto-flow: column;
-
+  display:flex;
   align-items: center;
   justify-content: space-between;
   margin:0 auto;
@@ -100,9 +98,9 @@ negro rgb(26,27,30)
 }
 
 .header-superior__redes {
-  width:100px;
   display:flex;
-  gap: 10px;
+  width:100px;
+  gap:10px;
 }
 
 .redes__icono-header {
@@ -162,7 +160,7 @@ negro rgb(26,27,30)
   margin-top:20px;
 }
 
-.menu-hero__menu {
+.menu {
   width:230px;
   height:max-content;
   padding:8px 0;
@@ -232,7 +230,7 @@ negro rgb(26,27,30)
 #subtemas-novedades {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px;
+  grid-column-gap:30px;
   margin-bottom:100px;
   height:350px;
 }
