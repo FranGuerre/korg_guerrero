@@ -288,7 +288,7 @@ negro rgb(26,27,30)
   100% {transform:scale(2);opacity:0;}
 }
 #subtema-artistas {
-  background:url(/img/artistas/toriena-sin-fondo.png), linear-gradient(36deg, rgb(26,27,30) 0%, rgb(234, 194, 145) 50%, rgb(26,27,30) 100%);
+  background:url(/img/artistas/toriena-sin-fondo.png), linear-gradient(90deg, rgb(26,27,30) 0%, rgb(234, 194, 145) 50%, rgb(26,27,30) 100%);
 }
 
 /* dorado rgb(234, 194, 145)
