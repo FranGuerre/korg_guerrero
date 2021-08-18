@@ -4,11 +4,12 @@ html {
   font-size:62.25%;
 }
 
-*, ul {
+*, ul, div {
   padding:0;
   margin:0;
   box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
+
 }
 
 li {
@@ -228,16 +229,17 @@ negro rgb(26,27,30)
 /* subtemas y novedades */
 
 #subtemas-novedades {
-  display:grid;
+  /* display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap:30px;
+  grid-column-gap:30px; */
+  
   margin-bottom:100px;
-  height:350px;
+  height:max-content;
 }
 /* subtemas */
 
 #subtemas-novedades__subtemas {
-  height:inherit;
+  min-height:300px;
   display:flex;
   flex-wrap:wrap;
   justify-items:center;
@@ -246,7 +248,7 @@ negro rgb(26,27,30)
 .subtemas__caja {
   position:relative;
   width:100%;
-  height:50%;
+  height:auto;
   border: 1px solid rgb(60, 60, 60);
   overflow:hidden;
 }
@@ -268,7 +270,8 @@ negro rgb(26,27,30)
   padding:10px;
   z-index: 2;
 }
-/* fondo y efecto de fondo de subtemas artistas y software*/
+
+/* efectos subtema*/
 .subtemas__caja--fondo {
   width:100%;
   height:100%;
@@ -291,16 +294,9 @@ negro rgb(26,27,30)
   background:url(/img/artistas/toriena-sin-fondo.png), linear-gradient(90deg, rgb(26,27,30) 0%, rgb(234, 194, 145) 50%, rgb(26,27,30) 100%);
 }
 
-/* dorado rgb(234, 194, 145)
-gris oscuro rgb(60, 60, 60)
-rojo rgb(174,52,70)
-rosa rgb(252,139,140)
-negro rgb(26,27,30) */
 
 #subtema-artistas a .subtemas__caja--fondo {
   background:url(/img/artistas/toriena-sin-fondo.png);
-  /* transition:transform 3s linear;
-  transform:translateX(-50%); */
 }
 
 #subtema-artistas, #subtema-artistas .subtemas__caja--fondo {
@@ -320,6 +316,8 @@ background-size: contain;
   background-image:url(https://cdn.korg.com/ar/products/upload/df5e801242c7b1f9e7a0f2c7ac4f3e68_pc.png);
   background-repeat: no-repeat;
 }
+/* fin efectos subtema*/
+
 /* sección novedades */
 
 #subtemas-novedades__novedades {
