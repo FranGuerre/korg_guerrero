@@ -14,10 +14,27 @@
 
 <body>
   <header>
+    <!-- header mobile -->
+    <nav class="navbar navbar-light bg-light header-contenedor header-mobile background-1">
+      <a class="navbar-brand" href="index.html"><img src="/img/iconos/korg-chico.png" alt="Logo de Korg" class="header-mobile__logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        </div>
+      </div>
+    </nav>
+    <!-- fin logo mobile -->
     <nav>
       <!--Header superior!-->
       <div class="header-contenedor background-1">
         <div class="header-superior width-pagina">
+
           <a href="acerca.html"><span>Acerca de KORG</span></a>
           <!--Buscador!-->
           <div class="buscador">
@@ -58,10 +75,10 @@
       </div>
     </section>
     <section>
+      <!--Sección para ingresar a: Artistas o Software!-->
       <div class="container" id="subtemas-novedades">
-        <!--Sección para ingresar a: Artistas o Software!-->
         <div class="row">
-          <ul class="col-md-6" id="subtemas-novedades__subtemas">
+          <ul class="col-sm-12 col-md-12 col-lg-6 m-sm-0 m-md-0" id="subtemas-novedades__subtemas">
             <li class="subtemas__caja" id="subtema-artistas">
               <a href="artistas.html">
                 <div class="subtemas__caja--titulo">
@@ -82,7 +99,7 @@
             </li>
           </ul>
           <!--Sección de novedades!-->
-          <div class="col-md-6" id="subtemas-novedades__novedades">
+          <div class="col-sm-12 col-md-12 col-lg-6 m-sm-0 m-md-0" id="subtemas-novedades__novedades">
             <div class="separador separador--chico">
               <h3>Novedades</h3>
             </div>
