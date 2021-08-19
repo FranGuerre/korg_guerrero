@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,57 +16,42 @@
 <body>
   <header>
     <nav>
-    <!-- header mobile -->
-    <div class="navbar navbar-expand-lg navbar-light bg-light d-md-none d-lg-none background-1">
-      <a class="navbar-brand" href="#"><img src="/img/iconos/korg-chico.png" alt="Logo de Korg" class="header-mobile__logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      </div>
-    </div>
-    <!-- <nav class="navbar navbar-light bg-light header-contenedor">
-      <a class="navbar-brand" href="index.html"><img src="/img/iconos/korg-chico.png" alt="Logo de Korg" class="header-mobile__logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      <!-- header mobile -->
+      <div class="navbar navbar-light d-md-none background-1 max-vw-100">
+        <a class="navbar-brand px-4" href="#"><img src="/img/iconos/korg-chico.png" alt="Logo de Korg" class="header-mobile__logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
       </div>
-    </nav> -->
-    <!-- fin logo mobile -->
+      <!-- fin header mobile -->
       <!--Header superior!-->
       <div class="header-contenedor background-1">
         <div class="header-superior width-pagina">
@@ -113,20 +98,20 @@
       <!--Sección para ingresar a: Artistas o Software!-->
       <div class="container" id="subtemas-novedades">
         <div class="row">
-          <ul class="col-sm-12 col-md-12 col-lg-6 m-sm-0 m-md-0" id="subtemas-novedades__subtemas">
+          <ul class="col-md-12 col-lg-6 m-sm-0 m-md-0" id="subtemas-novedades__subtemas">
             <li class="subtemas__caja" id="subtema-artistas">
               <a href="artistas.html">
                 <div class="subtemas__caja--titulo">
-                    <h3>Artistas</h3>
-                    <div class="subtemas__caja--fondo">
-                    </div>
+                  <h3>Artistas</h3>
+                  <div class="subtemas__caja--fondo">
+                  </div>
                 </div>
               </a>
             </li>
             <li class="subtemas__caja" id="subtema-software">
               <a href="catalogo.html">
                 <div class="subtemas__caja--titulo">
-                    <h3>Software</h3>
+                  <h3>Software</h3>
                 </div>
                 <div class="subtemas__caja--fondo">
                 </div>
@@ -134,7 +119,7 @@
             </li>
           </ul>
           <!--Sección de novedades!-->
-          <div class="col-sm-12 col-md-12 col-lg-6 m-sm-0 m-md-0" id="subtemas-novedades__novedades">
+          <div class="col-md-12 col-lg-6 m-sm-0 m-md-0" id="subtemas-novedades__novedades">
             <div class="separador separador--chico">
               <h3>Novedades</h3>
             </div>
@@ -143,8 +128,11 @@
                 <div class="ul-noticias__caja">
                   <a href="https://www.korg.com/ar/news/2021/0729/" target="_blank">
                     <div class="caja-texto">
-                      <span class="caja-texto__titulo"><h4>KORG Collection 3 - A Synthesizer Collection for the ages with 3 new masterpieces added. Limited time Sale!</h4></span>
-                      <p>In 2004, KORG released the KORG Legacy Collection, a groundbreaking endeavor to authentically recreate the company’s most famous synthesizers in software. The KORG collection was renewed in 2017. It continued to evolve into the KORG Collection 2 in 2019.</p>
+                      <span class="caja-texto__titulo">
+                        <h4>KORG Collection 3 - A Synthesizer Collection for the ages with 3 new masterpieces added. Limited time Sale!</h4>
+                      </span>
+                      <p>In 2004, KORG released the KORG Legacy Collection, a groundbreaking endeavor to authentically recreate the company’s most famous synthesizers in software. The KORG collection was renewed in 2017. It continued to evolve into
+                        the KORG Collection 2 in 2019.</p>
                     </div>
                   </a>
                   <img src="/img/noticias/korg-collection-3.png" alt="Korg Collection 3">
@@ -154,7 +142,9 @@
                 <div class="ul-noticias__caja">
                   <a href="https://www.korg.com/ar/news/2021/0714/" target="_blank">
                     <div class="caja-texto">
-                      <span class="caja-texto__titulo"><h4>Ableton lanza el nuevo "Live 11 Lite".</h4></span>
+                      <span class="caja-texto__titulo">
+                        <h4>Ableton lanza el nuevo "Live 11 Lite".</h4>
+                      </span>
                       <p>Nos complace informar que el nuevo "Live 11 Lite" de Ableton ahora viene incluido con un número de nuestros productos.</p>
                     </div>
                   </a>
@@ -165,8 +155,11 @@
                 <div class="ul-noticias__caja">
                   <a href="http://www.korg.com/products/dj/nts_1/custom_effects.php#article5" target="_blank">
                     <div class="caja-texto">
-                      <span class="caja-texto__titulo"><h4>[DOTEC-AUDIO x Nu:Tekt] Cómo crear efectos personalizados para el NTS-1</h4></span>
-                      <p>Crear plugins personalizados para el NTS-1 puede parecer bastante desalentador, ¡pero no te preocupes!¡En esta serie de 5 partes de artículos exploraremos junto con DOTEC-AUDIO cómo crear efectos personalizados para NTS-1, paso a paso!nts</p>
+                      <span class="caja-texto__titulo">
+                        <h4>[DOTEC-AUDIO x Nu:Tekt] Cómo crear efectos personalizados para el NTS-1</h4>
+                      </span>
+                      <p>Crear plugins personalizados para el NTS-1 puede parecer bastante desalentador, ¡pero no te preocupes!¡En esta serie de 5 partes de artículos exploraremos junto con DOTEC-AUDIO cómo crear efectos personalizados para NTS-1,
+                        paso a paso!nts</p>
                     </div>
                   </a>
                   <img src="/img/noticias/nts-1.jpeg" alt="El sinetizador digital NTS-1">
@@ -176,8 +169,11 @@
                 <div class="ul-noticias__caja">
                   <a href="https://www.korg.com/ar/news/2021/0531/" target="_blank">
                     <div class="caja-texto">
-                      <span class="caja-texto__titulo"><h4>Información sobre la actualización de Windows 10 de mayo de 2021 (Actualización de 8 de julio de 2021)</h4></span>
-                      <p>Estamos investigando posibles problemas de compatibilidad al reproducir / grabar audio USB en un dispositivo Windows 10 que tiene instalado el controlador de audio KORG. Los síntomas pueden incluir ruido generado durante la grabación y reproducción.</p>
+                      <span class="caja-texto__titulo">
+                        <h4>Información sobre la actualización de Windows 10 de mayo de 2021 (Actualización de 8 de julio de 2021)</h4>
+                      </span>
+                      <p>Estamos investigando posibles problemas de compatibilidad al reproducir / grabar audio USB en un dispositivo Windows 10 que tiene instalado el controlador de audio KORG. Los síntomas pueden incluir ruido generado durante la
+                        grabación y reproducción.</p>
                     </div>
                   </a>
                   <img src="/img/noticias/windows.jpeg" alt="Imagen de Windows 11">
@@ -187,8 +183,11 @@
                 <div class="ul-noticias__caja">
                   <a href="https://www.korg.com/ar/products/dj/sq_64/" target="_blank">
                     <div class="caja-texto">
-                      <span class="caja-texto__titulo"><h4>CREA - TOCA - CONTROLA Sube a un nivel incomparable de conectividad y control</h4></span>
-                      <p>El SQ-64 es un secuenciador por pasos polifónico increíblemente potente y compacto, con excelentes controles prácticos e intuitivos, y completas opciones de edición para darte toda la flexibilidad y potencia de secuenciación necesaria para todos tus proyectos musicales.</p>
+                      <span class="caja-texto__titulo">
+                        <h4>CREA - TOCA - CONTROLA Sube a un nivel incomparable de conectividad y control</h4>
+                      </span>
+                      <p>El SQ-64 es un secuenciador por pasos polifónico increíblemente potente y compacto, con excelentes controles prácticos e intuitivos, y completas opciones de edición para darte toda la flexibilidad y potencia de secuenciación
+                        necesaria para todos tus proyectos musicales.</p>
                     </div>
                   </a>
                   <img src="/img/noticias/sq-64.jpeg" alt="El secuenciador SQ-64">
@@ -198,7 +197,9 @@
                 <div class="ul-noticias__caja">
                   <a href="https://www.korg.com/ar/news/2020/1022/" target="_blank">
                     <div class="caja-texto">
-                      <span class="caja-texto__titulo"><h4>KRONOS Sound Libraries: Three new libraries and one update library are released.k</h4></span>
+                      <span class="caja-texto__titulo">
+                        <h4>KRONOS Sound Libraries: Three new libraries and one update library are released.k</h4>
+                      </span>
                       <p></p>
                     </div>
                   </a>
@@ -208,12 +209,12 @@
             </ul>
           </div>
         </div>
-    </div>
+      </div>
     </section>
   </main>
   <footer class="background-1">
     <nav>
-      <div class="footer-contenedor width-pagina">
+      <div class="footer-contenedor width-pagina" role="navigation">
         <div class="footer-contenedor__contenido">
           <a href="acerca.html"><span class="acerca-footer">Acerca de KORG</span></a>
           <!--Lista de redes sociales!-->
