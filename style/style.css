@@ -825,7 +825,25 @@ footer {
   .menu {
     display:none;
   }
+  /* index.html */
+  .menu-hero {
+    height:66vh;
+    margin-bottom:10vh;
+  }
 
+  .hero__titulo {
+    font-size: 1.5rem;
+    color:rgb(234, 194, 145);
+    animation: hero-titulo 10s infinite;
+    font-family:"Press Start 2P";
+    padding:3px;
+    border:2px solid rgb(200,207,177);
+    background-color: rgba(29, 170, 182,0.2);
+  }
+  .menu-hero__hero img {
+    width: 680px;
+  }
+  /* fin index.html */
 }
 
 
