@@ -43,10 +43,10 @@ body {
   margin:0 auto;
   width:100vw;
   max-width:100%;
-  
+
 }
 .width-pagina {
-  max-width:1000px;
+  max-width:1200px;
 }
 
 .background-1 {
@@ -185,8 +185,15 @@ negro rgb(26,27,30)
   z-index:2;
 }
 
+.logo {
+  filter:brightness(0);
+}
 .menu__logo {
   width:90%;
+}
+.logo:hover {
+  filter:none;
+
 }
 
 .menu__links {
@@ -341,6 +348,7 @@ background-size: contain;
 #novedades__ul-noticias {
   align-self: end;
   height:300px;
+  width:100%;
   display:flex;
   flex-wrap: wrap;
   overflow:scroll;
@@ -350,6 +358,7 @@ background-size: contain;
 
 .ul-noticias__caja {
   display:flex;
+  width:100%;
   border: 1px solid #000;
   padding:18px;
   gap:5px;
@@ -357,7 +366,6 @@ background-size: contain;
 
 .ul-noticias__caja img {
   border:1px solid #000;
-  width:100px;
 
 }
 
@@ -788,15 +796,21 @@ footer {
 }
 
 @media (min-width:768px) and (max-width:992px) {
-
   /* index.html */
   #subtemas-novedades__subtemas {
     height:200px;
     display:grid;
     grid-auto-flow:column;
+    margin-bottom:100px;
   }
 
   /* fin index.html */
+  .menu {
+    width:200px;
+  }
+  .menu__links {
+    font-size:2rem;
+  }
 }
 
 
@@ -828,22 +842,17 @@ footer {
   }
   /* index.html */
   .menu-hero {
-    height:66vh;
-    margin-bottom:10vw;
+    height:55vh;
+    margin-bottom:8vw;
   }
 
   .hero__titulo {
     font-size: 1.5rem;
-    color:rgb(234, 194, 145);
-    animation: hero-titulo 10s infinite;
-    font-family:"Press Start 2P";
-    padding:3px;
-    border:2px solid rgb(200,207,177);
-    background-color: rgba(29, 170, 182,0.2);
   }
+
   .menu-hero__hero img {
-    width: 680px;
-    max-width: 100%;
+    width:100%;
+    max-width:680px;
   }
 
   /* fin index.html */
@@ -856,4 +865,30 @@ footer {
     max-width:120px;
   }
   /* fin footer */
+}
+
+@media /*(min-width:576px) and*/ (max-width:576px) {
+  .menu-hero__hero {
+    height:400px;
+  }
+  .footer-contenedor__redes {
+    gap:10px;
+  }
+  #subtemas-novedades__subtemas {
+    height:min-content;
+    margin-bottom:2vh;
+  }
+  #subtemas-novedades__novedades {
+    height:inherit;
+    display:grid;
+    grid-template-rows: auto auto;
+
+  }
+
+  #novedades__ul-noticias {
+    align-self: end;
+    height:min-content;
+    gap:5px;
+    border:none;
+  }
 }
