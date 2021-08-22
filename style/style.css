@@ -346,6 +346,7 @@ background-size: contain;
 }
 
 #novedades__ul-noticias {
+  position:relative;
   align-self: end;
   height:300px;
   width:100%;
@@ -358,15 +359,26 @@ background-size: contain;
 
 .ul-noticias__caja {
   display:flex;
-  width:100%;
   border: 1px solid #000;
   padding:18px;
   gap:5px;
 }
 
 .ul-noticias__caja img {
+  display:inline;
+  width:120px;
+  height:100%;
   border:1px solid #000;
+  shape-outside: border-box;
+  shape-margin: 0.8em;
+    shape-image-threshold: 0.5;
+    /* shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); */
+  /* shape-outside: url(img/noticias/nts-1.jpeg); */
 
+}
+
+.caja-texto {
+  display:inline;
 }
 
 .caja-texto__titulo {
@@ -850,6 +862,9 @@ footer {
     font-size: 1.5rem;
   }
 
+  .menu-hero__hero {
+  height:min-content;
+  }
   .menu-hero__hero img {
     width:100%;
     max-width:680px;
