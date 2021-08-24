@@ -104,7 +104,7 @@ function funcionalidadSolapas() {
         item.children[0].classList.remove("borde-solapa-activa");
         item.classList.remove("mostrar-solapa");
       });
-             solapa.children[0].classList.toggle("borde-solapa-activa");
+        solapa.children[0].classList.toggle("borde-solapa-activa");
         solapa.classList.toggle("mostrar-solapa");
     });
   });
