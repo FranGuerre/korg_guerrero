@@ -133,3 +133,52 @@ function cargarSolapas() {
     solapa.children[1].innerHTML = arrSintes;
   });
 }
+
+/*reproductor de video*/
+let reproductorVid = document.querySelector(".reproductor");
+let videoPrincipal = document.querySelector(".reproductor__video-principal");
+let videoListaVid = document.querySelector(".reproductor__lista-videos");
+let video = document.querySelectorAll(".lista-videos__video");
+let arrVideos = ["https://www.youtube.com/embed/f_pEXrvvDLg",
+"https://www.youtube.com/embed/O1hDLgkmDcU",
+"https://www.youtube.com/embed/YIUcG8Ay14M",
+"https://www.youtube.com/embed/6PuMIAvJsrw",
+"https://www.youtube.com/embed/4nZUrRQgX84"];
+
+function poblarReproductor() {
+  /*
+  <li class="lista-videos__video">
+    <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </li>
+
+  */
+}
+function embedVideos(e) {
+  let vidClick = e.children[1];
+
+  /*agregar al principio de array y quitar de su lugar anterior*/
+  for(let i = 0; i < arrVideos.length; i++) {
+    if(arrVideos[i] === vidClick.src) {
+      arrVideos.splice(i);
+      arrVideos.push(vidClick.src);
+    }
+  }
+  for(let i = 0; i < arrVideos.length; i++) {
+    if(i === 0) {
+      /*embed video principal con primero en el array*/
+    } else {
+      /*embed el resto*/
+    }
+  }
+}
+function funcionalidadReproductorVid() {
+  reproductorVid.addEventListener("click", (e) => {
+    if(e.target.classList.contains('.lista-videos__video')) {
+      embedVideos(e);
+
+    }
+  });
+
+}
+/*fin reproductor de video*/
