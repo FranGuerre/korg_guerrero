@@ -160,36 +160,7 @@ negro rgb(26,27,30)
   /*termina buscador de header*/
 }
 
-/* MENU */
-.menu {
-  width:230px;
-  height:max-content;
-  padding:8px 0;
-  text-align: center;
-  border:3px solid rgb(60, 60, 60);
-  background: rgb(234, 194, 145);
-  line-height: normal;
 
-  .menu__logo {
-    width:90%;
-  }
-
-  .menu__links {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size:2.3rem;
-  }
-
-  .menu__links li {
-    text-align: center;
-    text-transform: uppercase;
-
-  }
-  .menu__links li a:hover {
-    color:rgb(174,52,70);
-  }
-}
 .header-mobile__logo {
   width:100px;
 }
@@ -205,9 +176,42 @@ negro rgb(26,27,30)
 
   margin-top:20px;
 
+
+  /* MENU */
+  .menu {
+    width:230px;
+    height:max-content;
+    padding:8px 0;
+    text-align: center;
+    border:3px solid rgb(60, 60, 60);
+    background: rgb(234, 194, 145);
+    line-height: normal;
+    grid-column:1 / 2;
+    grid-row:1 / 2;
+
+    .menu__logo {
+      width:90%;
+    }
+
+    .menu__links {
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size:2.3rem;
+    }
+
+    .menu__links li {
+      text-align: center;
+      text-transform: uppercase;
+
+    }
+    .menu__links li a:hover {
+      color:rgb(174,52,70);
+    }
+  }
   /* HERO */
   &__hero {
-      max-width:100vw;
+    max-width:100vw;
     position:relative;
     grid-column:1 / 2;
     grid-row:1 / 2;
@@ -839,6 +843,7 @@ footer {
   .header-contenedor {
     display:none;
     width:100vw;
+
     border-bottom:1px solid #000;
   }
 
