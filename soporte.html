@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Soporte</title>
 </head>
@@ -80,7 +80,6 @@
           <span class="presentacion__texto">
             <h2>Consulta nuestra sección de preguntas frecuentes o envia tu consulta a nuestro equipo.</h2>
           </span>
-
         </div>
       </div>
     </section>
@@ -93,15 +92,16 @@
         <h4>¡Utiliza nuestros filtros!</h4>
       </span>
       <!--  filtros para preguntas frecuentes-->
-      <ul class="filtros">
+      <ul class="filtros btn-group btn-group-toggle" data-toggle="buttons">
+
+
         <li class="filtro">
-          <button type="button" name="button" id="categoria-sintetizadores">Sintetizadores</button>
+          <button type="button" class="btn btn-lg btn-outline-dark" id="categoria-sintetizadores">Sintetizadores</button>
+        <li class="filtro">
+          <button type="button" class="btn btn-lg btn-outline-dark" id="categoria-workstation">Workstation</button>
         </li>
         <li class="filtro">
-          <button type="button" name="button" id="categoria-workstation">Workstation</button>
-        </li>
-        <li class="filtro">
-          <button type="button" name="button" id="categoria-garantia">Software</button>
+          <button type="button" class="btn btn-lg btn-outline-dark" id="categoria-garantia">Software</button>
         </li>
       </ul>
       <!--  sección preguntas frecuentes-->
@@ -116,17 +116,17 @@
               <div class="pregunta__respuesta">
                 <p>1. Comience con el Monologue apagado.<br>
 
-2. Mientras mantiene presionado el botón WRITE y el botón EXIT, encienda el monólogo.
-Se indicará y resaltará “FACTORY RESET” en la pantalla. NO gire la perilla PROGRAM / VALUE ya que esto seleccionará otra opción.<br>
+                  2. Mientras mantiene presionado el botón WRITE y el botón EXIT, encienda el monólogo.
+                  Se indicará y resaltará “FACTORY RESET” en la pantalla. NO gire la perilla PROGRAM / VALUE ya que esto seleccionará otra opción.<br>
 
-3. Presione el botón WRITE.<br>
-La pantalla indicará el mensaje "¿Está seguro?".<br>
+                  3. Presione el botón WRITE.<br>
+                  La pantalla indicará el mensaje "¿Está seguro?".<br>
 
-4. Gire la perilla PROGRAM / VALUE para seleccionar “Yes” y presione el botón WRITE.<br>
+                  4. Gire la perilla PROGRAM / VALUE para seleccionar “Yes” y presione el botón WRITE.<br>
 
 
-SUGERENCIA Presione el botón EXIT, o seleccione “No” usando la perilla PROGRAM / VALUE y presione el botón WRITE para cancelar la operación.
-Nunca apague el Monologue mientras se cargan los datos de fábrica.<br></p>
+                  SUGERENCIA Presione el botón EXIT, o seleccione “No” usando la perilla PROGRAM / VALUE y presione el botón WRITE para cancelar la operación.
+                  Nunca apague el Monologue mientras se cargan los datos de fábrica.<br></p>
               </div>
             </li>
             <li class="preguntas-frecuentes__categoria--pregunta">
@@ -136,8 +136,8 @@ Nunca apague el Monologue mientras se cargan los datos de fábrica.<br></p>
               <div class="pregunta__respuesta">
                 <p>Después de presionar GUARDAR, puede elegir el destino girando la perilla PROGRAM. Después de elegir su destino, presione GUARDAR nuevamente para ejecutar el proceso de guardado o presione EDITAR para salir sin guardar.<br>
 
-* Esta función se agregó a partir de la versión 1.02 en adelante.
-volca fm: Actualizador del sistema</p>
+                  * Esta función se agregó a partir de la versión 1.02 en adelante.
+                  volca fm: Actualizador del sistema</p>
               </div>
             </li>
           </ul>
@@ -152,18 +152,19 @@ volca fm: Actualizador del sistema</p>
               <div class="pregunta__respuesta">
                 <p>Antes de cargar los datos de pre-carga ir a "modo Global P0: Basic Setup-system" y desactivar el seteo “Memory protect” para los datos que queremos cargar. Ej: Programas.<br>
 
-Cargando los datos de pre-carga se reescribirán los contenidos de la memoria interna. Si queremos mantener los datos existentes en la memoria interna debemos usar “Save all (PCG&SNG)” o “Save PCG” para  guardar nuestros datos en una tarjeta de memoria antes de continuar el proceso.<br><br>
+                  Cargando los datos de pre-carga se reescribirán los contenidos de la memoria interna. Si queremos mantener los datos existentes en la memoria interna debemos usar “Save all (PCG&SNG)” o “Save PCG” para guardar nuestros datos en una
+                  tarjeta de memoria antes de continuar el proceso.<br><br>
 
-1) Acceder al modo Global - P0 BASIC SETUP-BASIC PAGE.
-(Entrar al modo Global presionando el botón Global)<br>
+                  1) Acceder al modo Global - P0 BASIC SETUP-BASIC PAGE.
+                  (Entrar al modo Global presionando el botón Global)<br>
 
-2)Presionar el botón de menú y elegir “LOAD PRELOAD/DEMO DATA”<br>
+                  2)Presionar el botón de menú y elegir “LOAD PRELOAD/DEMO DATA”<br>
 
-3) En el campo ”Kind” seleccionar All (Preload PCG and Demo songs)<br>
+                  3) En el campo ”Kind” seleccionar All (Preload PCG and Demo songs)<br>
 
-4) Presionar el botón Ok para cargar los datos pre-cargados si decidimos no hacerlo presionar el botón Cancel.
+                  4) Presionar el botón Ok para cargar los datos pre-cargados si decidimos no hacerlo presionar el botón Cancel.
 
-Cuando presionamos el botón Ok, un cuadro de dialogo nos pedirá la confirmación para ejecutar la carga.</p>
+                  Cuando presionamos el botón Ok, un cuadro de dialogo nos pedirá la confirmación para ejecutar la carga.</p>
               </div>
             </li>
             <li class="preguntas-frecuentes__categoria--pregunta">
@@ -181,15 +182,16 @@ Cuando presionamos el botón Ok, un cuadro de dialogo nos pedirá la confirmaci�
               <div class="pregunta__respuesta">
                 <p>El muestreador electribe y electribe tienen esencialmente las mismas funciones, pero sus motores de sonido son significativamente diferentes.
 
-Electribe: Sintetizador
-- Contiene un motor de sonido de modelado analógico con 55 sonidos diferentes (el muestreador electribe solo tiene 16)<br>
-- Contiene 16 tipos diferentes de filtro (el muestreador electribe solo tiene tres)<br>
+                  Electribe: Sintetizador
+                  - Contiene un motor de sonido de modelado analógico con 55 sonidos diferentes (el muestreador electribe solo tiene 16)<br>
+                  - Contiene 16 tipos diferentes de filtro (el muestreador electribe solo tiene tres)<br>
 
-Electribe Sampler: Sampler<br>
-- Puede usar cualquier sonido por muestreo (el electribe usa solo muestras preestablecidas)<br>
-- Admite muestras estéreo y corte de muestras (el electribe no lo hace)<br>
+                  Electribe Sampler: Sampler<br>
+                  - Puede usar cualquier sonido por muestreo (el electribe usa solo muestras preestablecidas)<br>
+                  - Admite muestras estéreo y corte de muestras (el electribe no lo hace)<br>
 
-Sin embargo, ambos modelos contienen un motor de sonido de modelado simple y muestras de batería estándar, por lo que es fácil hacer ritmos con cualquiera de los modelos. Elija el modelo que mejor se adapte a los sonidos que más utiliza.</p>
+                  Sin embargo, ambos modelos contienen un motor de sonido de modelado simple y muestras de batería estándar, por lo que es fácil hacer ritmos con cualquiera de los modelos. Elija el modelo que mejor se adapte a los sonidos que más
+                  utiliza.</p>
               </div>
             </li>
           </ul>
@@ -209,19 +211,21 @@ Sin embargo, ambos modelos contienen un motor de sonido de modelado simple y mue
             <li class="preguntas-frecuentes__categoria--pregunta">
               <div class="pregunta__titulo">
                 <h4 class="caja-texto__titulo">¿Puedo tocar el Odyssei con un teclado MIDI externo?
-</h4>
+                </h4>
               </div>
               <div class="pregunta__respuesta">
-                <p>¡Por supuesto! Puede reproducir el módulo utilizando un teclado MIDI externo como microKEY 2 o nanoKEY2, taktile, etc. a través del kit de conexión de cámara para iPad / adaptador de cámara USB Lightning. Y soporte de conexión micro KEY Air o nanoKEY Studio a través de Bluetooth MIDI.</p>
+                <p>¡Por supuesto! Puede reproducir el módulo utilizando un teclado MIDI externo como microKEY 2 o nanoKEY2, taktile, etc. a través del kit de conexión de cámara para iPad / adaptador de cámara USB Lightning. Y soporte de conexión
+                  micro KEY Air o nanoKEY Studio a través de Bluetooth MIDI.</p>
               </div>
             </li>
             <li class="preguntas-frecuentes__categoria--pregunta">
               <div class="pregunta__titulo">
                 <h4 class="caja-texto__titulo">¿Puedo hacer zoom en el panel de vista?
-</h4>
+                </h4>
               </div>
               <div class="pregunta__respuesta">
-                <p>En el modo SYNTH, puede tocar dos veces la sección AMPLIFICADOR CONTROLADO POR VOLTAJE del MS-20 para encender "ZOOM MS-20" y cambiar a "PANEL DE CONTROL". Al tocar dos veces el área del logotipo en la sección de parches, puede cambiar a "PATCH PANEL". También puede tocar dos veces para volver desde "PANEL DE CONTROL" o "PANEL DE PATCH".</p>
+                <p>En el modo SYNTH, puede tocar dos veces la sección AMPLIFICADOR CONTROLADO POR VOLTAJE del MS-20 para encender "ZOOM MS-20" y cambiar a "PANEL DE CONTROL". Al tocar dos veces el área del logotipo en la sección de parches, puede
+                  cambiar a "PATCH PANEL". También puede tocar dos veces para volver desde "PANEL DE CONTROL" o "PANEL DE PATCH".</p>
               </div>
             </li>
           </ul>
@@ -261,7 +265,7 @@ Sin embargo, ambos modelos contienen un motor de sonido de modelado simple y mue
           <button type="button" name="button" class="formulario__btn">Enviar</button>
         </form>
         <div class="contenido__info">
-          <div class="separador separador--chico">
+          <div class="separador">
             <h4>Asistencia técnica en Argentina</h4>
           </div>
           <p id="info__texto">
@@ -275,7 +279,7 @@ Sin embargo, ambos modelos contienen un motor de sonido de modelado simple y mue
       </div>
     </section>
   </main>
-  <footer class="background-1">
+  <footer class="footer background-1">
     <nav>
       <div class="footer-contenedor width-pagina">
         <div class="footer-contenedor__contenido">
