@@ -830,6 +830,7 @@ $color-solapa-4: rgb(253, 173, 192);
 }
 @media (min-width:768px) and (max-width:992px) {
   /* index.html */
+
   #subtemas-novedades__subtemas {
     height: 200px;
     display: grid;
@@ -845,11 +846,13 @@ $color-solapa-4: rgb(253, 173, 192);
     }
   }
 
-
 }
 /*(min-width:576px) and*/
 @media (max-width:768px) {
   /* header */
+  body {
+    max-height:90vh;
+  }
   .header-mobile {
     display: block;
     height: min-content;

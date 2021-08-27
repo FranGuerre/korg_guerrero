@@ -639,6 +639,8 @@ negro rgb(26,27,30)
 /*(min-width:576px) and*/
 @media (max-width: 768px) {
   /* header */
+  body {
+    max-height: 90vh; }
   .header-mobile {
     display: block;
     height: min-content; }
