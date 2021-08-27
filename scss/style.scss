@@ -40,6 +40,7 @@ $rosa-oscuro: rgba(252, 139, 140, 0.6);
 $rojo: rgb(174,52,70);
 $celeste: rgba(29, 170, 182, 0.2); // fin colores y variables
 $negro: rgb(26,27,30);
+$blanco:rgb(245,241,240);
 
 .main-contenedor {
   margin: 0 auto;
@@ -60,7 +61,8 @@ $negro: rgb(26,27,30);
   align-items: center;
   padding: 5px 20px;
   margin-bottom: 10px;
-
+  background-color:$negro;
+  color:$blanco;
   &:nth-child(1) {
     text-transform: uppercase;
     font-weight: bolder;
@@ -438,6 +440,9 @@ negro rgb(26,27,30)
 /* termina sección novedades */
 /* catalogo.html               catalogo.html                catalogo.html*/
 $solapa__nombre-width: 150px;
+$solapa__nombre-width-tablet: 120px;
+$solapa__nombre-width-mobile: 90px;
+
 $color-solapa-1: rgb(174,52,70);
 $color-solapa-2: rgb(245,241,240);
 $color-solapa-3: rgb(29, 170, 182);
@@ -598,9 +603,6 @@ $color-solapa-4: rgb(253, 173, 192);
   }
 }
 
-
-
-
 #preguntas-frecuentes {
   margin-bottom: 20px;
   display: grid;
@@ -616,6 +618,7 @@ $color-solapa-4: rgb(253, 173, 192);
     height: max-content;
     border: solid 1px rgba(60,60,60,0.5);
     border-radius: 5px;
+    margin-bottom:10px;
   }
 }
 
@@ -628,6 +631,7 @@ $color-solapa-4: rgb(253, 173, 192);
   padding: 10px;
   border-radius: inherit;
   font-size: 1.6rem;
+  border-bottom:1px solid $negro;
 }
 
 .pregunta__respuesta {
@@ -701,7 +705,7 @@ $color-solapa-4: rgb(253, 173, 192);
   flex-wrap: wrap;
   gap: 10px;
   margin: 60px 0;
-  justify-content: space-around;
+  justify-content:space-between;
 
   .articulos-artistas__articulo {
     display: flex;
@@ -901,8 +905,42 @@ $color-solapa-4: rgb(253, 173, 192);
     max-width: 120px;
   }
   /* fin footer */
+
+  // catalogo.html
+
+  .solapa .solapa__nombre {
+    width: $solapa__nombre-width-tablet;
+  }
+
+  #solapa-1 {
+
+    & .solapa__nombre {
+      right: ((3 * $solapa__nombre-width-tablet) - 1px);
+    }
+  }
+
+  #solapa-2 {
+
+    & .solapa__nombre {
+      right: ((2 * $solapa__nombre-width-tablet) - 1px);
+    }
+  }
+
+  #solapa-3 {
+
+    & .solapa__nombre {
+      right: ($solapa__nombre-width-tablet - 1px);
+    }
+  }
+
+  #solapa-4 {
+
+    & .solapa__nombre {
+      right: -1px;
+    }
+  }
 }
-/*(min-width:576px) and*/
+
 @media (max-width:576px) {
   .menu-hero__hero {
     height: 400px;
@@ -929,4 +967,39 @@ $color-solapa-4: rgb(253, 173, 192);
     gap: 5px;
     border: none;
   }
+
+  // catalogo.html
+
+  .solapa .solapa__nombre {
+    width: $solapa__nombre-width-mobile;
+  }
+
+  #solapa-1 {
+
+    & .solapa__nombre {
+      right: ((3 * $solapa__nombre-width-mobile) - 1px);
+    }
+  }
+
+  #solapa-2 {
+
+    & .solapa__nombre {
+      right: ((2 * $solapa__nombre-width-mobile) - 1px);
+    }
+  }
+
+  #solapa-3 {
+
+    & .solapa__nombre {
+      right: ($solapa__nombre-width-mobile - 1px);
+    }
+  }
+
+  #solapa-4 {
+
+    & .solapa__nombre {
+      right: -1px;
+    }
+  }
+  // fin catalogo.html
 }

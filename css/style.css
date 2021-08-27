@@ -40,7 +40,9 @@ body {
   display: flex;
   align-items: center;
   padding: 5px 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background-color: #1a1b1e;
+  color: #f5f1f0; }
   .separador:nth-child(1) {
     text-transform: uppercase;
     font-weight: bolder;
@@ -457,7 +459,8 @@ negro rgb(26,27,30)
     width: 700px;
     height: max-content;
     border: solid 1px rgba(60, 60, 60, 0.5);
-    border-radius: 5px; }
+    border-radius: 5px;
+    margin-bottom: 10px; }
 
 .categoria-visible {
   display: block; }
@@ -466,7 +469,8 @@ negro rgb(26,27,30)
   background-color: #f5f1f0;
   padding: 10px;
   border-radius: inherit;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  border-bottom: 1px solid #1a1b1e; }
 
 .pregunta__respuesta {
   padding: 10px; }
@@ -528,7 +532,7 @@ negro rgb(26,27,30)
   flex-wrap: wrap;
   gap: 10px;
   margin: 60px 0;
-  justify-content: space-around; }
+  justify-content: space-between; }
   .articulos-artistas .articulos-artistas__articulo {
     display: flex;
     flex-flow: wrap;
@@ -670,9 +674,18 @@ negro rgb(26,27,30)
     width: 25px; }
   .logo-footer {
     max-width: 120px; }
-  /* fin footer */ }
+  /* fin footer */
+  .solapa .solapa__nombre {
+    width: 120px; }
+  #solapa-1 .solapa__nombre {
+    right: 359px; }
+  #solapa-2 .solapa__nombre {
+    right: 239px; }
+  #solapa-3 .solapa__nombre {
+    right: 119px; }
+  #solapa-4 .solapa__nombre {
+    right: -1px; } }
 
-/*(min-width:576px) and*/
 @media (max-width: 576px) {
   .menu-hero__hero {
     height: 400px; }
@@ -689,4 +702,14 @@ negro rgb(26,27,30)
     align-self: end;
     height: min-content;
     gap: 5px;
-    border: none; } }
+    border: none; }
+  .solapa .solapa__nombre {
+    width: 90px; }
+  #solapa-1 .solapa__nombre {
+    right: 269px; }
+  #solapa-2 .solapa__nombre {
+    right: 179px; }
+  #solapa-3 .solapa__nombre {
+    right: 89px; }
+  #solapa-4 .solapa__nombre {
+    right: -1px; } }
