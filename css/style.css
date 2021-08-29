@@ -36,17 +36,26 @@ body {
 .width-pagina {
   max-width: 1200px; }
 
-.separador {
+.separador, .separador--grande, .separador--chico {
   display: flex;
   align-items: center;
   padding: 5px 20px;
-  margin-bottom: 10px;
   background-color: #1a1b1e;
-  color: #f5f1f0; }
-  .separador:nth-child(1) {
+  color: #f5f1f0;
+  text-transform: uppercase;
+  font-weight: bolder; }
+
+.separador--grande {
+  margin-bottom: 10px; }
+  .separador--grande:nth-child(1) {
+    font-size: 2.1rem; }
+
+.separador--chico {
+  margin-bottom: 5px; }
+  .separador--chico:nth-child(1) {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 2.1rem; }
+    font-size: 1.8rem; }
 
 /* colores de distintos sintetizadores
 volca fm:

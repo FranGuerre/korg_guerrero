@@ -60,13 +60,32 @@ $blanco:rgb(245,241,240);
   display: flex;
   align-items: center;
   padding: 5px 20px;
-  margin-bottom: 10px;
   background-color:$negro;
   color:$blanco;
+
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.separador--grande {
+  @extend .separador;
+
+  margin-bottom: 10px;
+  &:nth-child(1) {
+
+    font-size: 2.1rem;
+  }
+}
+
+.separador--chico {
+
+  @extend .separador;
+
+  margin-bottom: 5px;
   &:nth-child(1) {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
 }
 
