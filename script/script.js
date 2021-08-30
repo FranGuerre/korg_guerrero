@@ -91,6 +91,7 @@ let alerta = document.getElementById("alerta");
 window.addEventListener("DOMContentLoaded", function() {
   cargarSolapas();
   funcionalidadSolapas();
+  funcionalidadFiltros();
 });
 
 /*
@@ -132,4 +133,46 @@ function cargarSolapas() {
     arrSintes = arrSintes.join("");
     solapa.children[1].innerHTML = arrSintes;
   });
+}
+
+//          soporte.html
+
+let filtros = document.querySelector(".filtros");
+// let categoriaSintetizadores = document.getElementById("preguntas-sintetizadores");
+// let categoriaWorkstation = document.getElementById("preguntas-workstation");
+// let categoriaSoftware = document.getElementById("preguntas-software");
+
+function funcionalidadFiltros() {
+  filtros.addEventListener("click", (e) => {
+    if(e.target.classList.contains("filtro")) {
+      let id = e.target.id;
+      id = id.split("-");
+      id = id[1];
+
+      e.target.classList.remove("active");
+      seleccionarCategoria(id);
+    }
+  });
+}
+
+function seleccionarCategoria(v) {
+  let arrCategorias = ['preguntas-sintetizadores', 'preguntas-workstation','preguntas-software'];
+  let idCategoria = `preguntas-${v}`;
+  let indexCategoria = arrCategorias.indexOf(idCategoria);
+
+  if (indexCategoria !== -1) {
+    arrCategorias.splice(indexCategoria, 1);
+
+    if(!document.getElementById(idCategoria).classList.contains("categoria-visible")) {
+      document.getElementById(idCategoria).classList.add("categoria-visible");
+      document.getElementById(arrCategorias[0]).classList.remove("categoria-visible");
+      document.getElementById(arrCategorias[1]).classList.remove("categoria-visible");
+    }
+  }
+
+
+
+
+
+
 }

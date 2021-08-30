@@ -32,6 +32,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
 /* General */
 // colores y variables generales
 $dorado: rgb(234, 194, 145);
@@ -61,7 +62,7 @@ $blanco:rgb(245,241,240);
   align-items: center;
   padding: 5px 20px;
   background-color:$negro;
-  color:$blanco;  
+  color:$blanco;
   text-transform: uppercase;
   font-weight: bolder;
 }
@@ -110,6 +111,7 @@ rosa rgb(252,139,140)
 negro rgb(26,27,30)
 */
 /* termina General */
+
 /* Headers */
 .header-contenedor {
   max-width: 100%;
@@ -588,6 +590,7 @@ $color-solapa-4: rgb(253, 173, 192);
   }
 }
 /* soporte.html;               soporte.html;                soporte.html*/
+
 /*sección de preguntas frecuentes*/
 #presentacion-filtros {
   width: 100%;
@@ -659,6 +662,8 @@ $color-solapa-4: rgb(253, 173, 192);
     font-size:1.3rem;
   }
 }
+
+
 /*sección de Contactanos*/
 #contacto__contenido {
   width: 100%;

@@ -93,20 +93,20 @@
       </span>
       <!--  filtros para preguntas frecuentes-->
       <!-- falta aplicar funcionalidad -->
-      <ul class="filtros btn-group btn-group-toggle" data-toggle="buttons">
-        <li class="filtro">
-          <button type="button" class="btn btn-lg btn-outline-dark" id="categoria-sintetizadores">Sintetizadores</button>
-        <li class="filtro">
-          <button type="button" class="btn btn-lg btn-outline-dark" id="categoria-workstation">Workstation</button>
+      <ul class="btn-group btn-group-toggle filtros" data-toggle="buttons">
+        <li>
+          <button type="button" class="btn btn-lg btn-secondary filtro active" id="categoria-sintetizadores" data-toggle="button" aria-presse="true">Sintetizadores</button>
+        <li>
+          <button type="button" class="btn btn-lg btn-secondary filtro" id="categoria-workstation" data-toggle="button">Workstation</button>
         </li>
-        <li class="filtro">
-          <button type="button" class="btn btn-lg btn-outline-dark" id="categoria-garantia">Software</button>
+        <li>
+          <button type="button" class="btn btn-lg btn-secondary filtro" id="categoria-software" data-toggle="button">Software</button>
         </li>
       </ul>
       <!--  sección preguntas frecuentes-->
       <ul id="preguntas-frecuentes">
         <!-- categoría 1 -->
-        <li id="categoria-sintetizadores" class="preguntas-frecuentes__categoria categoria-visible">
+        <li id="preguntas-sintetizadores" class="preguntas-frecuentes__categoria categoria-visible">
           <ul>
             <li class="preguntas-frecuentes__categoria--pregunta">
               <div class="pregunta__titulo">
@@ -142,7 +142,7 @@
           </ul>
         </li>
         <!-- categoría 2 -->
-        <li id="categoria-workstation" class="preguntas-frecuentes__categoria">
+        <li id="preguntas-workstation" class="preguntas-frecuentes__categoria">
           <ul>
             <li class="preguntas-frecuentes__categoria--pregunta">
               <div class="pregunta__titulo">
@@ -197,7 +197,7 @@
         </li>
 
         <!-- categoría 3 -->
-        <li id="categoria-software" class="preguntas-frecuentes__categoria">
+        <li id="preguntas-software" class="preguntas-frecuentes__categoria">
           <ul>
             <li class="preguntas-frecuentes__categoria--pregunta">
               <div class="pregunta__titulo">
