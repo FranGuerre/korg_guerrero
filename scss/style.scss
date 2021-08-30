@@ -608,21 +608,30 @@ $color-solapa-4: rgb(253, 173, 192);
   padding:5px;
   display: flex;
   justify-content: space-around;
+
+  & li {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-flow: column;
+  }
 }
 
 .btn {
   color:$negro;
 
   &:hover {
-    background-color: rgba(0,0,0,0.2);
+    background-color: red;
     color:inherit;
   }
 
-  &:active {
-    background-color: $dorado;
-    box-shadow: 0;
+  &:focus &:active {
+    box-shadow: gold;
   }
 }
+
+// .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+//   box-shadow: red!important;
+// }
 
 #preguntas-frecuentes {
   margin-bottom: 20px;
