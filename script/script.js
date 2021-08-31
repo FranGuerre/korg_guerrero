@@ -169,10 +169,4 @@ function seleccionarCategoria(v) {
       document.getElementById(arrCategorias[1]).classList.remove("categoria-visible");
     }
   }
-
-
-
-
-
-
 }

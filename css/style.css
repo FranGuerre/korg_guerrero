@@ -201,7 +201,7 @@ negro rgb(26,27,30)
   font-family: "Press Start 2P";
   padding: 3px;
   border: 2px solid #c8cfb1;
-  background-color: rgba(29, 170, 182, 0.2); }
+  background-color: rgba(29, 170, 182, 0.6); }
 
 .menu-hero__hero img {
   width: 750px; }
@@ -253,7 +253,7 @@ negro rgb(26,27,30)
     color: #fff;
     font-size: 1.3rem;
     text-transform: uppercase;
-    background-color: rgba(29, 170, 182, 0.2);
+    background-color: rgba(29, 170, 182, 0.6);
     padding: 10px;
     z-index: 2; }
   .subtemas__caja--fondo {
@@ -448,14 +448,15 @@ negro rgb(26,27,30)
   .filtros li {
     display: flex;
     flex-flow: column;
-    width: 48px;
+    width: min-content;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin: 0 0.5rem;
     padding: 0; }
     .filtros li label {
       display: block;
-      background-color: #f5f1f0; }
+      background-color: #f5f1f0;
+      text-transform: uppercase; }
     .filtros li div {
       display: flex;
       align-content: center;
@@ -463,24 +464,22 @@ negro rgb(26,27,30)
       width: min-content;
       border-radius: 5px; }
       .filtros li div .btn {
-        background-color: rgba(29, 170, 182, 0.2);
+        background-color: rgba(29, 170, 182, 0.4);
         border: 2px solid #f5f1f0;
         height: 24px;
         width: 48px; }
         .filtros li div .btn:hover {
-          filter: brightness(10%);
           border: none;
           outline: none; }
-        .filtros li div .btn:focus {
-          filter: brightness(10%);
-          border: none;
-          outline: none; }
+      .filtros li div .btn-check:active + .btn-secondary, .filtros li div .btn-check:checked + .btn-secondary, .filtros li div .btn-secondary.active, .filtros li div .btn-secondary:active, .filtros li div .show > .btn-secondary.dropdown-toggle {
+        background-color: rgba(29, 170, 182, 0.6); }
   .filtros .filtros--linea {
     background-color: rgba(26, 27, 30, 0.8);
     opacity: 1;
     width: 200px;
     height: 2px;
-    align-self: center; }
+    margin-top: 0.7rem;
+    align-self: start; }
 
 #preguntas-frecuentes {
   margin-bottom: 20px;

@@ -39,7 +39,8 @@ $dorado: rgb(234, 194, 145);
 $rosa-medio: rgb(247, 199, 201);
 $rosa-oscuro: rgba(252, 139, 140, 0.6);
 $rojo: rgb(174,52,70);
-$celeste: rgba(29, 170, 182, 0.2); // fin colores y variables
+$celeste-claro: rgba(29, 170, 182, 0.4);
+$celeste: rgba(29, 170, 182, 0.6); // fin colores y variables
 $negro: rgb(26,27,30);
 $negro-claro: rgba(26,27,30,0.8);
 $blanco:rgb(245,241,240);
@@ -604,6 +605,7 @@ $color-solapa-4: rgb(253, 173, 192);
 
 .filtros {
   $btn-width:48px;
+
   width: 50%;
   height: 50px;
   display: flex;
@@ -613,15 +615,17 @@ $color-solapa-4: rgb(253, 173, 192);
   & li {
     display: flex;
     flex-flow: column;
-    width:$btn-width;
+    // width:$btn-width;
+    width:min-content;
     align-items: center;
     text-align: center;
-    margin:0;
+    margin:0 0.5rem;
     padding:0;
 
     label {
       display:block;
       background-color: $blanco;
+      text-transform: uppercase;
     }
     div {
       display:flex;
@@ -631,24 +635,22 @@ $color-solapa-4: rgb(253, 173, 192);
       border-radius:5px;
 
       .btn {
-        background-color: $celeste;
+        background-color: $celeste-claro;
         border:2px solid $blanco;
         height:24px;
         width:$btn-width;
 
         &:hover {
-          filter:brightness(10%);
-          border:none;
-          outline:none;
-        }
 
-        &:focus {
-          filter:brightness(10%);
           border:none;
           outline:none;
         }
       }
+      .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+        background-color: $celeste;
+      }
     }
+
 
 
   }
@@ -657,7 +659,8 @@ $color-solapa-4: rgb(253, 173, 192);
     opacity:1;
     width:200px;
     height:2px;
-    align-self:center;
+    margin-top:0.7rem;
+    align-self:start;
   }
 }
 
