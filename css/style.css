@@ -442,22 +442,45 @@ negro rgb(26,27,30)
 .filtros {
   width: 50%;
   height: 50px;
-  margin: 0 auto;
-  padding: 5px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: center;
+  margin: 0 auto; }
   .filtros li {
     display: flex;
-    flex-wrap: nowrap;
-    flex-flow: column; }
-
-.btn {
-  color: #1a1b1e; }
-  .btn:hover {
-    background-color: red;
-    color: inherit; }
-  .btn:focus .btn:active {
-    box-shadow: gold; }
+    flex-flow: column;
+    width: 48px;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    .filtros li label {
+      display: block;
+      background-color: #f5f1f0; }
+    .filtros li div {
+      display: flex;
+      align-content: center;
+      border: 2px solid rgba(26, 27, 30, 0.8);
+      width: min-content;
+      border-radius: 5px; }
+      .filtros li div .btn {
+        background-color: rgba(29, 170, 182, 0.2);
+        border: 2px solid #f5f1f0;
+        height: 24px;
+        width: 48px; }
+        .filtros li div .btn:hover {
+          filter: brightness(10%);
+          border: none;
+          outline: none; }
+        .filtros li div .btn:focus {
+          filter: brightness(10%);
+          border: none;
+          outline: none; }
+  .filtros .filtros--linea {
+    background-color: rgba(26, 27, 30, 0.8);
+    opacity: 1;
+    width: 200px;
+    height: 2px;
+    align-self: center; }
 
 #preguntas-frecuentes {
   margin-bottom: 20px;

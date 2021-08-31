@@ -41,6 +41,7 @@ $rosa-oscuro: rgba(252, 139, 140, 0.6);
 $rojo: rgb(174,52,70);
 $celeste: rgba(29, 170, 182, 0.2); // fin colores y variables
 $negro: rgb(26,27,30);
+$negro-claro: rgba(26,27,30,0.8);
 $blanco:rgb(245,241,240);
 
 .main-contenedor {
@@ -602,30 +603,61 @@ $color-solapa-4: rgb(253, 173, 192);
 }
 
 .filtros {
+  $btn-width:48px;
   width: 50%;
   height: 50px;
-  margin: 0 auto;
-  padding:5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin: 0 auto;
 
   & li {
-    display:flex;
-    flex-wrap: nowrap;
+    display: flex;
     flex-flow: column;
+    width:$btn-width;
+    align-items: center;
+    text-align: center;
+    margin:0;
+    padding:0;
+
+    label {
+      display:block;
+      background-color: $blanco;
+    }
+    div {
+      display:flex;
+      align-content: center;
+      border:2px solid $negro-claro;
+      width:min-content;
+      border-radius:5px;
+
+      .btn {
+        background-color: $celeste;
+        border:2px solid $blanco;
+        height:24px;
+        width:$btn-width;
+
+        &:hover {
+          filter:brightness(10%);
+          border:none;
+          outline:none;
+        }
+
+        &:focus {
+          filter:brightness(10%);
+          border:none;
+          outline:none;
+        }
+      }
+    }
+
+
   }
-}
-
-.btn {
-  color:$negro;
-
-  &:hover {
-    background-color: red;
-    color:inherit;
-  }
-
-  &:focus &:active {
-    box-shadow: gold;
+  .filtros--linea {
+    background-color: $negro-claro;
+    opacity:1;
+    width:200px;
+    height:2px;
+    align-self:center;
   }
 }
 
