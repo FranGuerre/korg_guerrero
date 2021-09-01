@@ -21,12 +21,6 @@ a {
 a:hover {
   color: inherit; }
 
-body {
-  background-color: #f5f1f0;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto; }
-
 /* General */
 .main-contenedor {
   margin: 0 auto;
@@ -42,6 +36,9 @@ body {
   align-items: center;
   padding: 5px 20px;
   background-color: #1a1b1e;
+  background-image: url("/img/texturas/noise.png");
+  background-blend-mode: multiply;
+  background-repeat: repeat;
   color: #f5f1f0;
   text-transform: uppercase;
   font-weight: bolder; }
@@ -80,6 +77,15 @@ rosa rgb(252,139,140)
 negro rgb(26,27,30)
 */
 /* termina General */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: url("/img/texturas/noise.png");
+  background-color: #f5f1f0;
+  background-blend-mode: multiply;
+  background-repeat: repeat; }
+
 /* Headers */
 .header-contenedor {
   max-width: 100%;
@@ -162,6 +168,9 @@ negro rgb(26,27,30)
   text-align: center;
   border: 3px solid #3c3c3c;
   background: #eac291;
+  background-image: url("/img/texturas/noise.png");
+  background-blend-mode: multiply;
+  background-repeat: repeat;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   z-index: 2;

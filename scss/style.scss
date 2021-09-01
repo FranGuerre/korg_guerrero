@@ -26,13 +26,6 @@ a:hover {
   color: inherit;
 }
 
-body {
-  background-color: rgb(245,241,240);
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
 /* General */
 // colores y variables generales
 $dorado: rgb(234, 194, 145);
@@ -65,6 +58,9 @@ $blanco:rgb(245,241,240);
   align-items: center;
   padding: 5px 20px;
   background-color:$negro;
+  background-image:url("/img/texturas/noise.png");
+  background-blend-mode: multiply;
+  background-repeat:repeat;
   color:$blanco;
   text-transform: uppercase;
   font-weight: bolder;
@@ -114,6 +110,16 @@ rosa rgb(252,139,140)
 negro rgb(26,27,30)
 */
 /* termina General */
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image:url("/img/texturas/noise.png");
+  background-color: $blanco;
+  background-blend-mode: multiply;
+  background-repeat:repeat;
+}
 
 /* Headers */
 .header-contenedor {
@@ -221,6 +227,10 @@ negro rgb(26,27,30)
   text-align: center;
   border: 3px solid #3c3c3c;
   background: $dorado;
+  background-image:url("/img/texturas/noise.png");
+
+  background-blend-mode: multiply;
+  background-repeat:repeat;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   z-index: 2;
@@ -1017,7 +1027,7 @@ $color-solapa-4: rgb(253, 173, 192);
 
   // soporte.html
   #contacto__contenido {
-    
+
   }
 
   // fin soporte.html
