@@ -61,6 +61,7 @@ $blanco:rgb(245,241,240);
 
 .separador {
   display: flex;
+  width:100%;
   align-items: center;
   padding: 5px 20px;
   background-color:$negro;
@@ -700,26 +701,27 @@ $color-solapa-4: rgb(253, 173, 192);
 .pregunta__respuesta {
   padding: 10px;
   background-color:$blanco;
+  border-radius:inherit;
 
   & p {
     font-size:1.3rem;
   }
 }
 
-
 /*sección de Contactanos*/
 #contacto__contenido {
   width: 100%;
-  // display: grid;
-  // grid-template-columns: auto auto;
-  display:flex;
-  flex-wrap:wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap:10px;
+  grid-auto-flow: column;
   margin: 20px 0;
 }
 
 #contenido__formulario {
   display: grid;
-  width: 100vw;
+  max-width: 500px;
+  min-width:320px;
   padding: 20px;
   grid-row-gap: 5px;
   font-size: 1.6rem;
@@ -732,8 +734,10 @@ $color-solapa-4: rgb(253, 173, 192);
 }
 
 #info__texto {
-  font-size: 1.4rem;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 30px;
+  padding-top:20px;
+  padding-left:20px;
 }
 /* artistas.html               artistas.html              artistas.html */
 .articulo-principal {
@@ -1010,6 +1014,13 @@ $color-solapa-4: rgb(253, 173, 192);
       right: -1px;
     }
   }
+
+  // soporte.html
+  #contacto__contenido {
+    
+  }
+
+  // fin soporte.html
 }
 
 @media (max-width:576px) {
