@@ -14,6 +14,9 @@ ul {
 li {
   list-style: none; }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0 !important; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -40,20 +43,13 @@ a:hover {
   background-blend-mode: multiply;
   background-repeat: repeat;
   color: #f5f1f0;
-  text-transform: uppercase;
-  font-weight: bolder; }
+  text-transform: uppercase; }
 
 .separador--grande {
   margin-bottom: 10px; }
-  .separador--grande:nth-child(1) {
-    font-size: 2.1rem; }
 
 .separador--chico {
   margin-bottom: 5px; }
-  .separador--chico:nth-child(1) {
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 1.8rem; }
 
 /* colores de distintos sintetizadores
 volca fm:
@@ -470,6 +466,7 @@ body {
     .filtros li div {
       display: flex;
       align-content: center;
+      background-color: #f5f1f0;
       border: 2px solid rgba(26, 27, 30, 0.8);
       width: min-content;
       border-radius: 5px; }
@@ -481,8 +478,9 @@ body {
         .filtros li div .btn:hover {
           border: none;
           outline: none; }
-      .filtros li div .btn-check:active + .btn-secondary, .filtros li div .btn-check:checked + .btn-secondary, .filtros li div .btn-secondary.active, .filtros li div .btn-secondary:active, .filtros li div .show > .btn-secondary.dropdown-toggle {
-        background-color: rgba(29, 170, 182, 0.6); }
+      .filtros li div .btn-active {
+        background-color: rgba(29, 170, 182, 0.6);
+        transform: scale(0.9); }
   .filtros .filtros--linea {
     background-color: rgba(26, 27, 30, 0.8);
     opacity: 1;

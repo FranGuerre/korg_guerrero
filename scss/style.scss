@@ -17,6 +17,10 @@ li {
   list-style: none;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin:0!important;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -64,17 +68,13 @@ $blanco-claro:rgb(250,241,250);
   background-repeat:repeat;
   color:$blanco;
   text-transform: uppercase;
-  font-weight: bolder;
+
 }
 
 .separador--grande {
   @extend .separador;
 
   margin-bottom: 10px;
-  &:nth-child(1) {
-
-    font-size: 2.1rem;
-  }
 }
 
 .separador--chico {
@@ -82,11 +82,6 @@ $blanco-claro:rgb(250,241,250);
   @extend .separador;
 
   margin-bottom: 5px;
-  &:nth-child(1) {
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 1.8rem;
-  }
 }
 
 /* colores de distintos sintetizadores
@@ -643,6 +638,7 @@ $color-solapa-4: rgb(253, 173, 192);
     div {
       display:flex;
       align-content: center;
+      background-color: $blanco;
       border:2px solid $negro-claro;
       width:min-content;
       border-radius:5px;
@@ -659,12 +655,16 @@ $color-solapa-4: rgb(253, 173, 192);
           outline:none;
         }
       }
-      .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+      .btn-active {
         background-color: $celeste;
+        transform: scale(0.9);
+
       }
+
     }
 
   }
+
   .filtros--linea {
     background-color: $negro-claro;
     opacity:1;
@@ -674,10 +674,6 @@ $color-solapa-4: rgb(253, 173, 192);
     align-self:start;
   }
 }
-
-// .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
-//   box-shadow: red!important;
-// }
 
 #preguntas-frecuentes {
   margin: 20px 0;
