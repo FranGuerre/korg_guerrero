@@ -28,7 +28,7 @@ a:hover {
   max-width: 100%; }
 
 .width-pagina {
-  max-width: 1200px; }
+  max-width: 1300px; }
 
 .separador, .separador--grande, .separador--chico {
   display: flex;
@@ -82,9 +82,9 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-image: url("/img/texturas/noise.png");
-  background-color: #f5f1f0;
-  background-blend-mode: multiply;
-  background-repeat: repeat; }
+  background-blend-mode: lighten;
+  background-repeat: repeat;
+  background-color: #f5f1f0; }
 
 /* Headers */
 .header-contenedor {
@@ -495,7 +495,8 @@ body {
   margin-bottom: 20px;
   display: grid;
   justify-items: center;
-  grid-row-gap: 10px; }
+  grid-row-gap: 10px;
+  padding: 0 16px; }
 
 .preguntas-frecuentes__categoria {
   display: none; }
@@ -527,9 +528,8 @@ body {
 #contacto__contenido {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
   grid-column-gap: 10px;
-  grid-auto-flow: column;
   margin: 20px 0; }
 
 #contenido__formulario {
@@ -737,7 +737,17 @@ body {
   #solapa-3 .solapa__nombre {
     right: 119px; }
   #solapa-4 .solapa__nombre {
-    right: -1px; } }
+    right: -1px; }
+  #contacto__contenido {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-column-gap: 10px;
+    margin: 20px 0; }
+    #contacto__contenido form {
+      justify-self: center;
+      margin-bottom: 40px;
+      max-height: 600px; } }
 
 @media (max-width: 576px) {
   .menu-hero__hero {
