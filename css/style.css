@@ -37,7 +37,6 @@ body {
   max-width: 1200px; }
 
 .separador, .separador--grande, .separador--chico {
-  font-family: "Press Start 2P";
   display: flex;
   align-items: center;
   padding: 5px 20px;
@@ -57,9 +56,6 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1.8rem; }
-
-.font-2p {
-  font-family: "Press Start 2P"; }
 
 /* colores de distintos sintetizadores
 volca fm:
@@ -205,7 +201,7 @@ negro rgb(26,27,30)
   font-family: "Press Start 2P";
   padding: 3px;
   border: 2px solid #c8cfb1;
-  background-color: rgba(29, 170, 182, 0.2); }
+  background-color: rgba(29, 170, 182, 0.6); }
 
 .menu-hero__hero img {
   width: 750px; }
@@ -257,7 +253,7 @@ negro rgb(26,27,30)
     color: #fff;
     font-size: 1.3rem;
     text-transform: uppercase;
-    background-color: rgba(29, 170, 182, 0.2);
+    background-color: rgba(29, 170, 182, 0.6);
     padding: 10px;
     z-index: 2; }
   .subtemas__caja--fondo {
@@ -448,8 +444,7 @@ negro rgb(26,27,30)
   height: 50px;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-bottom: 50px; }
+  margin: 0 auto; }
   .filtros li {
     display: flex;
     flex-flow: column;
@@ -461,30 +456,30 @@ negro rgb(26,27,30)
     .filtros li label {
       display: block;
       background-color: #f5f1f0;
-      text-transform: uppercase;
-      font-size: 1.4rem; }
+      text-transform: uppercase; }
     .filtros li div {
       display: flex;
       align-content: center;
       border: 2px solid rgba(26, 27, 30, 0.8);
       width: min-content;
-      border-radius: 5px;
-      margin-top: 0.7rem; }
+      border-radius: 5px; }
       .filtros li div .btn {
         background-color: rgba(29, 170, 182, 0.4);
         border: 2px solid #f5f1f0;
-        height: 28.6px;
-        width: 62.4px; }
+        height: 24px;
+        width: 48px; }
+        .filtros li div .btn:hover {
+          border: none;
+          outline: none; }
+      .filtros li div .btn-check:active + .btn-secondary, .filtros li div .btn-check:checked + .btn-secondary, .filtros li div .btn-secondary.active, .filtros li div .btn-secondary:active, .filtros li div .show > .btn-secondary.dropdown-toggle {
+        background-color: rgba(29, 170, 182, 0.6); }
   .filtros .filtros--linea {
     background-color: rgba(26, 27, 30, 0.8);
     opacity: 1;
     width: 200px;
     height: 2px;
-    margin-top: 0.9rem;
+    margin-top: 0.7rem;
     align-self: start; }
-
-.btn-active {
-  background-color: #eac291 !important; }
 
 #preguntas-frecuentes {
   margin-bottom: 20px;
@@ -512,20 +507,21 @@ negro rgb(26,27,30)
   border-bottom: 1px solid #1a1b1e; }
 
 .pregunta__respuesta {
-  padding: 10px; }
+  padding: 10px;
+  background-color: #f5f1f0; }
   .pregunta__respuesta p {
     font-size: 1.3rem; }
 
 /*sección de Contactanos*/
 #contacto__contenido {
   width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px 0; }
 
 #contenido__formulario {
   display: grid;
-  width: 500px;
+  width: 100vw;
   padding: 20px;
   grid-row-gap: 5px;
   font-size: 1.6rem;
@@ -536,10 +532,8 @@ negro rgb(26,27,30)
   justify-self: center; }
 
 #info__texto {
-  font-size: 1.8rem;
-  line-height: 40px;
-  margin-top: 20px;
-  padding-left: 10px; }
+  font-size: 1.4rem;
+  line-height: 20px; }
 
 /* artistas.html               artistas.html              artistas.html */
 .articulo-principal {
