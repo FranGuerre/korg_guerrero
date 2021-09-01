@@ -39,6 +39,7 @@ $dorado: rgb(234, 194, 145);
 $rosa-medio: rgb(247, 199, 201);
 $rosa-oscuro: rgba(252, 139, 140, 0.6);
 $rojo: rgb(174,52,70);
+$celeste-transparente: rgba(29, 170, 182, 0.2);
 $celeste-claro: rgba(29, 170, 182, 0.4);
 $celeste: rgba(29, 170, 182, 0.6); // fin colores y variables
 $negro: rgb(26,27,30);
@@ -60,6 +61,7 @@ $blanco:rgb(245,241,240);
 }
 
 .separador {
+  font-family: "Press Start 2P";
   display: flex;
   align-items: center;
   padding: 5px 20px;
@@ -91,6 +93,9 @@ $blanco:rgb(245,241,240);
   }
 }
 
+.font-2p {
+  font-family: "Press Start 2P";
+}
 /* colores de distintos sintetizadores
 volca fm:
 rosa rgb(253, 173, 192)
@@ -274,7 +279,7 @@ negro rgb(26,27,30)
   font-family: "Press Start 2P";
   padding: 3px;
   border: 2px solid #c8cfb1;
-  background-color: $celeste;
+  background-color: $celeste-transparente;
 }
 
 .menu-hero__hero img {
@@ -339,7 +344,7 @@ negro rgb(26,27,30)
     color: #fff;
     font-size: 1.3rem;
     text-transform: uppercase;
-    background-color: $celeste;
+    background-color: $celeste-transparente;
     padding: 10px;
     z-index: 2;
   }
@@ -604,13 +609,13 @@ $color-solapa-4: rgb(253, 173, 192);
 }
 
 .filtros {
-  $btn-width:48px;
 
   width: 50%;
   height: 50px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom:50px;
 
   & li {
     display: flex;
@@ -626,47 +631,40 @@ $color-solapa-4: rgb(253, 173, 192);
       display:block;
       background-color: $blanco;
       text-transform: uppercase;
+      font-size:1.4rem;
     }
+
     div {
       display:flex;
       align-content: center;
       border:2px solid $negro-claro;
       width:min-content;
       border-radius:5px;
+      margin-top:0.7rem;
+
 
       .btn {
         background-color: $celeste-claro;
         border:2px solid $blanco;
-        height:24px;
-        width:$btn-width;
+        height:(22px * 1.3);
+        width:(48px * 1.3);
 
-        &:hover {
-
-          border:none;
-          outline:none;
-        }
-      }
-      .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
-        background-color: $celeste;
       }
     }
-
-
-
   }
   .filtros--linea {
     background-color: $negro-claro;
     opacity:1;
     width:200px;
     height:2px;
-    margin-top:0.7rem;
+    margin-top:0.9rem;
     align-self:start;
   }
 }
 
-// .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
-//   box-shadow: red!important;
-// }
+.btn-active {
+  background-color:$dorado!important;
+}
 
 #preguntas-frecuentes {
   margin-bottom: 20px;
@@ -731,8 +729,11 @@ $color-solapa-4: rgb(253, 173, 192);
 }
 
 #info__texto {
-  font-size: 1.4rem;
-  line-height: 20px;
+
+  font-size: 1.8rem;
+  line-height: 40px;
+  margin-top:20px;
+  padding-left:10px;
 }
 /* artistas.html               artistas.html              artistas.html */
 .articulo-principal {

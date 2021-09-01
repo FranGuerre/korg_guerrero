@@ -138,9 +138,6 @@ function cargarSolapas() {
 //          soporte.html
 
 let filtros = document.querySelector(".filtros");
-// let categoriaSintetizadores = document.getElementById("preguntas-sintetizadores");
-// let categoriaWorkstation = document.getElementById("preguntas-workstation");
-// let categoriaSoftware = document.getElementById("preguntas-software");
 
 function funcionalidadFiltros() {
   filtros.addEventListener("click", (e) => {
@@ -149,7 +146,14 @@ function funcionalidadFiltros() {
       id = id.split("-");
       id = id[1];
 
-      e.target.classList.remove("active");
+      if(!e.target.classList.contains("btn-active")) {
+        document.querySelectorAll(".filtro").forEach(function(f) {
+          f.classList.remove("btn-active");
+        });
+        e.target.classList.add("btn-active");
+      }
+
+      // e.target.classList.remove("active");
       seleccionarCategoria(id);
     }
   });
