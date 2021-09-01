@@ -214,7 +214,7 @@ body {
   background-color: rgba(29, 170, 182, 0.6); }
 
 .menu-hero__hero img {
-  width: 750px; }
+  width: 800px; }
 
 @keyframes hero-titulo {
   0% {
@@ -492,7 +492,7 @@ body {
     align-self: start; }
 
 #preguntas-frecuentes {
-  margin-bottom: 20px;
+  margin: 20px 0;
   display: grid;
   justify-items: center;
   grid-row-gap: 10px;
@@ -508,7 +508,7 @@ body {
     margin-bottom: 10px; }
 
 .categoria-visible {
-  display: block; }
+  display: grid; }
 
 .pregunta__titulo {
   background-color: #f5f1f0;

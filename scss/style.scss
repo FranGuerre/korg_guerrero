@@ -290,7 +290,7 @@ body {
 }
 
 .menu-hero__hero img {
-  width: 750px;
+  width: 800px;
 }
 @keyframes hero-titulo {
   0% {
@@ -472,6 +472,7 @@ body {
   }
 }
 /* termina sección novedades */
+
 /* catalogo.html               catalogo.html                catalogo.html*/
 $solapa__nombre-width: 150px;
 $solapa__nombre-width-tablet: 120px;
@@ -679,7 +680,7 @@ $color-solapa-4: rgb(253, 173, 192);
 // }
 
 #preguntas-frecuentes {
-  margin-bottom: 20px;
+  margin: 20px 0;
   display: grid;
   justify-items: center;
   grid-row-gap: 10px;
@@ -699,7 +700,7 @@ $color-solapa-4: rgb(253, 173, 192);
 }
 
 .categoria-visible {
-  display: block;
+  display: grid;
 }
 
 .pregunta__titulo {
