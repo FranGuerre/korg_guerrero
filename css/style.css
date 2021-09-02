@@ -39,7 +39,7 @@ a:hover {
   align-items: center;
   padding: 5px 20px;
   background-color: #1a1b1e;
-  background-image: url("/img/texturas/noise.png");
+  background-image: url("../img/texturas/noise.png");
   background-blend-mode: multiply;
   background-repeat: repeat;
   color: #f5f1f0;
@@ -77,7 +77,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background-image: url("/img/texturas/noise.png");
+  background-image: url("../img/texturas/noise.png");
   background-blend-mode: lighten;
   background-repeat: repeat;
   background-color: #f5f1f0; }
@@ -164,7 +164,7 @@ body {
   text-align: center;
   border: 3px solid #3c3c3c;
   background: #eac291;
-  background-image: url("/img/texturas/noise.png");
+  background-image: url("../img/texturas/noise.png");
   background-blend-mode: multiply;
   background-repeat: repeat;
   grid-column: 1 / 2;
@@ -284,9 +284,9 @@ body {
     opacity: 0; } }
 
 #subtema-artistas {
-  background: url("img/artistas/toriena-sin-fondo.png"), linear-gradient(90deg, #1a1b1e 0%, #eac291 50%, #1a1b1e 100%); }
+  background: url("../img/artistas/toriena-sin-fondo.png"), linear-gradient(90deg, #1a1b1e 0%, #eac291 50%, #1a1b1e 100%); }
   #subtema-artistas a .subtemas__caja--fondo {
-    background: url("img/artistas/toriena-sin-fondo.png"); }
+    background: url("../img/artistas/toriena-sin-fondo.png"); }
   #subtema-artistas,
   #subtema-artistas .subtemas__caja--fondo {
     background-repeat: no-repeat;
@@ -557,7 +557,7 @@ body {
   align-items: end;
   justify-items: start;
   background-color: black;
-  background-image: url("/img/artistas/toriena.jpg");
+  background-image: url("../img/artistas/toriena.jpg");
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat; }
@@ -632,13 +632,13 @@ body {
       background-color: #d2d2d2; }
 
 #perfil-corporativo {
-  background-image: url("/img/iconos/icono-perfil-corporativo.png"); }
+  background-image: url("../img/iconos/icono-perfil-corporativo.png"); }
 
 #distribuidores {
-  background-image: url("/img/iconos/icono-distribuidores.png"); }
+  background-image: url("../img/iconos/icono-distribuidores.png"); }
 
 #condiciones {
-  background-image: url("/img/iconos/icono-condiciones.png"); }
+  background-image: url("../img/iconos/icono-condiciones.png"); }
 
 /* footer                  footer                 footer */
 .footer {
