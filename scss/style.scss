@@ -385,10 +385,10 @@ body {
 }
 
 #subtema-artistas {
-  background: url("/img/artistas/toriena-sin-fondo.png"), linear-gradient(90deg, rgb(26,27,30) 0%, rgb(234, 194, 145) 50%, rgb(26,27,30) 100%);
+  background: url("img/artistas/toriena-sin-fondo.png"), linear-gradient(90deg, rgb(26,27,30) 0%, rgb(234, 194, 145) 50%, rgb(26,27,30) 100%);
 
   & a .subtemas__caja--fondo {
-    background: url("/img/artistas/toriena-sin-fondo.png");
+    background: url("img/artistas/toriena-sin-fondo.png");
   }
 
   &,

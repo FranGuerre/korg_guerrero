@@ -284,9 +284,9 @@ body {
     opacity: 0; } }
 
 #subtema-artistas {
-  background: url("/img/artistas/toriena-sin-fondo.png"), linear-gradient(90deg, #1a1b1e 0%, #eac291 50%, #1a1b1e 100%); }
+  background: url("img/artistas/toriena-sin-fondo.png"), linear-gradient(90deg, #1a1b1e 0%, #eac291 50%, #1a1b1e 100%); }
   #subtema-artistas a .subtemas__caja--fondo {
-    background: url("/img/artistas/toriena-sin-fondo.png"); }
+    background: url("img/artistas/toriena-sin-fondo.png"); }
   #subtema-artistas,
   #subtema-artistas .subtemas__caja--fondo {
     background-repeat: no-repeat;
