@@ -1,5 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-
+// Disket
+@font-face {
+  src: url("../fuentes/Disket Rostype/Disket-Mono-Regular.ttf");
+  font-family: Disket;
+  font-weight: normal;
+}
+@font-face {
+  src: url("../fuentes/Disket Rostype/Disket-Mono-Bold.ttf");
+  font-family: Disket;
+  font-weight: bold;
+}
+// PPTelegraf
+@font-face {
+  src:url("../fuentes/PPTelegraf/PPTelegraf-Regular.otf");
+  font-family:PPTelegraf;
+  font-weight:normal;
+}
+@font-face {
+  src:url("../fuentes/PPTelegraf/PPTelegraf-UltraBold.otf");
+  font-family:PPTelegraf;
+  font-weight:bold;
+}
 html {
   font-size: 62.25%;
 }
@@ -31,6 +52,7 @@ a:hover {
 }
 
 /* General */
+
 // colores y variables generales
 $dorado: rgb(234, 194, 145);
 $rosa-medio: rgb(247, 199, 201);
@@ -58,13 +80,13 @@ $blanco-claro:rgb(250,241,250);
 }
 
 .separador {
+  font-family:'PPTelegraf';
   display: flex;
   width:100%;
   align-items: center;
   padding: 5px 20px;
   background-color:$negro;
-  background-image:url("../img/texturas/noise.png");
-  background-blend-mode: multiply;
+
   background-repeat:repeat;
   color:$blanco;
   text-transform: uppercase;
@@ -84,38 +106,17 @@ $blanco-claro:rgb(250,241,250);
   margin-bottom: 5px;
 }
 
-/* colores de distintos sintetizadores
-volca fm:
-rosa rgb(253, 173, 192)
-celeste rgb(46, 251, 246)
-dorado rgb(234, 194, 145)
-
-poly800:
-rojo rgb(214, 25, 4)
-celeste rgb(29, 170, 182)
-blanco rgb(200,207,177)
-grid rgb(86,85,83)
-gris oscuro rgb(60, 60, 60)
-
-volca modular:
-gris rgb(213,213,212)
-blanco rgb(245,241,240)
-rojo rgb(174,52,70)
-azul rgb(39,73,101)
-rosa rgb(252,139,140)
-negro rgb(26,27,30)
-*/
 /* termina General */
 
 body {
+  height:100%;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background-image:url("../img/texturas/noise.png");
-  background-blend-mode: lighten;
-  background-repeat:repeat;
-  background-color: $blanco;
-
+  background-color:rgba(47,67,83,0.5);
+  background-image: -webkit-linear-gradient(bottom right, rgba(47,67,83,0.5) 0%, #d2ccc4 74%);
+  background-image: -o-linear-gradient(bottom right, rgba(47,67,83,0.3) 0%, #d2ccc4 74%);
+  background-image: linear-gradient(to top left, rgba(47,67,83,0.3) 0%, #d2ccc4 74%);
 }
 
 /* Headers */
@@ -193,15 +194,16 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+
+  .presentacion__texto {
+    width: 60%;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-shadow: -3px 2px 0 rgb(252,139,140), -3px 2px 0 rgb(252,139,140);
+    text-transform: uppercase;
+  }
 }
 
-.presentacion__texto {
-  width: 80%;
-  font-size: 2rem;
-  font-weight: lighter;
-  text-shadow: -3px 2px 0 rgb(252,139,140), -3px 2px 0 rgb(252,139,140);
-  text-transform: uppercase;
-}
 // fin header y presentación del resto de las páginas
 
 .header-mobile__logo {
@@ -218,12 +220,13 @@ body {
 }
 
 .menu {
-  width: 230px;
+  width: 280px;
   height: max-content;
   padding: 8px 0;
   text-align: center;
   border: 3px solid #3c3c3c;
   background: $dorado;
+  // background-image:linear-gradient(75deg, $dorado 0%, rgb(250, 210, 200) 60%, rgba(0,0,0,0.4) 100%);
   background-image:url("../img/texturas/noise.png");
   background-blend-mode: multiply;
   background-repeat:repeat;
@@ -237,7 +240,6 @@ body {
 
     .logo {
       filter: brightness(0);
-
       &:hover {
         filter: none;
       }
@@ -248,11 +250,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 2.3rem;
+    font-size: 2.8rem;
+    letter-spacing: -1.5px;
 
     & li {
       text-align: center;
       text-transform: uppercase;
+
+      a {
+        font-family:'PPTelegraf';
+        font-weight: bold;
+
+      }
     }
 
     & li a:hover {
@@ -427,15 +436,23 @@ body {
   overflow: scroll;
   border: 0.7px solid #000;
   border-bottom: 2px solid #000;
+
+  li {
+    width: 100%;
+  }
 }
 
 .ul-noticias__caja {
   display: flex;
+  justify-content: space-between;
+  background-blend-mode:multiply;
+  width:100%;
   border: 1px solid #000;
   padding: 18px;
   gap: 5px;
 
   &:hover {
+    background-image:url("../img/texturas/noise.png");
     background-color: $rosa-medio;
   }
 
@@ -632,8 +649,8 @@ $color-solapa-4: rgb(253, 173, 192);
 
     label {
       display:block;
-      background-color: $blanco;
       text-transform: uppercase;
+      font-size:1.2rem;
     }
     div {
       display:flex;
@@ -658,9 +675,7 @@ $color-solapa-4: rgb(253, 173, 192);
       .btn-active {
         background-color: $celeste;
         transform: scale(0.9);
-
       }
-
     }
 
   }
@@ -685,7 +700,6 @@ $color-solapa-4: rgb(253, 173, 192);
 
 .preguntas-frecuentes__categoria {
   display: none;
-
   .preguntas-frecuentes__categoria--pregunta {
     max-width: 700px;
     height: max-content;
@@ -700,7 +714,6 @@ $color-solapa-4: rgb(253, 173, 192);
 }
 
 .pregunta__titulo {
-  background-color: rgb(245,241,240);
   padding: 10px;
   border-radius: inherit;
   font-size: 1.6rem;
@@ -709,7 +722,6 @@ $color-solapa-4: rgb(253, 173, 192);
 
 .pregunta__respuesta {
   padding: 10px;
-  background-color:$blanco;
   border-radius:inherit;
 
   & p {
@@ -939,6 +951,7 @@ $color-solapa-4: rgb(253, 173, 192);
 
   .navbar {
     font-size: 2rem!important;
+
   }
 
   .header-contenedor {
