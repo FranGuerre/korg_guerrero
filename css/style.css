@@ -62,8 +62,7 @@ a:hover {
   top: 0;
   width: 100vw;
   height: 100%;
-  z-index: -1;
-  filter: hue-rotate(25%); }
+  z-index: -1; }
 
 .separador, .separador--grande, .separador--chico {
   font-family: 'PPTelegraf';
@@ -160,7 +159,7 @@ body {
   width: 100px; }
 
 /* index.html;               index.html;                index.html*/
-/* menu y hero */
+/* menu */
 .menu-hero {
   max-width: 100%;
   width: 100vw;
@@ -203,8 +202,9 @@ body {
     .menu .menu__links li a:hover {
       color: #ae3446; }
 
-/* HERO */
-.menu-hero__hero {
+/* fin menu */
+/* hero */
+.hero {
   max-width: 100vw;
   position: relative;
   grid-column: 1 / 2;
@@ -224,7 +224,7 @@ body {
   border: 2px solid #c8cfb1;
   background-color: rgba(29, 170, 182, 0.6); }
 
-.menu-hero__hero img {
+.hero img {
   width: 800px; }
 
 @keyframes hero-titulo {
@@ -243,6 +243,7 @@ body {
 .logo:hover {
   filter: none; }
 
+/* fin hero */
 /* subtemas y novedades */
 #subtemas-novedades {
   margin-bottom: 100px;
@@ -704,7 +705,6 @@ body {
     .menu .menu__links {
       font-size: 2rem; } }
 
-/*(min-width:576px) and*/
 @media (max-width: 768px) {
   /* header */
   .header-mobile {
@@ -725,24 +725,19 @@ body {
       font-size: 1.4rem; }
   .menu {
     display: none; }
+  /* fin header */
   /* index.html */
   .menu-hero {
     height: 55vh;
     margin-bottom: 8vw; }
-    .menu-hero .menu-hero__hero {
+    .menu-hero .hero {
       height: min-content; }
-      .menu-hero .menu-hero__hero img {
+      .menu-hero .hero img {
         width: 100%;
         max-width: 680px; }
-      .menu-hero .menu-hero__hero .hero__titulo {
+      .menu-hero .hero .hero__titulo {
         font-size: 1.5rem; }
   /* fin index.html */
-  /* footer */
-  .redes__icono-footer {
-    width: 25px; }
-  .logo-footer {
-    max-width: 120px; }
-  /* fin footer */
   .solapa .solapa__nombre {
     width: 120px; }
   #solapa-1 .solapa__nombre {
@@ -762,10 +757,16 @@ body {
     #contacto__contenido form {
       justify-self: center;
       margin-bottom: 40px;
-      max-height: 600px; } }
+      max-height: 600px; }
+  /* footer */
+  .redes__icono-footer {
+    width: 25px; }
+  .logo-footer {
+    max-width: 120px; }
+  /* fin footer */ }
 
 @media (max-width: 576px) {
-  .menu-hero__hero {
+  .hero {
     height: 400px; }
   .footer-contenedor__redes {
     gap: 10px; }
