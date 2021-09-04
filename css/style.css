@@ -212,6 +212,14 @@ body {
   justify-self: center;
   align-self: center; }
 
+.carrusel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.carrusel__filmina {
+  position: relative;
+  width: 100%; }
+
 .hero__titulo {
   position: absolute;
   top: 0;

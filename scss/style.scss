@@ -300,6 +300,16 @@ body {
   align-self: center;
 }
 
+.carrusel {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.carrusel__filmina {
+  position:relative;
+  width:100%;
+}
+
 .hero__titulo {
   position: absolute;
   top: 0;
@@ -1052,7 +1062,7 @@ $color-solapa-4: rgb(253, 173, 192);
     }
   }
   // fin catalogo.html
-  
+
   // soporte.html
   #contacto__contenido {
     width: 100%;
