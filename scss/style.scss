@@ -1,3 +1,6 @@
+
+// Tipografías
+
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 // Disket
 @font-face {
@@ -21,6 +24,8 @@
   font-family:PPTelegraf;
   font-weight:bold;
 }
+// fin Tipografías
+
 html {
   font-size: 62.25%;
 }
@@ -78,9 +83,21 @@ $blanco-claro:rgb(250,241,250);
 .background-1 {
   // $rosa-medio: rgb(247, 199, 201);
 }
-
+.fondo {
+  position:fixed;
+  background-image:url("/img/iconos/korg-grande.png");
+  background-repeat: repeat;
+  background-size:contain;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100%;
+  z-index: -1;
+  filter:hue-rotate(25%);
+}
 .separador {
   font-family:'PPTelegraf';
+  font-weight: bold;
   display: flex;
   width:100%;
   align-items: center;
@@ -250,7 +267,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     letter-spacing: -1.5px;
 
     & li {
