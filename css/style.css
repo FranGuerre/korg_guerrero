@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 @font-face {
-  src: url("../fuentes/Disket Rostype/Disket-Mono-Regular.ttf");
+  src: url("../fuentes/Disket-Rostype/Disket-Mono-Regular.ttf");
   font-family: Disket;
   font-weight: normal; }
 
 @font-face {
-  src: url("../fuentes/Disket Rostype/Disket-Mono-Bold.ttf");
+  src: url("../fuentes/Disket-Rostype/Disket-Mono-Bold.ttf");
   font-family: Disket;
   font-weight: bold; }
 
