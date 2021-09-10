@@ -65,8 +65,9 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# ignora node_modules
-node_modules
+#ignora node_modules
+node_modules/
+node/
 
 #ignora .github
 .github
