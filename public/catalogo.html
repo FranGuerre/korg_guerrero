@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="titulo" content="Artistas">
-  <meta name="description" content="Descubre a los referentes y a los nuevos artistas de la familia Korg.">
-  <meta name="keywords" content="korg, sintetizadores, artistas, referentes, familia, entrevistas, artículos">
+  <meta name="title" content="Catálogo General">
+  <meta name="description" content="Recorre nuestro vasto catálogo de sintetizadores clásicos e innovadores.">
+  <meta name="keywords" content="korg, sintetizador, catálogo, general, workstation, analógico, digital, software">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-  <title>Korg - Artistas</title>
+  <title>Korg - Catálogo General</title>
 </head>
 
 <body>
@@ -65,82 +65,53 @@
         <div class="menu">
           <a href="index.html"><img src="img/iconos/korg-chico.png" alt="Logo de Korg" class="logo menu__logo"></a>
           <ul class="menu__links">
-            <li><a href="catalogo.html">Catálogo General</a></li>
-            <li><a href="soporte.html">Soporte</a></li>
+            <!-- <li class="link"><a href="index.html">Inicio</a></li> -->
+            <li class="link"><a href="catalogo.html">Catálogo General</a></li>
+            <li class="link"><a href="soporte.html">Soporte</a></li>
           </ul>
         </div>
         <div class="main-header__presentacion">
           <span class="presentacion__texto">
-            <h1 class="display-5">Descubre a los referentes y a los nuevos artistas de la familia Korg.</h1>
+            <h1 class="display-5">Recorre nuestro vasto catálogo de sintetizadores clásicos e innovadores.</h1>
           </span>
         </div>
       </div>
     </section>
-    <div class="main-contenedor width-pagina">
-      <!-- contenido principal -->
-      <section>
-        <!-- articulo principal  -->
-        <div class="articulo-principal">
-          <div class="articulo-principal__info">
-            <a href="https://www.korg.com/us/features/artists/2021/0423/">
-              <h4>TORIENA interview</h4>
-            </a>
-            <a href="https://www.korg.com/us/features/artists/2021/0423/">
-              <p>TORIENA started her career in Kyoto in 2012 and launched her chiptune label "MADMILKEY RECORDS" in 2013. Her music oscillates around catchy and hardcore chiptune music using Game Boy and other electronic instruments, and her powerful
-                performance style leaves no one indifferent.</p>
-            </a>
+    <!-- catálogo -->
+    <section>
+      <div class="catalogo-contenedor" id="catalogo">
+              <ul class="solapas">
+                <li class="solapa" id="solapa-1" >
+                  <div class="solapa__nombre">
+                    <h3>workstation</h3>
+                  </div>
+                  <ul class="solapa__contenido">
+                  </ul>
+                </li>
+                <li class="solapa mostrar-solapa" id="solapa-2">
+                  <div class="solapa__nombre borde-solapa-activa">
+                    <h3>analógico</h3>
+                  </div>
+                  <ul class="solapa__contenido">
+                  </ul>
+                </li>
+                <li class="solapa" id="solapa-3">
+                  <div class="solapa__nombre">
+                    <h3>digital</h3>
+                  </div>
+                  <ul class="solapa__contenido">
+                  </ul>
+                </li>
+                <li class="solapa" id="solapa-4">
+                  <div class="solapa__nombre">
+                    <h3>software</h3>
+                  </div>
+                  <ul class="solapa__contenido">
+                  </ul>
+                </li>
+              </ul>
+            </ul>
           </div>
-        </div>
-        <!-- articulos -->
-        <ul class="articulos-artistas">
-          <li class="articulos-artistas__articulo">
-<a href="https://www.korg.com/us/features/artists/2016/1110/">
-            <img src="img/artistas/herbie-hancock.jpeg" alt="Herbie Hancock">
-
-              <h4>Herbie Hancock</h4>
-              <p>Few can be called legends and continue to amaze us with their insightful and fresh creativity. But Herbie Hancock is one of those few, and if anyone can bring musical exploration to uncharted territory, he’s the guy. A pianist since age seven, Herbie admits to being a “gadget freak,” and has simultaneously embraced jazz, funk, and avant-garde electronic music creation while still fulfilling the inclination to make an acoustic journey in between those electric efforts.</p>
-            </a>
-          </li>
-          <li class="articulos-artistas__articulo">
-<a href="https://www.korg.com/us/features/artists/2016/0608/">
-            <img src="img/artistas/jana-kramer.jpeg" alt="Jana Kramer">
-
-              <h4>Jana Kramer</h4>
-              <p>Michigan born Jana Kramer is an actress and country music singer/songwriter. With an impressive string of movie and television roles since 2002, Kramer began a country music career in 2012 with the single "Why Ya Wanna" from her self-titled debut album and released her latest album Thirty One in 2015. She has been nominated for various American Country Awards, CMT Awards and has won an ACM Award for Top New Female Artist in 2013.</p>
-            </a>
-          </li>
-          <li class="articulos-artistas__articulo">
-            <a href="https://www.korg.com/us/features/artists/2015/1101/">
-              <img src="img/artistas/jordan-rudess.jpeg" alt="Jordan Rudess">
-              <h4>Jordan Rudess</h4>
-              <p>Voted "the best keyboardist of all time" by MusicRadar, Jordan’s virtuosic writing and performance abilities along with his knack for cutting-edge technology enable him to continuously expand on his already iconic role in the modern keyboard landscape. As a long-time member of the Korg family, Jordan has provided important product feedback throughout the years and he has helped create some of the sounds heard in Korg products, like the Kronos Music Workstation.</p>
-            </a>
-          </li>
-          <li class="articulos-artistas__articulo">
-            <a href="https://www.korg.com/us/features/artists/2014/110103/">
-              <img src="img/artistas/cory-henry.jpeg" alt="imagen del artista">
-              <h4>Cory Henry</h4>
-              <p>"The Kronos does a great job of making you feel as if the instrument that you're playing is right in the same room as you. Every time I browse another sound, it kind of gets me into a different place that makes me just want to play, as if I am a violin player, or if I have an actual electric piano in my house. It does a great job of making you feel that you're playing the actual instrument."</p>
-            </a>
-          </li>
-          <li class="articulos-artistas__articulo">
-<a href="https://www.korg.com/us/features/artists/2016/0425/">
-            <img src="img/artistas/laderrick.jpeg" alt="LaDerrick Jr">
-
-              <h4>LaDerrick Jr</h4>
-              <p>LaDerrick is a musician/producer from East Orange, New Jersey who started his musical journey at the age of 3 with a great passion for Drums. He cultivated that passion into other instruments like Piano, Organ and Bass Guitar. He has performed/worked with: Alicia Keys, Tinashe, Future, The Weeknd, Marvin Sapp, Tye Tribbett, Donnie MCclurkin and many more.</p>
-            </a>
-          </li>
-          <li class="articulos-artistas__articulo">
-<a href="https://www.korg.com/us/features/artists/2021/0806/">
-            <img src="img/artistas/moe-shop.jpeg" alt="imagen del artista">
-
-              <h4>Moe Shop</h4>
-              <p>"When I first got my volca and was filled in on the project, I really wasn’t sure where to begin as I’d never done anything like this before. I started making some simple chords in my DAW, and then fed those into the volca sample. I just spent a while jamming repeating this process to see what would happen.""</p>
-            </a>
-          </li>
-        </ul>
-    </div>
     </section>
   </main>
   <footer class="footer background-1">
