@@ -635,32 +635,32 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 40px 0; }
-  .acerca-vinculos .acerca-vinculos__vinculo {
+  .acerca-vinculos .acerca-vinculos__vinculo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+  .acerca-vinculos .acerca-vinculos__vinculo h4 {
+    display: inline;
+    font-size: 1.5rem;
+    background-color: #d2d2d2; }
+  .acerca-vinculos .acerca-vinculos__vinculo:hover h4 {
+    color: #d2d2d2;
+    background-color: rgba(26, 27, 30, 0.8); }
+  .acerca-vinculos .acerca-vinculos__icono {
     width: 180px;
     height: 180px;
     position: relative;
     background-position: center;
     background-size: cover; }
-    .acerca-vinculos .acerca-vinculos__vinculo a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-align: center; }
-    .acerca-vinculos .acerca-vinculos__vinculo h4 {
-      display: inline;
-      font-size: 1.5rem;
-      background-color: #d2d2d2; }
-  .acerca-vinculos .acerca-vinculos__vinculo:hover h4 {
-    color: #d2d2d2;
-    background-color: rgba(26, 27, 30, 0.8); }
 
-#perfil-corporativo {
+#perfil-corporativo .acerca-vinculos__icono {
   background-image: url("../img/iconos/icono-perfil-corporativo.png"); }
 
-#distribuidores {
+#distribuidores .acerca-vinculos__icono {
   background-image: url("../img/iconos/icono-distribuidores.png"); }
 
-#condiciones {
+#condiciones .acerca-vinculos__icono {
   background-image: url("../img/iconos/icono-condiciones.png"); }
 
 /* footer                  footer                 footer */
@@ -728,6 +728,8 @@ body {
       font-size: 1.4rem; }
   .menu {
     display: none; }
+  .main-header__presentacion .presentacion__texto {
+    width: 70%; }
   /* fin header */
   /* index.html */
   .menu-hero {
@@ -765,7 +767,7 @@ body {
     grid-auto-flow: row; }
     .texto-korg p {
       font-size: 1.8rem; }
-  .acerca-vinculos .acerca-vinculos__vinculo {
+  .acerca-vinculos .acerca-vinculos__icono {
     width: 150px;
     height: 150px; }
   /* footer */
@@ -802,18 +804,8 @@ body {
     right: 89px; }
   #solapa-4 .solapa__nombre {
     right: -1px; }
-  .acerca-vinculos .acerca-vinculos__vinculo {
+  .acerca-vinculos .acerca-vinculos__vinculo h4 {
+    font-size: 1.3rem; }
+  .acerca-vinculos .acerca-vinculos__icono {
     width: 130px;
-    height: 130px; }
-    .acerca-vinculos .acerca-vinculos__vinculo a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-align: center; }
-    .acerca-vinculos .acerca-vinculos__vinculo h4 {
-      display: inline;
-      font-size: 1.5rem;
-      background-color: #d2d2d2; }
-  .acerca-vinculos .acerca-vinculos__vinculo:hover h4 {
-    color: #d2d2d2;
-    background-color: rgba(26, 27, 30, 0.8); } }
+    height: 130px; } }
