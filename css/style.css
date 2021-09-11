@@ -100,7 +100,7 @@ body {
   height: 40px; }
   .header-contenedor .header-superior {
     height: inherit;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
