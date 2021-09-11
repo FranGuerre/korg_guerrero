@@ -233,13 +233,13 @@ body {
 .menu-hero {
   max-width: 100%;
   width: 100vw;
-  height: 80vh;
+  height: 82vh;
   display: grid;
   margin-top: 20px;
 }
 
 .menu {
-  width: 280px;
+  width: 260px;
   height: max-content;
   padding: 8px 0;
   text-align: center;
@@ -269,7 +269,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     letter-spacing: -1.5px;
 
     & li {
@@ -856,14 +856,18 @@ $color-solapa-4: rgb(253, 173, 192);
 
 
 /* acerca.html                 acerca.html                acerca.html*/
+
 .texto-korg {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 20px;
   margin: 0 auto;
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  padding: 0 40px;
+  justify-content: start;
+
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 .acerca-vinculos {
@@ -872,8 +876,8 @@ $color-solapa-4: rgb(253, 173, 192);
   margin: 40px 0;
 
   .acerca-vinculos__vinculo {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -956,13 +960,12 @@ $color-solapa-4: rgb(253, 173, 192);
   }
   /* fin index.html */
   .menu {
-    width: 200px;
+    width: 230px;
 
     .menu__links {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
   }
-
 }
 
 @media (max-width:768px) {
@@ -1068,6 +1071,26 @@ $color-solapa-4: rgb(253, 173, 192);
     }
   }
   // fin soporte.html
+
+  // acerca.html
+
+  .texto-korg {
+    grid-auto-flow: row;
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .acerca-vinculos {
+
+    .acerca-vinculos__vinculo {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  // fin acerca.html
 
   /* footer */
   .redes__icono-footer {
