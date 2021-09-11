@@ -284,7 +284,7 @@ body {
     }
 
     & li a:hover {
-      color: $rojo;
+      color: $blanco;
     }
   }
 }
@@ -891,9 +891,13 @@ $color-solapa-4: rgb(253, 173, 192);
 
     & h4 {
       display: inline;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       background-color: rgb(210,210,210);
     }
+  }
+  .acerca-vinculos__vinculo:hover h4 {
+    color: rgb(210,210,210);
+    background-color: $negro-claro;
   }
 }
 

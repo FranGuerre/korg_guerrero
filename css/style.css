@@ -199,7 +199,7 @@ body {
         font-family: 'PPTelegraf';
         font-weight: bold; }
     .menu .menu__links li a:hover {
-      color: #ae3446; }
+      color: #f5f1f0; }
 
 /* fin menu */
 /* hero */
@@ -648,8 +648,11 @@ body {
       text-align: center; }
     .acerca-vinculos .acerca-vinculos__vinculo h4 {
       display: inline;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       background-color: #d2d2d2; }
+  .acerca-vinculos .acerca-vinculos__vinculo:hover h4 {
+    color: #d2d2d2;
+    background-color: rgba(26, 27, 30, 0.8); }
 
 #perfil-corporativo {
   background-image: url("../img/iconos/icono-perfil-corporativo.png"); }
