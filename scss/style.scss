@@ -1168,4 +1168,31 @@ $color-solapa-4: rgb(253, 173, 192);
     }
   }
   // fin catalogo.html
+
+  // acerca.html
+  .acerca-vinculos {
+
+    .acerca-vinculos__vinculo {
+      width: 130px;
+      height: 130px;
+
+      & a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+
+      & h4 {
+        display: inline;
+        font-size: 1.5rem;
+        background-color: rgb(210,210,210);
+      }
+    }
+    .acerca-vinculos__vinculo:hover h4 {
+      color: rgb(210,210,210);
+      background-color: $negro-claro;
+    }
+  }
+  // fin acerca.html
 }

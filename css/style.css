@@ -801,4 +801,19 @@ body {
   #solapa-3 .solapa__nombre {
     right: 89px; }
   #solapa-4 .solapa__nombre {
-    right: -1px; } }
+    right: -1px; }
+  .acerca-vinculos .acerca-vinculos__vinculo {
+    width: 130px;
+    height: 130px; }
+    .acerca-vinculos .acerca-vinculos__vinculo a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center; }
+    .acerca-vinculos .acerca-vinculos__vinculo h4 {
+      display: inline;
+      font-size: 1.5rem;
+      background-color: #d2d2d2; }
+  .acerca-vinculos .acerca-vinculos__vinculo:hover h4 {
+    color: #d2d2d2;
+    background-color: rgba(26, 27, 30, 0.8); } }
