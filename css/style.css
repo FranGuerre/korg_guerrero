@@ -579,7 +579,7 @@ body {
   background-color: black;
   background-image: url("../img/artistas/toriena.jpg");
   background-size: contain;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat; }
 
 .articulo-principal__info {
@@ -597,6 +597,7 @@ body {
 
 /* sección de articulos */
 .articulos-artistas {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -777,6 +778,16 @@ body {
   .acerca-vinculos .acerca-vinculos__icono {
     width: 150px;
     height: 150px; }
+  .articulo-principal {
+    height: 400px; }
+  .articulo-principal__info {
+    width: 80%;
+    margin: 20px;
+    color: #f0f0f0; }
+    .articulo-principal__info h4 {
+      font-size: 2rem; }
+    .articulo-principal__info p {
+      font-size: 1.6rem; }
   /* footer */
   .redes__icono-footer {
     width: 25px; }
@@ -815,4 +826,22 @@ body {
     font-size: 1.3rem; }
   .acerca-vinculos .acerca-vinculos__icono {
     width: 130px;
-    height: 130px; } }
+    height: 130px; }
+  .articulos-artistas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 60px 0;
+    justify-content: center; }
+  .articulo-principal {
+    height: 300px;
+    background-size: cover; }
+  .articulo-principal__info {
+    width: 80%;
+    margin: 20px;
+    color: #f0f0f0; }
+    .articulo-principal__info h4 {
+      font-size: 3rem; }
+    .articulo-principal__info p {
+      display: none; } }

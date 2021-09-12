@@ -794,7 +794,7 @@ $color-solapa-4: rgb(253, 173, 192);
   background-color: black;
   background-image: url("../img/artistas/toriena.jpg");
   background-size: contain;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
@@ -818,11 +818,12 @@ $color-solapa-4: rgb(253, 173, 192);
 
 /* sección de articulos */
 .articulos-artistas {
+  width:100%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 60px 0;
-  justify-content:space-between;
+  justify-content: space-between;
 
   .articulos-artistas__articulo {
     display: flex;
@@ -902,8 +903,6 @@ $color-solapa-4: rgb(253, 173, 192);
   }
 
 }
-
-
 
 #perfil-corporativo .acerca-vinculos__icono{
   background-image: url("../img/iconos/icono-perfil-corporativo.png");
@@ -1113,6 +1112,28 @@ $color-solapa-4: rgb(253, 173, 192);
 
   // fin acerca.html
 
+// artistas.html
+.articulo-principal {
+  height: 400px;
+
+}
+
+.articulo-principal__info {
+  width: 80%;
+  margin: 20px;
+  color: rgb(240,240,240);
+
+  & h4 {
+    font-size: 2rem;
+
+  }
+
+  & p {
+    font-size: 1.6rem;
+  }
+}
+
+// fin artistas.html
   /* footer */
   .redes__icono-footer {
     width: 25px;
@@ -1200,5 +1221,39 @@ $color-solapa-4: rgb(253, 173, 192);
       height:130px;
     }
   }
+
+  .articulos-artistas {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 60px 0;
+    justify-content: center;
+
+  }
   // fin acerca.html
+
+  // artistas.html
+  .articulo-principal {
+    height: 300px;
+    background-size: cover;
+
+  }
+
+  .articulo-principal__info {
+    width: 80%;
+    margin: 20px;
+    color: rgb(240,240,240);
+
+    & h4 {
+      font-size: 3rem;
+
+    }
+
+    & p {
+      display:none;
+    }
+  }
+
+  // fin artistas.html
 }
