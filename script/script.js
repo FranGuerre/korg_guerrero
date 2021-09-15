@@ -89,15 +89,33 @@ let solapas = document.querySelectorAll(".solapa");
 let alerta = document.getElementById("alerta");
 
 window.addEventListener("DOMContentLoaded", function() {
+  navToggle();
   cargarSolapas();
   funcionalidadSolapas();
   funcionalidadFiltros();
 });
 
+
+let nav = document.querySelector(".header-mobile");
+let navMenu = document.querySelector(".nav-menu");
+
+
+function navToggle() {
+  nav.addEventListener("click", (e) => {
+    if(e.target.classList.contains("nav-toggle")) {
+      e.target.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  });
+}
+
+// solapas.html
 /*
 agregar un listener a cada solapa. en caso de click
 se le agrega clases a esa solapa y se le quita a las demás
 */
+
+
 function funcionalidadSolapas() {
   solapas.forEach(solapa => {
     solapa.addEventListener("click", () => {

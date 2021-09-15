@@ -1,0 +1,110 @@
+/* NAV */
+
+.header-mobile{
+  display:none;
+	position:relative;
+	height:50px;
+
+	background-color:#3c3c3c;
+	z-index:2;
+
+  .nav-logo{
+    height:50px;
+    line-height:50px;
+    padding:0 20px;
+    color:#ffffff;
+    font-weight:700;
+    text-transform:uppercase;
+  }
+}
+
+.nav-menu{
+		position:absolute;
+    top:50px;
+		width:100%;
+		height:0;
+		padding:0;
+		overflow:hidden;
+	}
+	.nav-menu.active{
+		height:auto;
+	}
+	.nav-menu li{
+		width:100%;
+    		background-color:#2c2c2c;
+    padding:5px 0 5px 20px;
+	}
+	.nav-menu li a{
+		width:100%;
+		padding:0;
+		text-align:center;
+    text-decoration:none;
+
+	}
+	ul.nav-menu li a:hover{
+		background-color:#1c1c1c;
+	}
+	.nav-toggle{
+		display:block;
+	}
+
+
+.nav-toggle{
+  position:relative;
+	width:50px;
+	height:50px;
+	background-color:#11999e;
+	cursor:pointer;
+}
+
+span.icon-bar{
+	position:absolute;
+	right:12px;
+	display:block;
+	width:26px;
+	height:2px;
+	background-color:#ffffff;
+}
+.icon-bar:nth-child(1){
+  top:17px;
+}
+.icon-bar:nth-child(2){
+  top:24px;
+}
+.icon-bar:nth-child(3){
+  top:31px;
+}
+
+
+span.icon-bar{
+	-webkit-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+
+/* ICON BARS ANIMATION */
+
+.nav-toggle.active .icon-bar:nth-child(1){
+	top:24px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.nav-toggle.active .icon-bar:nth-child(2){
+	width:0;
+}
+.nav-toggle.active .icon-bar:nth-child(3){
+	top:24px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+@media (max-width:768px) {
+  .header-mobile {
+    display:flex;
+    justify-content:space-between;
+  }
+}

@@ -1,4 +1,4 @@
-
+@import "_header.scss";
 // Tipografías
 
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
@@ -30,9 +30,7 @@ html {
   font-size: 62.25%;
 }
 
-*,
-div,
-ul {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -41,10 +39,6 @@ ul {
 
 li {
   list-style: none;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin:0!important;
 }
 
 a {
@@ -58,7 +52,7 @@ a:hover {
 
 /* General */
 
-// colores y variables generales
+// colores
 $dorado: rgb(234, 194, 145);
 $rosa-medio: rgb(247, 199, 201);
 $rosa-oscuro: rgba(252, 139, 140, 0.6);
@@ -107,6 +101,7 @@ $blanco-claro:rgb(250,241,250);
 .separador--grande {
   @extend .separador;
 
+
   margin-bottom: 10px;
 }
 
@@ -114,6 +109,7 @@ $blanco-claro:rgb(250,241,250);
 
   @extend .separador;
 
+  font-size:2rem;
   margin-bottom: 5px;
 }
 
@@ -160,40 +156,6 @@ body {
     }
   }
 }
-/*buscador de header. Probablemente no se utilice*/
-.buscador {
-  display: none;
-  width: max-content;
-  border: 0.5px solid #000;
-  border-radius: 3px;
-
-  & input {
-    border: none;
-    padding: 0 5px;
-  }
-
-  & input:focus {
-    outline: none;
-    border: none;
-  }
-
-  & button {
-    display: grid;
-    margin: 2px 4px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  & button img {
-    width: 18px;
-  }
-
-  & button img:hover {
-    transform: scale(1.08);
-  }
-}
-/*termina buscador de header*/
 
 // header y presentación del resto de las páginas
 
@@ -220,10 +182,6 @@ body {
 }
 
 // fin header y presentación del resto de las páginas
-
-.header-mobile__logo {
-  width: 100px;
-}
 
 /* index.html;               index.html;                index.html*/
 
@@ -313,7 +271,8 @@ body {
 }
 
 .hero img {
-  width: 800px;
+  max-width: 800px;
+  width:100%;
 }
 @keyframes hero-titulo {
   0% {
@@ -345,6 +304,9 @@ body {
 
 /* subtemas y novedades */
 #subtemas-novedades {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:20px;
   margin-bottom: 100px;
   height: max-content;
 
@@ -955,8 +917,16 @@ $color-solapa-4: rgb(253, 173, 192);
   padding-bottom: 20px;
   font-size: 1.2rem;
 }
+
+@media (max-width:992px) {
+  #subtemas-novedades {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+}
 @media (min-width:768px) and (max-width:992px) {
   /* index.html */
+
   #subtemas-novedades__subtemas {
     height: 200px;
     display: grid;
