@@ -104,6 +104,7 @@ function navToggle() {
     if(e.target.classList.contains("nav-toggle")) {
       e.target.classList.toggle("active");
       navMenu.classList.toggle("mostrar-nav");
+      nav.classList.toggle("background-active");
     }
   });
 }

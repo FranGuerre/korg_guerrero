@@ -122,6 +122,9 @@ body {
 
 // header y presentación del resto de las páginas
 
+header nav {
+  display:none;
+}
 .main-header {
   width: 100%;
   display: grid;
@@ -139,8 +142,11 @@ body {
     width: 60%;
     font-size: 2rem;
     font-weight: lighter;
-    text-shadow: -3px 2px 0 rgb(252,139,140), -3px 2px 0 rgb(252,139,140);
+    color:$negro;
+    // text-shadow: -3px 2px 0 rgb(252,139,140), -3px 2px 0 rgb(252,139,140);
     text-transform: uppercase;
+    -webkit-text-stroke-width: 1.4px;
+-webkit-text-stroke-color: $dorado;
   }
 }
 
@@ -881,6 +887,8 @@ $color-solapa-4: rgb(253, 173, 192);
   font-size: 1.2rem;
 }
 
+// media queries                  media queries
+
 @media (max-width:992px) {
   #subtemas-novedades {
     display:grid;
@@ -890,6 +898,9 @@ $color-solapa-4: rgb(253, 173, 192);
 
 @media (min-width:768px) and (max-width:992px) {
   /* index.html */
+  .menu-hero {
+    height:95vh;
+  }
   #subtemas-novedades__subtemas {
     height: 200px;
     display: grid;
@@ -908,19 +919,8 @@ $color-solapa-4: rgb(253, 173, 192);
 
 @media (max-width:768px) {
   /* header */
-  .header-contenedor {
-    display: none;
-    // width: 100vw;
-    border-bottom: 1px solid #000;
-
-    .header-superior {
-      height: min-content;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0 auto;
-      font-size: 1.4rem;
-    }
+  header nav {
+    display:block;
   }
 
   .menu {
@@ -938,7 +938,7 @@ $color-solapa-4: rgb(253, 173, 192);
 
   /* index.html */
   .menu-hero {
-    height: 50vh;
+    height: 55vh;
     margin-bottom: 8vw;
 
     .hero {

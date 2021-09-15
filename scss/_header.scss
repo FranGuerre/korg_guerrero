@@ -16,6 +16,9 @@ $header-height:50px;
     text-transform:uppercase;
   }
 }
+.background-active {
+  background-color:$dorado;
+}
 
 .nav-menu {
   // display:none;
@@ -50,7 +53,6 @@ $header-height:50px;
 .mostrar-nav {
   // visibility: visible;
   top:$header-height;
-  background-color:$dorado;
 }
 
 .nav-toggle {
