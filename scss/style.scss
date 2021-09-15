@@ -1,3 +1,4 @@
+@import "_colores.scss";
 @import "_header.scss";
 // Tipografías
 
@@ -51,18 +52,6 @@ a:hover {
 }
 
 /* General */
-
-// colores
-$dorado: rgb(234, 194, 145);
-$rosa-medio: rgb(247, 199, 201);
-$rosa-oscuro: rgba(252, 139, 140, 0.6);
-$rojo: rgb(174,52,70);
-$celeste-claro: rgba(29, 170, 182, 0.4);
-$celeste: rgba(29, 170, 182, 0.6); // fin colores y variables
-$negro: rgb(26,27,30);
-$negro-claro: rgba(26,27,30,0.8);
-$blanco:rgb(245,241,240);
-$blanco-claro:rgb(250,241,250);
 
 .main-contenedor {
   margin: 0 auto;
@@ -188,10 +177,11 @@ body {
 /* menu */
 
 .menu-hero {
+  display: grid;
+
   max-width: 100%;
   width: 100vw;
-  height: 82vh;
-  display: grid;
+  height: 84vh;
   margin-top: 20px;
 }
 
@@ -236,7 +226,6 @@ body {
       a {
         font-family:'PPTelegraf';
         font-weight: bold;
-
       }
     }
 
@@ -924,6 +913,7 @@ $color-solapa-4: rgb(253, 173, 192);
     grid-template-columns: 1fr;
   }
 }
+
 @media (min-width:768px) and (max-width:992px) {
   /* index.html */
 
@@ -945,17 +935,6 @@ $color-solapa-4: rgb(253, 173, 192);
 
 @media (max-width:768px) {
   /* header */
-
-  .header-mobile {
-    display: block;
-    height: min-content;
-  }
-
-  .navbar {
-    font-size: 2rem!important;
-
-  }
-
   .header-contenedor {
     display: none;
     width: 100vw;
@@ -986,7 +965,7 @@ $color-solapa-4: rgb(253, 173, 192);
 
   /* index.html */
   .menu-hero {
-    height: 55vh;
+    height: 50vh;
     margin-bottom: 8vw;
 
     .hero {

@@ -87,6 +87,8 @@ const sintes = [
 
 let solapas = document.querySelectorAll(".solapa");
 let alerta = document.getElementById("alerta");
+let nav = document.querySelector(".header-mobile");
+let navMenu = document.querySelector(".nav-menu");
 
 window.addEventListener("DOMContentLoaded", function() {
   navToggle();
@@ -95,10 +97,7 @@ window.addEventListener("DOMContentLoaded", function() {
   funcionalidadFiltros();
 });
 
-
-let nav = document.querySelector(".header-mobile");
-let navMenu = document.querySelector(".nav-menu");
-
+// header-mobile
 
 function navToggle() {
   nav.addEventListener("click", (e) => {
@@ -108,6 +107,9 @@ function navToggle() {
     }
   });
 }
+
+// fin header-mobile
+
 
 // solapas.html
 /*
