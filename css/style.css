@@ -1,10 +1,30 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@font-face {
+  src: url("../fuentes/Disket-Rostype/Disket-Mono-Regular.ttf");
+  font-family: Disket;
+  font-weight: normal; }
+
+@font-face {
+  src: url("../fuentes/Disket-Rostype/Disket-Mono-Bold.ttf");
+  font-family: Disket;
+  font-weight: bold; }
+
+@font-face {
+  src: url("../fuentes/PPTelegraf/PPTelegraf-Regular.otf");
+  font-family: PPTelegraf;
+  font-weight: normal; }
+
+@font-face {
+  src: url("../fuentes/PPTelegraf/PPTelegraf-UltraBold.otf");
+  font-family: PPTelegraf;
+  font-weight: bold; }
+
 .header-mobile {
   display: none;
   position: relative;
   height: 50px;
-  z-index: 2; }
+  z-index: 3; }
   .header-mobile .nav-logo {
     width: 160px;
     line-height: 50px;
@@ -15,15 +35,19 @@
 
 .nav-menu {
   position: absolute;
-  top: 50px;
+  top: -200px;
   width: 100%;
   padding: 0;
-  background-color: #ae3446; }
+  background-color: #eac291;
+  transition: top 0.7s ease-in-out;
+  z-index: 2; }
   .nav-menu li {
     width: 100%;
     height: 30px;
-    font-size: 2rem;
-    padding: 5px 0 5px 20px; }
+    font-size: 1.8rem;
+    padding: 5px 0 5px 20px;
+    text-transform: uppercase;
+    font-weight: 600; }
   .nav-menu li a {
     width: 100%;
     height: inherit;
@@ -33,12 +57,15 @@
   .nav-menu li a:hover {
     background-color: #1c1c1c; }
 
+.mostrar-nav {
+  top: 50px;
+  background-color: #eac291; }
+
 .nav-toggle {
   display: block;
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: #11999e;
   cursor: pointer; }
 
 span.icon-bar {
@@ -84,26 +111,6 @@ span.icon-bar {
     display: flex;
     justify-content: space-between;
     align-items: center; } }
-
-@font-face {
-  src: url("../fuentes/Disket-Rostype/Disket-Mono-Regular.ttf");
-  font-family: Disket;
-  font-weight: normal; }
-
-@font-face {
-  src: url("../fuentes/Disket-Rostype/Disket-Mono-Bold.ttf");
-  font-family: Disket;
-  font-weight: bold; }
-
-@font-face {
-  src: url("../fuentes/PPTelegraf/PPTelegraf-Regular.otf");
-  font-family: PPTelegraf;
-  font-weight: normal; }
-
-@font-face {
-  src: url("../fuentes/PPTelegraf/PPTelegraf-UltraBold.otf");
-  font-family: PPTelegraf;
-  font-weight: bold; }
 
 html {
   font-size: 62.25%; }
@@ -777,7 +784,6 @@ body {
   /* header */
   .header-contenedor {
     display: none;
-    width: 100vw;
     border-bottom: 1px solid #000; }
     .header-contenedor .header-superior {
       height: min-content;
@@ -856,8 +862,6 @@ body {
 @media (max-width: 576px) {
   .hero {
     height: 400px; }
-  .footer-contenedor__redes {
-    gap: 10px; }
   #subtemas-novedades__subtemas {
     height: min-content;
     margin-bottom: 2vh; }
@@ -902,4 +906,10 @@ body {
     .articulo-principal__info h4 {
       font-size: 3rem; }
     .articulo-principal__info p {
-      display: none; } }
+      display: none; }
+  .footer-contenedor__redes {
+    gap: 10px; } }
+
+@media (max-width: 480px) {
+  .menu-hero {
+    height: 40vh; } }

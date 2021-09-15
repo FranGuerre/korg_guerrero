@@ -1,31 +1,5 @@
-@import "_colores.scss";
+@import "_colores-fuentes.scss";
 @import "_header.scss";
-// Tipografías
-
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-// Disket
-@font-face {
-  src: url("../fuentes/Disket-Rostype/Disket-Mono-Regular.ttf");
-  font-family: Disket;
-  font-weight: normal;
-}
-@font-face {
-  src: url("../fuentes/Disket-Rostype/Disket-Mono-Bold.ttf");
-  font-family: Disket;
-  font-weight: bold;
-}
-// PPTelegraf
-@font-face {
-  src:url("../fuentes/PPTelegraf/PPTelegraf-Regular.otf");
-  font-family:PPTelegraf;
-  font-weight:normal;
-}
-@font-face {
-  src:url("../fuentes/PPTelegraf/PPTelegraf-UltraBold.otf");
-  font-family:PPTelegraf;
-  font-weight:bold;
-}
-// fin Tipografías
 
 html {
   font-size: 62.25%;
@@ -916,7 +890,6 @@ $color-solapa-4: rgb(253, 173, 192);
 
 @media (min-width:768px) and (max-width:992px) {
   /* index.html */
-
   #subtemas-novedades__subtemas {
     height: 200px;
     display: grid;
@@ -937,7 +910,7 @@ $color-solapa-4: rgb(253, 173, 192);
   /* header */
   .header-contenedor {
     display: none;
-    width: 100vw;
+    // width: 100vw;
     border-bottom: 1px solid #000;
 
     .header-superior {
@@ -1099,10 +1072,6 @@ $color-solapa-4: rgb(253, 173, 192);
     height: 400px;
   }
 
-  .footer-contenedor__redes {
-    gap: 10px;
-  }
-
   #subtemas-novedades__subtemas {
     height: min-content;
     margin-bottom: 2vh;
@@ -1205,4 +1174,18 @@ $color-solapa-4: rgb(253, 173, 192);
   }
 
   // fin artistas.html
+
+  // footer.html
+
+  .footer-contenedor__redes {
+    gap: 10px;
+  }
+
+  // fin footer.html
+}
+
+@media (max-width:480px) {
+  .menu-hero {
+    height: 40vh;
+  }
 }

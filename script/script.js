@@ -103,13 +103,12 @@ function navToggle() {
   nav.addEventListener("click", (e) => {
     if(e.target.classList.contains("nav-toggle")) {
       e.target.classList.toggle("active");
-      navMenu.classList.toggle("active");
+      navMenu.classList.toggle("mostrar-nav");
     }
   });
 }
 
 // fin header-mobile
-
 
 // solapas.html
 /*
