@@ -1,0 +1,38 @@
+.footer {
+  max-width: 100%;
+  width: 100vw;
+  border-top: 1px solid rgb(60,60,60);
+}
+
+.footer-contenedor {
+  margin: 0 auto;
+
+  .footer-contenedor__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+}
+.acerca-footer {
+  font-size: 1.6rem;
+}
+
+.logo-footer {
+  width: 160px;
+}
+
+.footer-contenedor__redes {
+  display: flex;
+  gap: 30px;
+}
+
+.redes__icono-footer {
+  width: 30px;
+}
+
+.footer-contenedor__pie {
+  text-align: right;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}

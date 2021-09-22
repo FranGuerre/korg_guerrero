@@ -1,5 +1,6 @@
 @import "_colores-fuentes.scss";
-@import "_header.scss";
+@import "_headers.scss";
+@import "_footer.scss";
 
 html {
   font-size: 62.25%;
@@ -92,35 +93,7 @@ body {
   background-image: linear-gradient(to top left, rgba(47,67,83,0.3) 0%, #d2ccc4 74%);
 }
 
-/* Headers */
-.header-contenedor {
-  max-width: 100%;
-  width: 100vw;
-  height: 40px;
-  // border-bottom: 1px solid #000;
-  .header-superior {
-    height: inherit;
-    // display: flex;
-    display:none;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    font-size: 1.8rem;
-
-    &__redes {
-      display: flex;
-      width: min-content;
-      gap: 18px;
-
-      .redes__icono-header {
-        width: 26px;
-        height: auto;
-      }
-    }
-  }
-}
-
-// header y presentación del resto de las páginas
+// header y presentación
 
 header nav {
   display:none;
@@ -150,7 +123,7 @@ header nav {
   }
 }
 
-// fin header y presentación del resto de las páginas
+// fin header y presentación
 
 /* index.html;               index.html;                index.html*/
 
@@ -847,45 +820,6 @@ $color-solapa-4: rgb(253, 173, 192);
   background-image: url("../img/iconos/icono-condiciones.png");
 }
 
-/* footer                  footer                 footer */
-.footer {
-  max-width: 100%;
-  width: 100vw;
-  border-top: 1px solid rgb(60,60,60);
-}
-
-.footer-contenedor {
-  margin: 0 auto;
-
-  .footer-contenedor__contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-  }
-}
-.acerca-footer {
-  font-size: 1.6rem;
-}
-
-.logo-footer {
-  width: 160px;
-}
-
-.footer-contenedor__redes {
-  display: flex;
-  gap: 30px;
-}
-
-.redes__icono-footer {
-  width: 30px;
-}
-
-.footer-contenedor__pie {
-  text-align: right;
-  padding-bottom: 20px;
-  font-size: 1.2rem;
-}
 
 // media queries                  media queries
 
