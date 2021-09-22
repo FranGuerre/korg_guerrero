@@ -38,15 +38,17 @@ a:hover {
   max-width: 1300px;
 }
 
-.fondo {
-  position:fixed;
+.padding-pagina {
+  padding:0 20px;
 
-  left:0;
-  top:0;
-  width:100vw;
-  height:100%;
-  z-index: -1;
+  @media (max-width:768px) {
+    padding:0 10px;
+  }
+  @media (max-width:576px) {
+    padding:0 6px;
+  }
 }
+
 .separador {
   font-family:'PPTelegraf';
   font-weight: bold;
@@ -65,12 +67,10 @@ a:hover {
 .separador--grande {
   @extend .separador;
 
-
   margin-bottom: 10px;
 }
 
 .separador--chico {
-
   @extend .separador;
 
   font-size:2rem;
@@ -1109,13 +1109,6 @@ $color-solapa-4: rgb(253, 173, 192);
 
   // fin artistas.html
 
-  // footer.html
-
-  .footer-contenedor__redes {
-    gap: 10px;
-  }
-
-  // fin footer.html
 }
 
 @media (max-width:480px) {

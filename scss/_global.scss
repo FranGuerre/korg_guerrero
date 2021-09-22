@@ -1,0 +1,11 @@
+.width-pagina {
+  max-width: 1300px;
+}
+
+.padding-pagina {
+  padding:0 20px;
+
+  @media (max-width:768px) {
+    padding:0 10px;
+  }
+}

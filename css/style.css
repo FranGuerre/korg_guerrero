@@ -26,9 +26,8 @@
   height: 50px;
   z-index: 3; }
   .header-mobile .nav-logo {
-    width: 160px;
+    width: 120px;
     line-height: 50px;
-    padding: 0 20px;
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase; }
@@ -144,6 +143,16 @@ span.icon-bar {
   padding-bottom: 20px;
   font-size: 1.2rem; }
 
+@media (max-width: 576px) {
+  .footer-contenedor__redes {
+    gap: 10px; } }
+
+@media (max-width: 480px) {
+  .footer-contenedor .footer-contenedor__contenido {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around; } }
+
 html {
   font-size: 62.25%; }
 
@@ -172,13 +181,14 @@ a:hover {
 .width-pagina {
   max-width: 1300px; }
 
-.fondo {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100%;
-  z-index: -1; }
+.padding-pagina {
+  padding: 0 20px; }
+  @media (max-width: 768px) {
+    .padding-pagina {
+      padding: 0 10px; } }
+  @media (max-width: 576px) {
+    .padding-pagina {
+      padding: 0 6px; } }
 
 .separador, .separador--grande, .separador--chico {
   font-family: 'PPTelegraf';
@@ -885,9 +895,7 @@ header nav {
     .articulo-principal__info h4 {
       font-size: 3rem; }
     .articulo-principal__info p {
-      display: none; }
-  .footer-contenedor__redes {
-    gap: 10px; } }
+      display: none; } }
 
 @media (max-width: 480px) {
   .menu-hero {
