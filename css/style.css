@@ -115,8 +115,7 @@ span.icon-bar {
     align-items: center; } }
 
 .footer {
-  max-width: 100%;
-  width: 100vw;
+  width: 100%;
   border-top: 1px solid #3c3c3c; }
 
 .footer-contenedor {
