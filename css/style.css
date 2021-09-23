@@ -126,7 +126,7 @@ span.icon-bar {
     margin: 20px 0; }
 
 .acerca-footer {
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
 
 .logo-footer {
   width: 160px; }
@@ -500,35 +500,44 @@ header nav {
     border: 1px solid #3c3c3c;
     cursor: pointer; }
   .solapa .solapa__contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    justify-items: center; }
   .solapa .contenido__producto {
-    width: min-content;
+    width: max-content;
+    max-width: 320px;
     height: min-content;
     display: flex;
     flex-wrap: wrap;
     transition: all 0.2s;
     background-color: rgba(86, 85, 83, 0);
-    padding: 0 3px 10px; }
+    padding: 0 3px 10px;
+    margin: 5px 0;
+    border: 1px dashed #ae3446; }
+    .solapa .contenido__producto img {
+      width: 330px;
+      height: 220px;
+      transform: scale(1.03); }
+    .solapa .contenido__producto h4 {
+      font-size: 2.2rem;
+      color: #f5f1f0;
+      -webkit-text-stroke-width: 1.4px;
+      -webkit-text-stroke-color: #1a1b1e;
+      transform: skewX(-12deg); }
   .solapa .contenido__producto:hover {
     background-color: rgba(86, 85, 83, 0.4); }
-  .solapa .contenido__producto img {
-    width: 300px;
-    height: 200px; }
-  .solapa .contenido__producto h4 {
-    font-size: 1.5rem; }
   .solapa .contenido__producto--info {
     overflow: scroll;
-    height: 40px; }
+    height: 40px;
+    border-top: 1px dashed #f7c7c9; }
   .solapa .contenido__producto p {
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
 
 #solapa-1 {
-  background-color: #ae3446; }
+  background-color: #f5f1f0; }
   #solapa-1 .solapa__nombre {
     right: 449px;
-    background-color: #ae3446; }
+    background-color: #f5f1f0; }
 
 #solapa-2 {
   background-color: #f5f1f0; }
@@ -537,17 +546,17 @@ header nav {
     background-color: #f5f1f0; }
 
 #solapa-3 {
-  background-color: #1daab6; }
+  background-color: #f5f1f0; }
   #solapa-3 .solapa__nombre {
     right: 149px;
-    background-color: #1daab6; }
+    background-color: #f5f1f0; }
 
 #solapa-4 {
-  background-color: #fdadc0;
+  background-color: #f5f1f0;
   z-index: 1; }
   #solapa-4 .solapa__nombre {
     right: -1px;
-    background-color: #fdadc0; }
+    background-color: #f5f1f0; }
 
 /* soporte.html;               soporte.html;                soporte.html*/
 /*sección de preguntas frecuentes*/
@@ -804,8 +813,19 @@ header nav {
         height: 100%;
         z-index: 1; }
   /* fin index.html */
-  .solapa .solapa__nombre {
-    width: 120px; }
+  .solapa {
+    padding: 30px 0; }
+    .solapa .solapa__contenido {
+      grid-template-columns: repeat(auto-fill, minmax(550px, 1fr)); }
+    .solapa .contenido__producto {
+      max-width: 550px; }
+      .solapa .contenido__producto img {
+        width: 495px;
+        height: 330px; }
+      .solapa .contenido__producto h4 {
+        font-size: 2.4rem; }
+    .solapa .solapa__nombre {
+      width: 120px; }
   #solapa-1 .solapa__nombre {
     right: 359px; }
   #solapa-2 .solapa__nombre {
@@ -863,6 +883,14 @@ header nav {
     height: min-content;
     gap: 5px;
     border: none; }
+  .solapa .solapa__contenido {
+    grid-template-columns: 1fr; }
+  .solapa .contenido__producto img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1); }
+  .solapa .solapa__nombre {
+    width: 120px; }
   .solapa .solapa__nombre {
     width: 90px; }
   #solapa-1 .solapa__nombre {

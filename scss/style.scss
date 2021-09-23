@@ -119,7 +119,7 @@ header nav {
     // text-shadow: -3px 2px 0 rgb(252,139,140), -3px 2px 0 rgb(252,139,140);
     text-transform: uppercase;
     -webkit-text-stroke-width: 1.4px;
--webkit-text-stroke-color: $dorado;
+    -webkit-text-stroke-color: $dorado;
   }
 }
 
@@ -412,14 +412,15 @@ header nav {
 /* termina sección novedades */
 
 /* catalogo.html               catalogo.html                catalogo.html*/
+
 $solapa__nombre-width: 150px;
 $solapa__nombre-width-tablet: 120px;
 $solapa__nombre-width-mobile: 90px;
 
-$color-solapa-1: rgb(174,52,70);
+$color-solapa-1: rgb(245,241,240);
 $color-solapa-2: rgb(245,241,240);
-$color-solapa-3: rgb(29, 170, 182);
-$color-solapa-4: rgb(253, 173, 192);
+$color-solapa-3: rgb(245,241,240);
+$color-solapa-4: rgb(245,241,240);
 
 .mostrar-solapa {
   z-index: 2;
@@ -468,41 +469,50 @@ $color-solapa-4: rgb(253, 173, 192);
 
   // contenido de solapa
   .solapa__contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    justify-items: center;
   }
 
   .contenido__producto {
-    width: min-content;
+    width: max-content;
+    max-width:320px;
     height: min-content;
     display: flex;
     flex-wrap: wrap;
     transition: all 0.2s;
     background-color: rgba(86,85,83,0);
     padding: 0 3px 10px;
+    margin: 5px 0;
+    border:1px dashed $rojo;
+
+    & img {
+      width: 330px;
+      height: 220px;
+      transform:scale(1.03);
+    }
+
+    & h4 {
+      font-size: 2.2rem;
+      color:$blanco;
+      -webkit-text-stroke-width: 1.4px;
+      -webkit-text-stroke-color: $negro;
+      transform: skewX(-12deg);
+    }
   }
 
   .contenido__producto:hover {
     background-color: rgba(86,85,83,0.4);
   }
 
-  .contenido__producto img {
-    width: 300px;
-    height: 200px;
-  }
-
-  .contenido__producto h4 {
-    font-size: 1.5rem;
-  }
-
   .contenido__producto--info {
     overflow: scroll;
     height: 40px;
+    border-top:1px dashed $rosa-medio;
   }
 
   .contenido__producto p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -542,6 +552,7 @@ $color-solapa-4: rgb(253, 173, 192);
     background-color: $color-solapa-4;
   }
 }
+
 /* soporte.html;               soporte.html;                soporte.html*/
 
 /*sección de preguntas frecuentes*/
@@ -898,11 +909,31 @@ $color-solapa-4: rgb(253, 173, 192);
   /* fin index.html */
 
   // catalogo.html
+  .solapa  {
+    padding:30px 0;
+    .solapa__contenido {
+      grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
 
-  .solapa .solapa__nombre {
+    }
+
+    .contenido__producto {
+
+      max-width:550px;
+
+      & img {
+        width: (330px * 1.5);
+        height: (220px * 1.5);
+      }
+
+      & h4 {
+        font-size: 2.4rem;
+      }
+    }
+
+  .solapa__nombre {
     width: $solapa__nombre-width-tablet;
   }
-
+}
   #solapa-1 {
 
     & .solapa__nombre {
@@ -1025,7 +1056,25 @@ $color-solapa-4: rgb(253, 173, 192);
   }
 
   // catalogo.html
+  .solapa  {
+    .solapa__contenido {
+      grid-template-columns: 1fr;
 
+    }
+
+    .contenido__producto {
+      // max-width:100%;
+      & img {
+        max-width:100%;
+        height:auto;
+        transform:scale(1);
+      }
+    }
+
+    .solapa__nombre {
+      width: $solapa__nombre-width-tablet;
+    }
+  }
   .solapa .solapa__nombre {
     width: $solapa__nombre-width-mobile;
   }
