@@ -175,8 +175,7 @@ a:hover {
 /* General */
 .main-contenedor {
   margin: 0 auto;
-  width: 100vw;
-  max-width: 100%; }
+  width: 100%; }
 
 .width-pagina {
   max-width: 1300px; }
