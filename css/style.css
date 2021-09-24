@@ -520,7 +520,7 @@ header nav {
       color: #f5f1f0;
       -webkit-text-stroke-width: 1.4px;
       -webkit-text-stroke-color: #1a1b1e;
-      transform: skewX(-12deg); }
+      transform: skewX(-18deg); }
   .solapa .contenido__producto:hover {
     background-color: rgba(86, 85, 83, 0.4); }
   .solapa .contenido__producto--info {
@@ -924,4 +924,21 @@ header nav {
 
 @media (max-width: 480px) {
   .menu-hero {
-    height: 40vh; } }
+    height: 40vh; }
+  .catalogo-contenedor {
+    margin-top: 155px; }
+  .solapa .solapa__nombre {
+    height: 150px;
+    width: 36px;
+    top: -150px;
+    letter-spacing: -6px;
+    text-orientation: upright;
+    writing-mode: vertical-lr; }
+  #solapa-1 .solapa__nombre {
+    right: 107px; }
+  #solapa-2 .solapa__nombre {
+    right: 71px; }
+  #solapa-3 .solapa__nombre {
+    right: 35px; }
+  #solapa-4 .solapa__nombre {
+    right: -1px; } }
