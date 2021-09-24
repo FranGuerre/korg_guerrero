@@ -30,7 +30,7 @@ a:hover {
 
 .main-contenedor {
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
 }
 
 .width-pagina {
@@ -736,18 +736,16 @@ $color-solapa-4: rgb(245,241,240);
 /* sección de articulos */
 .articulos-artistas {
   width:100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+  grid-gap: 10px;
   margin: 60px 0;
   justify-content: space-between;
 
   .articulos-artistas__articulo {
     display: flex;
     flex-flow: wrap;
-    gap: 4px;
-    width: min-content;
-    height: min-content;
+    gap: 8px;
     padding-bottom: 5px;
 
     &:hover {
@@ -755,18 +753,20 @@ $color-solapa-4: rgb(245,241,240);
     }
 
     & img {
-      width: 280px;
+      width:100%;
       display: inline-block;
     }
 
     & h4 {
-      font-size: 1.6rem;
+      font-size: 2rem;
       display: inline;
-      background-color: rgba(86,85,83,0.6);
+      background-color: $negro;
+      color:$blanco-claro;
+
     }
 
     & p {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
   }
 }
@@ -1002,9 +1002,12 @@ $color-solapa-4: rgb(245,241,240);
   // fin acerca.html
 
 // artistas.html
+.articulos-artistas {
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+
+}
 .articulo-principal {
   height: 400px;
-
 }
 
 .articulo-principal__info {
@@ -1157,7 +1160,16 @@ $color-solapa-4: rgb(245,241,240);
       display:none;
     }
   }
+  .articulos-artistas {
+    padding:0 40px;
 
+    .articulos-artistas__articulo {
+
+      & p {
+        font-size: 1.4rem;
+      }
+    }
+  }
   // fin artistas.html
 
 }
@@ -1207,4 +1219,12 @@ $color-solapa-4: rgb(245,241,240);
     }
   }
   // fin catalogo.html
+
+  // artistas.html
+
+  .articulos-artistas {
+    padding:0 20px;
+
+  }
+  // fin artistas.html
 }
