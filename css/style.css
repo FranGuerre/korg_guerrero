@@ -203,10 +203,11 @@ a:hover {
   text-transform: uppercase; }
 
 .separador--grande {
+  font-size: 2rem;
   margin-bottom: 10px; }
 
 .separador--chico {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 5px; }
 
 /* termina General */
@@ -613,8 +614,7 @@ header nav {
   margin: 20px 0;
   display: grid;
   justify-items: center;
-  grid-row-gap: 10px;
-  padding: 0 16px; }
+  grid-row-gap: 10px; }
 
 .preguntas-frecuentes__categoria {
   display: none; }
@@ -644,18 +644,20 @@ header nav {
 #contacto__contenido {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   grid-column-gap: 10px;
   margin: 20px 0; }
 
 #contenido__formulario {
   display: grid;
   max-width: 500px;
-  min-width: 320px;
+  min-width: 300px;
   padding: 20px;
   grid-row-gap: 5px;
   font-size: 1.6rem;
   border: 1px solid rgba(60, 60, 60, 0.5); }
+  #contenido__formulario textarea {
+    resize: none; }
 
 .formulario__btn {
   width: 150px;
@@ -831,10 +833,12 @@ header nav {
     right: 119px; }
   #solapa-4 .solapa__nombre {
     right: -1px; }
+  .filtros {
+    width: 100%; }
   #contacto__contenido {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-column-gap: 10px;
     margin: 20px 0; }
     #contacto__contenido form {

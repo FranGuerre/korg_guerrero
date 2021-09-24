@@ -67,13 +67,14 @@ a:hover {
 .separador--grande {
   @extend .separador;
 
+  font-size:2rem;
   margin-bottom: 10px;
 }
 
 .separador--chico {
   @extend .separador;
 
-  font-size:2rem;
+  font-size:1.8rem;
   margin-bottom: 5px;
 }
 
@@ -629,7 +630,6 @@ $color-solapa-4: rgb(245,241,240);
   display: grid;
   justify-items: center;
   grid-row-gap: 10px;
-  padding:0 16px;
 }
 
 .preguntas-frecuentes__categoria {
@@ -668,7 +668,7 @@ $color-solapa-4: rgb(245,241,240);
 #contacto__contenido {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   grid-column-gap:10px;
   margin: 20px 0;
 }
@@ -676,11 +676,15 @@ $color-solapa-4: rgb(245,241,240);
 #contenido__formulario {
   display: grid;
   max-width: 500px;
-  min-width:320px;
+  min-width:300px;
   padding: 20px;
   grid-row-gap: 5px;
   font-size: 1.6rem;
   border: 1px solid rgba(60,60,60,0.5);
+
+  textarea {
+    resize: none;
+  }
 }
 
 .formulario__btn {
@@ -694,6 +698,8 @@ $color-solapa-4: rgb(245,241,240);
   padding-top:20px;
   padding-left:20px;
 }
+
+
 
 /* artistas.html               artistas.html              artistas.html */
 
@@ -957,10 +963,14 @@ $color-solapa-4: rgb(245,241,240);
   // fin catalogo.html
 
   // soporte.html
+  .filtros {
+    width: 100%;
+  }
+
   #contacto__contenido {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-column-gap:10px;
     margin: 20px 0;
 
