@@ -475,9 +475,7 @@ $color-solapa-4: rgb(245,241,240);
   }
 
   .contenido__producto {
-    width: max-content;
-    max-width:320px;
-    height: min-content;
+    // height: min-content;
     display: flex;
     flex-wrap: wrap;
     transition: all 0.2s;
@@ -487,8 +485,8 @@ $color-solapa-4: rgb(245,241,240);
     border:1px dashed $rojo;
 
     & img {
-      width: 330px;
-      height: 220px;
+      display:block;
+      width:100%;
       transform:scale(1.03);
     }
 

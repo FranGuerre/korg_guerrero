@@ -504,9 +504,6 @@ header nav {
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     justify-items: center; }
   .solapa .contenido__producto {
-    width: max-content;
-    max-width: 320px;
-    height: min-content;
     display: flex;
     flex-wrap: wrap;
     transition: all 0.2s;
@@ -515,8 +512,8 @@ header nav {
     margin: 5px 0;
     border: 1px dashed #ae3446; }
     .solapa .contenido__producto img {
-      width: 330px;
-      height: 220px;
+      display: block;
+      width: 100%;
       transform: scale(1.03); }
     .solapa .contenido__producto h4 {
       font-size: 2.2rem;
