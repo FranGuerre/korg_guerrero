@@ -848,10 +848,11 @@ $color-solapa-4: rgb(245,241,240);
   .menu-hero {
     height:95vh;
   }
+
   #subtemas-novedades__subtemas {
     height: 200px;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
     margin-bottom: 100px;
   }
   /* fin index.html */
@@ -911,7 +912,7 @@ $color-solapa-4: rgb(245,241,240);
   /* fin index.html */
 
   // catalogo.html
-  .solapa  {
+  .solapa {
     padding:30px 0;
     .solapa__contenido {
       grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
@@ -1051,13 +1052,7 @@ $color-solapa-4: rgb(245,241,240);
     height: inherit;
     display: grid;
     grid-template-rows: auto auto;
-  }
-
-  #novedades__ul-noticias {
-    align-self: end;
-    height: min-content;
-    gap: 5px;
-    border: none;
+    margin-bottom:30px;
   }
 
   // catalogo.html

@@ -46,8 +46,8 @@
   .nav-menu li {
     width: 100%;
     height: 30px;
-    font-size: 1.8rem;
-    padding: 5px 0 5px 20px;
+    font-size: 2rem;
+    padding: 5px 0 5px 10px;
     text-transform: uppercase;
     font-weight: 600; }
   .nav-menu li a {
@@ -775,7 +775,7 @@ header nav {
   #subtemas-novedades__subtemas {
     height: 200px;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     margin-bottom: 100px; }
   /* fin index.html */
   .menu {
@@ -878,12 +878,8 @@ header nav {
   #subtemas-novedades__novedades {
     height: inherit;
     display: grid;
-    grid-template-rows: auto auto; }
-  #novedades__ul-noticias {
-    align-self: end;
-    height: min-content;
-    gap: 5px;
-    border: none; }
+    grid-template-rows: auto auto;
+    margin-bottom: 30px; }
   .solapa .solapa__contenido {
     grid-template-columns: 1fr; }
   .solapa .contenido__producto img {
