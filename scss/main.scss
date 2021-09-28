@@ -417,11 +417,6 @@ $solapa__nombre-width: 150px;
 $solapa__nombre-width-tablet: 120px;
 $solapa__nombre-width-mobile: 90px;
 
-$color-solapa-1: rgb(245,241,240);
-$color-solapa-2: rgb(245,241,240);
-$color-solapa-3: rgb(245,241,240);
-$color-solapa-4: rgb(245,241,240);
-
 .mostrar-solapa {
   z-index: 2;
 }
@@ -442,7 +437,7 @@ $color-solapa-4: rgb(245,241,240);
   grid-template-rows: 1fr;
   width: 100%;
   height: min-content;
-  border: 1px solid rgb(60,60,60);
+  border: 1px solid $negro;
   margin-bottom: 40px;
 }
 
@@ -451,7 +446,7 @@ $color-solapa-4: rgb(245,241,240);
   padding: 30px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  background-color: #fff;
+  background-color: $blanco;
 
   .solapa__nombre {
     display: grid;
@@ -463,7 +458,8 @@ $color-solapa-4: rgb(245,241,240);
     top: -36px;
     right: -2px;
     font-size: 1.3rem;
-    border: 1px solid rgb(60,60,60);
+    background-color: $blanco;
+    border: 1px solid $negro;
     cursor: pointer;
   }
 
@@ -471,6 +467,7 @@ $color-solapa-4: rgb(245,241,240);
   .solapa__contenido {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-gap:5px;
     justify-items: center;
   }
 
@@ -484,9 +481,7 @@ $color-solapa-4: rgb(245,241,240);
     border:1px dashed $rojo;
 
     & img {
-      display:block;
       width:100%;
-      transform:scale(1.03);
     }
 
     & h4 {
@@ -514,39 +509,30 @@ $color-solapa-4: rgb(245,241,240);
 }
 
 #solapa-1 {
-  background-color: $color-solapa-1;
 
   & .solapa__nombre {
     right: ((3 * $solapa__nombre-width) - 1px);
-    background-color: $color-solapa-1;
   }
 }
 
 #solapa-2 {
-  background-color: $color-solapa-2;
-
   & .solapa__nombre {
     right: ((2 * $solapa__nombre-width) - 1px);
-    background-color: $color-solapa-2;
   }
 }
 
 #solapa-3 {
-  background-color: $color-solapa-3;
 
   & .solapa__nombre {
     right: ($solapa__nombre-width - 1px);
-    background-color: $color-solapa-3;
   }
 }
 
 #solapa-4 {
-  background-color: $color-solapa-4;
   z-index: 1;
 
   & .solapa__nombre {
     right: -1px;
-    background-color: $color-solapa-4;
   }
 }
 
@@ -780,6 +766,7 @@ $color-solapa-4: rgb(245,241,240);
   grid-column-gap: 20px;
   margin: 0 auto;
   justify-content: start;
+  text-align:justify;
 
   p {
     font-size: 2rem;
@@ -789,6 +776,7 @@ $color-solapa-4: rgb(245,241,240);
 
 .acerca-vinculos {
   display: flex;
+  flex-wrap:wrap;
   justify-content: space-evenly;
   margin: 40px 0;
 
@@ -850,8 +838,8 @@ $color-solapa-4: rgb(245,241,240);
   }
 
   #subtemas-novedades__subtemas {
-    height: 200px;
     display: grid;
+    height: 200px;
     grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
     margin-bottom: 100px;
   }
