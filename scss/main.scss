@@ -21,7 +21,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+.width-chico {
+  width:400px;
+}
 a:hover {
   color: inherit;
 }
@@ -30,12 +32,12 @@ a:hover {
 
 .main-contenedor {
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
 }
 
 .width-pagina {
   max-width: 1300px;
-  width:100%;
+  // width:100%;
 }
 
 .padding-pagina {
@@ -551,7 +553,6 @@ $solapa__nombre-width-mobile: 90px;
 
 .filtros {
   $btn-width:48px;
-
   width: 50%;
   height: 50px;
   display: flex;
@@ -565,7 +566,6 @@ $solapa__nombre-width-mobile: 90px;
     align-items: center;
     text-align: center;
     margin:0 0.5rem;
-    padding:0;
 
     label {
       display:block;
@@ -587,7 +587,6 @@ $solapa__nombre-width-mobile: 90px;
         width:$btn-width;
 
         &:hover {
-
           border:none;
           outline:none;
         }
@@ -603,7 +602,7 @@ $solapa__nombre-width-mobile: 90px;
   .filtros--linea {
     background-color: $negro-claro;
     opacity:1;
-    width:200px;
+    width:100%;
     height:2px;
     margin-top:0.7rem;
     align-self:start;
@@ -952,17 +951,19 @@ $solapa__nombre-width-mobile: 90px;
 
   // soporte.html
   .filtros {
-    width: 100%;
+    width:100%;
   }
 
   #contacto__contenido {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
     grid-column-gap:10px;
     margin: 20px 0;
 
     form {
+      width:100%;
       justify-self:center;
       margin-bottom:40px;
       max-height:600px;
@@ -1015,6 +1016,7 @@ $solapa__nombre-width-mobile: 90px;
 }
 
 // fin artistas.html
+
   /* footer */
   .redes__icono-footer {
     width: 25px;
