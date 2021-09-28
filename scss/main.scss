@@ -35,6 +35,7 @@ a:hover {
 
 .width-pagina {
   max-width: 1300px;
+  width:100%;
 }
 
 .padding-pagina {
@@ -133,7 +134,7 @@ header nav {
   display: grid;
 
   max-width: 100%;
-  width: 100vw;
+  width: 100%;
   height: 84vh;
   margin-top: 20px;
 }
@@ -560,7 +561,6 @@ $solapa__nombre-width-mobile: 90px;
   & li {
     display: flex;
     flex-flow: column;
-    // width:$btn-width;
     width:min-content;
     align-items: center;
     text-align: center;
@@ -875,7 +875,7 @@ $solapa__nombre-width-mobile: 90px;
   /* index.html */
   .menu-hero {
     height: 55vh;
-    margin-bottom: 8vw;
+    margin-bottom: 50px;
 
     .hero {
       height: min-content;
@@ -903,7 +903,7 @@ $solapa__nombre-width-mobile: 90px;
   .solapa {
     padding:30px 0;
     .solapa__contenido {
-      grid-template-columns: repeat(auto-fill,minmax(550px,1fr));
+      grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
 
     }
 
@@ -1055,7 +1055,6 @@ $solapa__nombre-width-mobile: 90px;
       & img {
         max-width:100%;
         height:auto;
-        transform:scale(1);
       }
     }
 

@@ -102,7 +102,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 function navFuncionalidad() {
   nav.addEventListener("click", (e) => {
-    if(e.target.classList.contains("nav-toggle") || e.target.classList.contains("icon-bar")) {      
+    if(e.target.classList.contains("nav-toggle") || e.target.classList.contains("icon-bar")) {
       navToggle.classList.toggle("active");
       navMenu.classList.toggle("mostrar-nav");
       nav.classList.toggle("background-active");
