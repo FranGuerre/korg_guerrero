@@ -115,10 +115,11 @@ header nav {
   justify-items: center;
 
   .presentacion__texto {
-    width: 60%;
+    width: 80%;
     font-size: 2rem;
     font-weight: lighter;
     color:$negro;
+    text-align:left;
     // text-shadow: -3px 2px 0 rgb(252,139,140), -3px 2px 0 rgb(252,139,140);
     text-transform: uppercase;
     -webkit-text-stroke-width: 1.4px;
@@ -355,7 +356,7 @@ header nav {
   grid-template-rows: auto 300px;
 }
 
-#novedades__ul-noticias {
+#novedades__noticias {
   position: relative;
   align-self: end;
   height: 300px;
@@ -371,7 +372,7 @@ header nav {
   }
 }
 
-.ul-noticias__caja {
+.noticias__caja {
   display: flex;
   justify-content: space-between;
   background-blend-mode:multiply;
@@ -380,38 +381,37 @@ header nav {
   padding: 18px;
   gap: 5px;
 
+
+  .caja-texto {
+    display: inline;
+
+    img {
+      float:right;
+      border: 1px solid $negro;
+      margin:0 0 4px 4px;
+    }
+
+    h4 {
+        font-size:1.6rem;
+        text-align: justify;
+      background-color: $rosa-medio;
+    }
+    p {
+      font-size:1.4rem;
+      text-align: justify;
+    }
+  }
+
   &:hover {
     background-image:url("../img/texturas/noise.png");
     background-color: $rosa-medio;
   }
 
-  &:hover h4 {
+  &:hover .caja-texto h4 {
     background-color: $rosa-oscuro;
   }
-
-  & img {
-    display: inline;
-    width: 120px;
-    height: 100%;
-    border: 1px solid #000;
-    shape-outside: border-box;
-    shape-margin: 0.8em;
-    shape-image-threshold: 0.5;
-  }
 }
 
-.caja-texto {
-  display: inline;
-
-  .caja-texto__titulo {
-    display: inline-block;
-    font-size: 1.2rem;
-  }
-
-  & h4 {
-    background-color: $rosa-medio;
-  }
-}
 /* termina sección novedades */
 
 /* catalogo.html               catalogo.html                catalogo.html*/
@@ -571,6 +571,7 @@ $solapa__nombre-width-mobile: 90px;
       display:block;
       text-transform: uppercase;
       font-size:1.2rem;
+      margin-bottom:5px;
     }
     div {
       display:flex;
@@ -865,8 +866,8 @@ $solapa__nombre-width-mobile: 90px;
   .main-header__presentacion {
 
     .presentacion__texto {
-      width: 70%;
-      font-size:2.3rem;
+      width:100%;
+      justify-content: start;
     }
   }
   /* fin header */

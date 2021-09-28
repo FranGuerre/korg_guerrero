@@ -241,10 +241,11 @@ header nav {
   align-items: center;
   justify-items: center; }
   .main-header__presentacion .presentacion__texto {
-    width: 60%;
+    width: 80%;
     font-size: 2rem;
     font-weight: lighter;
     color: #1a1b1e;
+    text-align: left;
     text-transform: uppercase;
     -webkit-text-stroke-width: 1.4px;
     -webkit-text-stroke-color: #eac291; }
@@ -419,7 +420,7 @@ header nav {
   display: grid;
   grid-template-rows: auto 300px; }
 
-#novedades__ul-noticias {
+#novedades__noticias {
   position: relative;
   align-self: end;
   height: 300px;
@@ -429,10 +430,10 @@ header nav {
   overflow: scroll;
   border: 0.7px solid #000;
   border-bottom: 2px solid #000; }
-  #novedades__ul-noticias li {
+  #novedades__noticias li {
     width: 100%; }
 
-.ul-noticias__caja {
+.noticias__caja {
   display: flex;
   justify-content: space-between;
   background-blend-mode: multiply;
@@ -440,27 +441,24 @@ header nav {
   border: 1px solid #000;
   padding: 18px;
   gap: 5px; }
-  .ul-noticias__caja:hover {
+  .noticias__caja .caja-texto {
+    display: inline; }
+    .noticias__caja .caja-texto img {
+      float: right;
+      border: 1px solid #1a1b1e;
+      margin: 0 0 4px 4px; }
+    .noticias__caja .caja-texto h4 {
+      font-size: 1.6rem;
+      text-align: justify;
+      background-color: #f7c7c9; }
+    .noticias__caja .caja-texto p {
+      font-size: 1.4rem;
+      text-align: justify; }
+  .noticias__caja:hover {
     background-image: url("../img/texturas/noise.png");
     background-color: #f7c7c9; }
-  .ul-noticias__caja:hover h4 {
+  .noticias__caja:hover .caja-texto h4 {
     background-color: rgba(252, 139, 140, 0.6); }
-  .ul-noticias__caja img {
-    display: inline;
-    width: 120px;
-    height: 100%;
-    border: 1px solid #000;
-    shape-outside: border-box;
-    shape-margin: 0.8em;
-    shape-image-threshold: 0.5; }
-
-.caja-texto {
-  display: inline; }
-  .caja-texto .caja-texto__titulo {
-    display: inline-block;
-    font-size: 1.2rem; }
-  .caja-texto h4 {
-    background-color: #f7c7c9; }
 
 /* termina sección novedades */
 /* catalogo.html               catalogo.html                catalogo.html*/
@@ -573,7 +571,8 @@ header nav {
     .filtros li label {
       display: block;
       text-transform: uppercase;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      margin-bottom: 5px; }
     .filtros li div {
       display: flex;
       align-content: center;
@@ -783,8 +782,8 @@ header nav {
   .menu {
     display: none; }
   .main-header__presentacion .presentacion__texto {
-    width: 70%;
-    font-size: 2.3rem; }
+    width: 100%;
+    justify-content: start; }
   /* fin header */
   /* index.html */
   .menu-hero {
