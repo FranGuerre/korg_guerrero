@@ -504,12 +504,14 @@ header nav {
   .solapa .solapa__contenido {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-auto-flow: dense;
     grid-gap: 5px;
     justify-items: center; }
   .solapa .contenido__producto {
     display: flex;
     flex-wrap: wrap;
-    transition: all 0.2s;
+    justify-content: center;
+    transition: all 0.1s;
     background-color: rgba(86, 85, 83, 0);
     padding: 0 3px 10px;
     margin: 5px 0;
@@ -523,7 +525,7 @@ header nav {
       -webkit-text-stroke-color: #1a1b1e;
       transform: skewX(-18deg); }
   .solapa .contenido__producto:hover {
-    background-color: rgba(86, 85, 83, 0.4); }
+    border: 2px dashed #ae3446; }
   .solapa .contenido__producto--info {
     overflow: scroll;
     height: 40px;
@@ -873,13 +875,17 @@ header nav {
     display: grid;
     grid-template-rows: auto auto;
     margin-bottom: 30px; }
-  .solapa .solapa__contenido {
-    grid-template-columns: 1fr; }
-  .solapa .contenido__producto img {
-    max-width: 100%;
-    height: auto; }
-  .solapa .solapa__nombre {
-    width: 120px; }
+  .solapa {
+    justify-items: center; }
+    .solapa .solapa__contenido {
+      grid-template-columns: 1fr; }
+    .solapa .contenido__producto {
+      max-width: 400px; }
+      .solapa .contenido__producto img {
+        max-width: 100%;
+        height: auto; }
+    .solapa .solapa__nombre {
+      width: 120px; }
   .solapa .solapa__nombre {
     width: 90px; }
   #solapa-1 .solapa__nombre {

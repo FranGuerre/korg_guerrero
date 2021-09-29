@@ -48,6 +48,12 @@ const sintes = [
     info: "El minilogue xd es el último sintetizador polifónico analógico de KORG y un potentísimo instrumento musical. Ahora, está disponible en un elegante color blanco perlado de edición limitada. El minilogue xd PW combina un maravilloso sonido con un bonito diseño que destaca tanto en el escenario como en el estudio."
   },
   {
+    modelo: "Arp Odyssey",
+    img: "https://cdn.korg.com/ar/products/upload/36db66fcbcb877a629703eac7ee6b6ed_pc.png",
+    categoria: 2,
+    info: "ARP Odyssey fue un sintetizador analógico producido en 1972 por el fabricante americano ARP Instruments, Inc., que rápidamente obtuvo un gran éxito entre los músicos.  Muy respetado por su gran relación calidad-precio, facilidad de interpretación y portabilidad, ARP Odyssey experimentó varias mejoras durante su historia. Reverenciado por músicos de todos los estilos como un clásico histórico, su sonido puede escucharse en numerosas canciones clásicas."
+  },
+  {
     modelo: "Modwave",
     img: "https://cdn.korg.com/ar/products/upload/eea4821a485cf93ee6ff4bb01771491c_pc.png",
     categoria: 3,
@@ -113,6 +119,7 @@ function navFuncionalidad() {
 // fin header-mobile
 
 // solapas.html
+
 /*
 agregar un listener a cada solapa. en caso de click
 se le agrega clases a esa solapa y se le quita a las demás
