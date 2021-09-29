@@ -91,10 +91,11 @@ body {
   background-color:rgba(47,67,83,0.5);
   background-repeat: repeat;
   background-size:100% 100%;
-  background-image: -webkit-linear-gradient(bottom right, rgba(47,67,83,0.5) 0%, #d2ccc4 74%);
-  background-image: -o-linear-gradient(bottom right, rgba(47,67,83,0.3) 0%, #d2ccc4 74%);
-  background-image: linear-gradient(to top left, rgba(47,67,83,0.3) 0%, #d2ccc4 74%);
+  background-image: -webkit-linear-gradient(bottom right, $verde-claro 0%, $celeste-super-claro 74%);
+  background-image: -o-linear-gradient(bottom right, $verde-claro 0%, $celeste-super-claro 74%);
+  background-image: linear-gradient(to top left, $verde-claro 0%, $celeste-super-claro 74%);
 }
+
 
 // header y presentación
 $margin-menu-presentacion:30px;
@@ -116,15 +117,14 @@ header nav {
   justify-items: center;
 
   .presentacion__texto {
+
     width: 80%;
     font-size: 2rem;
     font-weight: lighter;
     color:$negro;
     text-align:left;
-    // text-shadow: -3px 2px 0 rgb(252,139,140), -3px 2px 0 rgb(252,139,140);
+
     text-transform: uppercase;
-    -webkit-text-stroke-width: 1.4px;
-    -webkit-text-stroke-color: $dorado;
   }
 }
 
