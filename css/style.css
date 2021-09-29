@@ -378,7 +378,7 @@ header nav {
     width: 100%;
     height: 100%;
     opacity: 0;
-    animation-duration: 8s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     z-index: 1; }
   .subtemas__caja:hover a .subtemas__caja--fondo {
