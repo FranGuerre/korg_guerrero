@@ -750,7 +750,7 @@ $solapa__nombre-width-mobile: 90px;
     padding-bottom: 5px;
 
     &:hover {
-      background-color: rgba(86,85,83,0.3);
+      background-color: $blanco-claro;
     }
 
     & img {
@@ -763,11 +763,15 @@ $solapa__nombre-width-mobile: 90px;
       display: inline;
       background-color: $negro;
       color:$blanco-claro;
+      margin:4px 0;
+
 
     }
 
     & p {
       font-size: 1.6rem;
+      text-align:justify;
+
     }
   }
 }
