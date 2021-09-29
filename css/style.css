@@ -379,6 +379,7 @@ header nav {
     height: 100%;
     opacity: 0;
     animation-duration: 8s;
+    animation-timing-function: linear;
     z-index: 1; }
   .subtemas__caja:hover a .subtemas__caja--fondo {
     animation-name: aparicion; }
@@ -396,14 +397,19 @@ header nav {
     opacity: 0; } }
 
 #subtema-artistas {
-  background: url("../img/artistas/toriena-sin-fondo.png"), linear-gradient(90deg, #1a1b1e 0%, #eac291 50%, #1a1b1e 100%); }
-  #subtema-artistas a .subtemas__caja--fondo {
-    background: url("../img/artistas/toriena-sin-fondo.png"); }
-  #subtema-artistas,
-  #subtema-artistas .subtemas__caja--fondo {
+  background: linear-gradient(90deg, #1a1b1e 0%, #eac291 50%, #1a1b1e 100%);
+  background-size: contain;
+  background-repeat: no-repeat; }
+  #subtema-artistas a {
+    background: url("../img/artistas/toriena-sin-fondo.png");
+    background-size: 42% auto;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; }
+    background-position: 50% 18%; }
+  #subtema-artistas .subtemas__caja--fondo {
+    background-image: url("../img/artistas/toriena-sin-fondo.png");
+    background-size: 45% auto;
+    background-repeat: no-repeat;
+    background-position: 50% 18%; }
 
 #subtema-software {
   background: url("https://cdn.korg.com/ar/products/upload/df5e801242c7b1f9e7a0f2c7ac4f3e68_pc.png"), linear-gradient(36deg, #1a1b1e 0%, #ae3446 37%, #2749bf 100%);
@@ -412,7 +418,8 @@ header nav {
   background-position: bottom; }
   #subtema-software .subtemas__caja--fondo {
     background-image: url("https://cdn.korg.com/ar/products/upload/df5e801242c7b1f9e7a0f2c7ac4f3e68_pc.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: bottom; }
 
 /* sección novedades */
 #subtemas-novedades__novedades {
@@ -800,7 +807,7 @@ header nav {
         position: absolute;
         width: 100%;
         height: 100%;
-        z-index: 1; }
+        z-index: 2; }
   /* fin index.html */
   .solapa {
     padding: 30px 0; }
