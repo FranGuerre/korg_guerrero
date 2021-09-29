@@ -517,14 +517,15 @@ header nav {
   .solapa .contenido__producto {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     transition: all 0.1s;
     background-color: rgba(86, 85, 83, 0);
     padding: 0 3px 10px;
     margin: 5px 0;
-    border: 1px dashed #ae3446; }
+    border: 2px dashed rgba(252, 139, 140, 0.6); }
     .solapa .contenido__producto img {
-      width: 100%; }
+      width: 100%;
+      height: auto;
+      margin: 0 auto; }
     .solapa .contenido__producto h4 {
       font-size: 2.2rem;
       color: #f5f1f0;
@@ -592,11 +593,9 @@ header nav {
       .filtros li div .btn {
         background-color: rgba(29, 170, 182, 0.4);
         border: 2px solid #f5f1f0;
+        border-radius: 5px;
         height: 24px;
         width: 48px; }
-        .filtros li div .btn:hover {
-          border: none;
-          outline: none; }
       .filtros li div .btn-active {
         background-color: rgba(29, 170, 182, 0.6);
         transform: scale(0.9); }
@@ -636,7 +635,7 @@ header nav {
   padding: 10px;
   border-radius: inherit; }
   .pregunta__respuesta p {
-    font-size: 1.3rem; }
+    font-size: 1.4rem; }
 
 /*sección de Contactanos*/
 #contacto__contenido {
@@ -667,7 +666,7 @@ header nav {
   padding-top: 20px;
   padding-left: 20px; }
 
-/* artistas.html               artistas.html              artistas.html */
+/* artistas.html    */
 .articulo-principal {
   width: 100%;
   height: 600px;
@@ -679,19 +678,19 @@ header nav {
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat; }
-
-.articulo-principal__info {
-  width: 70%;
-  margin: 20px;
-  color: #f0f0f0; }
-  .articulo-principal__info h4 {
-    display: inline-block;
-    font-size: 2.2rem;
-    background-color: rgba(20, 20, 20, 0.5); }
-  .articulo-principal__info p {
-    display: inline-block;
-    font-size: 1.8rem;
-    background-color: rgba(20, 20, 20, 0.5); }
+  .articulo-principal:hover .articulo-principal__info p {
+    background-color: #1a1b1e; }
+  .articulo-principal .articulo-principal__info {
+    width: 70%;
+    margin: 20px;
+    color: #f0f0f0; }
+    .articulo-principal .articulo-principal__info h4 {
+      display: block;
+      font-size: 2.2rem; }
+    .articulo-principal .articulo-principal__info p {
+      display: inline;
+      font-size: 1.8rem;
+      background-color: rgba(20, 20, 20, 0.5); }
 
 /* sección de articulos */
 .articulos-artistas {
@@ -707,17 +706,21 @@ header nav {
     gap: 8px;
     padding-bottom: 5px; }
     .articulos-artistas .articulos-artistas__articulo:hover {
-      background-color: #faf1fa; }
+      background-color: #f5f1f0;
+      justify-content: space-between;
+      background-blend-mode: multiply;
+      background-image: url("../img/texturas/noise.png"); }
     .articulos-artistas .articulos-artistas__articulo img {
       width: 100%;
       display: inline-block; }
     .articulos-artistas .articulos-artistas__articulo h4 {
+      display: inline-block;
       font-size: 2rem;
-      display: inline;
       background-color: #1a1b1e;
       color: #faf1fa;
       margin: 4px 0; }
     .articulos-artistas .articulos-artistas__articulo p {
+      display: inline-block;
       font-size: 1.6rem;
       text-align: justify; }
 
@@ -749,7 +752,7 @@ header nav {
     background-color: #d2d2d2; }
   .acerca-vinculos .acerca-vinculos__vinculo:hover h4 {
     color: #d2d2d2;
-    background-color: rgba(26, 27, 30, 0.8); }
+    background-color: #1a1b1e; }
   .acerca-vinculos .acerca-vinculos__icono {
     width: 180px;
     height: 180px;
@@ -858,14 +861,14 @@ header nav {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
   .articulo-principal {
     height: 400px; }
-  .articulo-principal__info {
-    width: 80%;
-    margin: 20px;
-    color: #f0f0f0; }
-    .articulo-principal__info h4 {
-      font-size: 2rem; }
-    .articulo-principal__info p {
-      font-size: 1.6rem; }
+    .articulo-principal .articulo-principal__info {
+      width: 80%;
+      margin: 20px;
+      color: #f0f0f0; }
+      .articulo-principal .articulo-principal__info h4 {
+        font-size: 2rem; }
+      .articulo-principal .articulo-principal__info p {
+        font-size: 1.6rem; }
   /* footer */
   .redes__icono-footer {
     width: 25px; }
@@ -920,14 +923,14 @@ header nav {
   .articulo-principal {
     height: 300px;
     background-size: cover; }
-  .articulo-principal__info {
-    width: 80%;
-    margin: 20px;
-    color: #f0f0f0; }
-    .articulo-principal__info h4 {
-      font-size: 3rem; }
-    .articulo-principal__info p {
-      display: none; }
+    .articulo-principal .articulo-principal__info {
+      width: 80%;
+      margin: 20px;
+      color: #f0f0f0; }
+      .articulo-principal .articulo-principal__info h4 {
+        font-size: 3rem; }
+      .articulo-principal .articulo-principal__info p {
+        display: none; }
   .articulos-artistas {
     padding: 0 40px; }
     .articulos-artistas .articulos-artistas__articulo p {

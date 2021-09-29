@@ -129,12 +129,14 @@ se le agrega clases a esa solapa y se le quita a las demás
 function funcionalidadSolapas() {
   solapas.forEach(solapa => {
     solapa.addEventListener("click", () => {
+      // resetea las solapas
       solapas.forEach(item => {
         item.children[0].classList.remove("borde-solapa-activa");
         item.classList.remove("mostrar-solapa");
       });
-        solapa.children[0].classList.toggle("borde-solapa-activa");
-        solapa.classList.toggle("mostrar-solapa");
+      // activa la solapa que fue clickeada
+      solapa.children[0].classList.toggle("borde-solapa-activa");      
+      solapa.classList.toggle("mostrar-solapa");
     });
   });
 }

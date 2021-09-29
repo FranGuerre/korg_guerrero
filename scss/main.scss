@@ -402,8 +402,8 @@ header nav {
     }
 
     h4 {
-        font-size:1.6rem;
-        text-align: justify;
+      font-size:1.6rem;
+      text-align: justify;
       background-color: $rosa-medio;
     }
     p {
@@ -430,9 +430,13 @@ $solapa__nombre-width: 150px;
 $solapa__nombre-width-tablet: 120px;
 $solapa__nombre-width-mobile: 90px;
 
+// para JS
+
 .mostrar-solapa {
   z-index: 2;
 }
+
+// fin para JS
 
 .borde-solapa-activa {
   border-bottom: none!important;
@@ -477,6 +481,7 @@ $solapa__nombre-width-mobile: 90px;
   }
 
   // contenido de solapa
+
   .solapa__contenido {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
@@ -488,15 +493,16 @@ $solapa__nombre-width-mobile: 90px;
   .contenido__producto {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     transition: all 0.1s;
     background-color: rgba(86,85,83,0);
     padding: 0 3px 10px;
     margin: 5px 0;
-    border:1px dashed $rojo;
+    border:2px dashed $rosa-oscuro;
 
     & img {
       width:100%;
+      height:auto;
+      margin:0 auto;
     }
 
     & h4 {
@@ -509,8 +515,8 @@ $solapa__nombre-width-mobile: 90px;
   }
 
   .contenido__producto:hover {
-    // background-color: rgba(86,85,83,0.4);
     border:2px dashed $rojo;
+
   }
 
   .contenido__producto--info {
@@ -599,12 +605,13 @@ $solapa__nombre-width-mobile: 90px;
       .btn {
         background-color: $celeste-claro;
         border:2px solid $blanco;
+        border-radius:5px;
         height:24px;
         width:$btn-width;
 
         &:hover {
-          border:none;
-          outline:none;
+          // border:none;
+          // outline:none;
         }
       }
       .btn-active {
@@ -659,7 +666,7 @@ $solapa__nombre-width-mobile: 90px;
   border-radius:inherit;
 
   & p {
-    font-size:1.3rem;
+    font-size:1.4rem;
   }
 }
 
@@ -701,7 +708,7 @@ $solapa__nombre-width-mobile: 90px;
 
 
 
-/* artistas.html               artistas.html              artistas.html */
+/* artistas.html    */
 
 .articulo-principal {
   width: 100%;
@@ -714,24 +721,27 @@ $solapa__nombre-width-mobile: 90px;
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-}
 
-.articulo-principal__info {
-  width: 70%;
-  margin: 20px;
-  color: rgb(240,240,240);
+  &:hover .articulo-principal__info p {
+    background-color: $negro;
+  }
+  .articulo-principal__info {
+    width: 70%;
+    margin: 20px;
+    color: rgb(240,240,240);
 
-  & h4 {
-    display: inline-block;
-    font-size: 2.2rem;
-    background-color: rgba(20,20,20,0.5);
+    & h4 {
+      display: block;
+      font-size: 2.2rem;
+    }
+
+    & p {
+      display: inline;
+      font-size: 1.8rem;
+      background-color: rgba(20,20,20,0.5);
+    }
   }
 
-  & p {
-    display: inline-block;
-    font-size: 1.8rem;
-    background-color: rgba(20,20,20,0.5);
-  }
 }
 
 /* sección de articulos */
@@ -749,8 +759,11 @@ $solapa__nombre-width-mobile: 90px;
     gap: 8px;
     padding-bottom: 5px;
 
-    &:hover {
-      background-color: $blanco-claro;
+    &:hover  {
+      background-color: $blanco;
+      justify-content: space-between;
+    background-blend-mode:multiply;
+    background-image:url("../img/texturas/noise.png");
     }
 
     & img {
@@ -759,16 +772,15 @@ $solapa__nombre-width-mobile: 90px;
     }
 
     & h4 {
+      display:inline-block;
       font-size: 2rem;
-      display: inline;
       background-color: $negro;
       color:$blanco-claro;
       margin:4px 0;
-
-
     }
 
     & p {
+      display:inline-block;
       font-size: 1.6rem;
       text-align:justify;
 
@@ -815,7 +827,7 @@ $solapa__nombre-width-mobile: 90px;
     }
     &:hover h4 {
       color: rgb(210,210,210);
-      background-color: $negro-claro;
+      background-color: $negro;
     }
   }
   .acerca-vinculos__icono {
@@ -1021,22 +1033,24 @@ $solapa__nombre-width-mobile: 90px;
 }
 .articulo-principal {
   height: 400px;
+
+  .articulo-principal__info {
+    width: 80%;
+    margin: 20px;
+    color: rgb(240,240,240);
+
+    & h4 {
+      font-size: 2rem;
+
+    }
+
+    & p {
+      font-size: 1.6rem;
+    }
+  }
 }
 
-.articulo-principal__info {
-  width: 80%;
-  margin: 20px;
-  color: rgb(240,240,240);
 
-  & h4 {
-    font-size: 2rem;
-
-  }
-
-  & p {
-    font-size: 1.6rem;
-  }
-}
 
 // fin artistas.html
 
@@ -1155,22 +1169,22 @@ $solapa__nombre-width-mobile: 90px;
     height: 300px;
     background-size: cover;
 
+    .articulo-principal__info {
+      width: 80%;
+      margin: 20px;
+      color: rgb(240,240,240);
+
+      & h4 {
+        font-size: 3rem;
+
+      }
+
+      & p {
+        display:none;
+      }
+    }
   }
 
-  .articulo-principal__info {
-    width: 80%;
-    margin: 20px;
-    color: rgb(240,240,240);
-
-    & h4 {
-      font-size: 3rem;
-
-    }
-
-    & p {
-      display:none;
-    }
-  }
   .articulos-artistas {
     padding:0 40px;
 
