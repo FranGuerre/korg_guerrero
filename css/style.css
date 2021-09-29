@@ -468,7 +468,7 @@ header nav {
     background-color: rgba(252, 139, 140, 0.6); }
 
 /* termina sección novedades */
-/* catalogo.html               catalogo.html                catalogo.html*/
+/* catalogo.html */
 .mostrar-solapa {
   z-index: 2; }
 
@@ -539,7 +539,7 @@ header nav {
     height: 40px;
     border-top: 1px dashed #f7c7c9; }
   .solapa .contenido__producto p {
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
 
 #solapa-1 .solapa__nombre {
   right: 449px; }
