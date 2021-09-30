@@ -28,10 +28,7 @@
   z-index: 3; }
   .header-mobile .nav-logo {
     width: 120px;
-    line-height: 50px;
-    color: #ffffff;
-    font-weight: 700;
-    text-transform: uppercase; }
+    line-height: 50px; }
 
 .background-active {
   background-color: #eac291; }
@@ -620,7 +617,7 @@ header nav {
   .preguntas-frecuentes__categoria .preguntas-frecuentes__categoria--pregunta {
     max-width: 700px;
     height: max-content;
-    border: solid 1px rgba(60, 60, 60, 0.5);
+    border: solid 1px rgba(26, 27, 30, 0.8);
     border-radius: 5px;
     margin-bottom: 10px; }
 
@@ -654,7 +651,7 @@ header nav {
   padding: 20px;
   grid-row-gap: 5px;
   font-size: 1.6rem;
-  border: 1px solid rgba(60, 60, 60, 0.5); }
+  border: 1px solid rgba(26, 27, 30, 0.8); }
   #contenido__formulario textarea {
     resize: none; }
 
@@ -688,14 +685,14 @@ header nav {
   .articulo-principal .articulo-principal__info {
     width: 70%;
     margin: 20px;
-    color: #f0f0f0; }
+    color: #f5f1f0; }
     .articulo-principal .articulo-principal__info h4 {
       display: block;
       font-size: 2.2rem; }
     .articulo-principal .articulo-principal__info p {
       display: inline;
       font-size: 1.8rem;
-      background-color: rgba(20, 20, 20, 0.5); }
+      background-color: rgba(26, 27, 30, 0.8); }
 
 /* sección de articulos */
 .articulos-artistas {
@@ -754,9 +751,9 @@ header nav {
   .acerca-vinculos .acerca-vinculos__vinculo h4 {
     display: inline;
     font-size: 1.5rem;
-    background-color: #d2d2d2; }
+    background-color: #faf1fa; }
   .acerca-vinculos .acerca-vinculos__vinculo:hover h4 {
-    color: #d2d2d2;
+    color: #faf1fa;
     background-color: #1a1b1e; }
   .acerca-vinculos .acerca-vinculos__icono {
     width: 180px;
@@ -935,7 +932,7 @@ header nav {
     .articulo-principal .articulo-principal__info {
       width: 80%;
       margin: 20px;
-      color: #f0f0f0; }
+      color: #f5f1f0; }
       .articulo-principal .articulo-principal__info h4 {
         font-size: 3rem; }
       .articulo-principal .articulo-principal__info p {

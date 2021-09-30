@@ -647,7 +647,7 @@ $solapa__nombre-width-mobile: 90px;
   .preguntas-frecuentes__categoria--pregunta {
     max-width: 700px;
     height: max-content;
-    border: solid 1px rgba(60,60,60,0.5);
+    border: solid 1px $negro-claro;
     border-radius: 5px;
     margin-bottom:10px;
   }
@@ -690,7 +690,7 @@ $solapa__nombre-width-mobile: 90px;
   padding: 20px;
   grid-row-gap: 5px;
   font-size: 1.6rem;
-  border: 1px solid rgba(60,60,60,0.5);
+  border: 1px solid $negro-claro;
 
   textarea {
     resize: none;
@@ -734,7 +734,7 @@ $solapa__nombre-width-mobile: 90px;
   .articulo-principal__info {
     width: 70%;
     margin: 20px;
-    color: rgb(240,240,240);
+    color: $blanco;
 
     & h4 {
       display: block;
@@ -744,7 +744,7 @@ $solapa__nombre-width-mobile: 90px;
     & p {
       display: inline;
       font-size: 1.8rem;
-      background-color: rgba(20,20,20,0.5);
+      background-color: $negro-claro;
     }
   }
 
@@ -829,10 +829,10 @@ $solapa__nombre-width-mobile: 90px;
     & h4 {
       display: inline;
       font-size: 1.5rem;
-      background-color: rgb(210,210,210);
+      background-color: $blanco-claro;
     }
     &:hover h4 {
-      color: rgb(210,210,210);
+      color: $blanco-claro;
       background-color: $negro;
     }
   }
@@ -1190,7 +1190,7 @@ $solapa__nombre-width-mobile: 90px;
     .articulo-principal__info {
       width: 80%;
       margin: 20px;
-      color: rgb(240,240,240);
+      color: $blanco;
 
       & h4 {
         font-size: 3rem;
