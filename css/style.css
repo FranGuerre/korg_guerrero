@@ -878,6 +878,8 @@ header nav {
   /* fin footer */ }
 
 @media (max-width: 576px) {
+  .hero .hero__titulo {
+    font-size: 1.2rem; }
   #subtemas-novedades__subtemas {
     height: min-content;
     margin-bottom: 2vh; }

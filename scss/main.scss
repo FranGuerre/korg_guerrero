@@ -1005,6 +1005,13 @@ $solapa__nombre-width-mobile: 90px;
 }
 @media (max-width:576px) {
 
+  // index.html
+
+  .hero {
+    .hero__titulo {
+      font-size: 1.2rem;
+    }
+  }
   #subtemas-novedades__subtemas {
     height: min-content;
     margin-bottom: 2vh;
@@ -1016,6 +1023,8 @@ $solapa__nombre-width-mobile: 90px;
     grid-template-rows: auto auto;
     margin-bottom: 30px;
   }
+
+  // fin index.html
   // catalogo.html
   .solapa {
     justify-items: center;
