@@ -76,7 +76,8 @@ span.icon-bar {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: #ffffff; }
+  background-color: #f5f1f0;
+  box-shadow: 0 0 2px rgba(26, 27, 30, 0.8); }
 
 .icon-bar:nth-child(1) {
   top: 17px; }

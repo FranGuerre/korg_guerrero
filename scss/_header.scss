@@ -66,7 +66,9 @@ span.icon-bar{
 	display:block;
 	width:26px;
 	height:2px;
-	background-color:#ffffff;
+	background-color:$blanco;
+  box-shadow: 0 0 2px $negro-claro;
+
 }
 .icon-bar:nth-child(1){
   top:17px;
