@@ -3,15 +3,18 @@ $rosa-medio: rgb(247, 199, 201);
 $rosa-oscuro: rgba(252, 139, 140, 0.6);
 $rojo: rgb(174,52,70);
 $celeste-claro: rgba(29, 170, 182, 0.4);
-$celeste: rgba(29, 170, 182, 0.6); // fin colores y variables
+$celeste: rgba(29, 170, 182, 0.6);
 $negro: rgb(26,27,30);
 $negro-claro: rgba(26,27,30,0.8);
 $blanco:rgb(245,241,240);
 $blanco-claro:rgb(250,241,250);
 $azul:rgba(47,67,83,1);
 $azul-transparente:rgba(47,67,83,0.5);
-$verde-claro:rgb(197, 255, 208);
+$verde-claro:rgb(197, 255, 168);
 $celeste-super-claro:rgb(185, 255, 231);
+// $verde-claro:rgb(197, 255, 208);
+// $celeste-super-claro:rgb(185, 255, 231);
+
 // Tipografías
 
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);

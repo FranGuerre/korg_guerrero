@@ -96,8 +96,8 @@ body {
   background-image: linear-gradient(to top left, $verde-claro 0%, $celeste-super-claro 74%);
 }
 
-
 // header y presentación
+
 $margin-menu-presentacion:30px;
 
 header nav {
@@ -121,8 +121,7 @@ header nav {
     width: 80%;
     font-size: 2rem;
     font-weight: lighter;
-    color:$negro;
-    text-align:left;
+    color:$azul-transparente;
 
     text-transform: uppercase;
   }
@@ -130,9 +129,9 @@ header nav {
 
 // fin header y presentación
 
-/* index.html;               index.html;                index.html*/
+/* index.html */
 
-/* menu */
+/* menu  */
 
 .menu-hero {
   display: grid;
@@ -140,6 +139,7 @@ header nav {
   max-width: 100%;
   width: 100%;
   height: 84vh;
+  max-height:850px;
   margin-top: $margin-menu-presentacion;
 }
 
@@ -149,10 +149,12 @@ header nav {
   padding: 8px 0;
   text-align: center;
   border: 3px solid #3c3c3c;
+
   background: $dorado;
   background-image:url("../img/texturas/noise.png");
   background-blend-mode: multiply;
   background-repeat:repeat;
+
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   z-index: 2;
@@ -724,6 +726,9 @@ $solapa__nombre-width-mobile: 90px;
 
   &:hover .articulo-principal__info p {
     background-color: $negro;
+    justify-content: space-between;
+    background-blend-mode:multiply;
+    background-image:url("../img/texturas/noise.png");
   }
   .articulo-principal__info {
     width: 70%;
@@ -762,8 +767,8 @@ $solapa__nombre-width-mobile: 90px;
     &:hover  {
       background-color: $blanco;
       justify-content: space-between;
-    background-blend-mode:multiply;
-    background-image:url("../img/texturas/noise.png");
+      background-blend-mode:multiply;
+      background-image:url("../img/texturas/noise.png");
     }
 
     & img {
@@ -856,10 +861,22 @@ $solapa__nombre-width-mobile: 90px;
 // media queries                  media queries
 
 @media (max-width:992px) {
+
+  // index.html
   #subtemas-novedades {
     display:grid;
     grid-template-columns: 1fr;
   }
+  // fin index.html
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  // index.html
+  .menu-hero {
+    height:1000px;
+  }
+
+  //  fin index.html
 }
 
 @media (min-width:768px) and (max-width:992px) {
