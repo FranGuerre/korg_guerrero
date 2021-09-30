@@ -184,6 +184,7 @@ header nav {
   justify-self: center;
   align-self: center;
   margin-top: 70px;
+  margin-bottom:20px;
 
   img {
     max-width: 900px;
@@ -828,7 +829,7 @@ $solapa__nombre-width-mobile: 90px;
     a {
       background-size: 52% auto;
       background-position:bottom;
-    }    
+    }
 
     & .subtemas__caja--fondo {
       background-size: 52% auto;

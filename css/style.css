@@ -297,7 +297,8 @@ header nav {
   grid-row: 1 / 2;
   justify-self: center;
   align-self: center;
-  margin-top: 70px; }
+  margin-top: 70px;
+  margin-bottom: 20px; }
   .hero img {
     max-width: 900px;
     width: 100%; }
