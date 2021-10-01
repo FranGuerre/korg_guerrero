@@ -91,13 +91,33 @@ const sintes = [
   },
   ]
 
+const filminas = [
+  {
+    titulo:"ARP 2600",
+    img: "img/hero-1.png"
+  },
+  {
+    titulo:"modwave",
+    img: "img/hero-2.png"
+  },
+  {
+    titulo:"modstate",
+    img: "img/hero-3.png"
+  }
+]
 let solapas = document.querySelectorAll(".solapa");
-let alerta = document.getElementById("alerta");
+
 let nav = document.querySelector(".header-mobile");
 let navMenu = document.querySelector(".nav-menu");
 let navToggle = document.querySelector(".nav-toggle");
 
+let heroTitulo = document.querySelector(".hero__titulo");
+let heroImg = document.querySelector(".hero__img");
+
+let x = 0;
+
 window.addEventListener("DOMContentLoaded", function() {
+  hero();
   navFuncionalidad();
   cargarSolapas();
   funcionalidadSolapas();
@@ -118,6 +138,23 @@ function navFuncionalidad() {
 
 // fin header-mobile
 
+
+function hero() {
+
+  heroTitulo.innerText = filminas[x].titulo;
+  heroImg.src = filminas[x].img;
+
+  x++;
+  if(x >= filminas.length) {
+    x = 0;
+  }
+
+  setTimeout("hero()",10000);
+
+}
+
+
+
 // solapas.html
 
 /*
@@ -135,7 +172,7 @@ function funcionalidadSolapas() {
         item.classList.remove("mostrar-solapa");
       });
       // activa la solapa que fue clickeada
-      solapa.children[0].classList.toggle("borde-solapa-activa");      
+      solapa.children[0].classList.toggle("borde-solapa-activa");
       solapa.classList.toggle("mostrar-solapa");
     });
   });
