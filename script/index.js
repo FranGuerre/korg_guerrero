@@ -26,6 +26,7 @@ function hero() {
 
   heroTitulo.innerText = filminas[x].titulo;
   heroImg.src = filminas[x].img;
+  heroImg.alt = `Sintetizador ${filminas[x].titulo}`;
 
   x++;
   if(x >= filminas.length) {
