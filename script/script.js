@@ -95,11 +95,11 @@ const filminas = [
   {
     titulo:"ARP 2600",
     img: "img/hero-1.png"
-  }
+  },
   {
     titulo:"modwave",
     img: "img/hero-2.png"
-  }
+  },
   {
     titulo:"modstate",
     img: "img/hero-3.png"
@@ -114,7 +114,10 @@ let navToggle = document.querySelector(".nav-toggle");
 let heroTitulo = document.querySelector(".hero__titulo");
 let heroImg = document.querySelector(".hero__img");
 
+let x = 0;
+
 window.addEventListener("DOMContentLoaded", function() {
+  hero();
   navFuncionalidad();
   cargarSolapas();
   funcionalidadSolapas();
@@ -135,8 +138,8 @@ function navFuncionalidad() {
 
 // fin header-mobile
 
-function hero() {
 
+function hero() {
 
   heroTitulo.innerText = filminas[x].titulo;
   heroImg.src = filminas[x].img;
@@ -146,8 +149,10 @@ function hero() {
     x = 0;
   }
 
+  setTimeout("hero()",10000);
 
 }
+
 
 
 // solapas.html
